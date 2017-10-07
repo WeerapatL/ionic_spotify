@@ -6,13 +6,71 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="dark">
+    <ion-title class="ion-title">Home</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <br>
+  <div class="topic"><b>Concerts Near You</b></div>
+  <div class="desc">Upcoming Concerts by Artists You Love</div>
+  <ion-scroll scrollX="true" direction="x">
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="adele_-_21.png"></ion-img>
+        <ion-card-header class="artist">
+          Artists
+          <p class="desc2">location</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+  </ion-scroll>
+  <br>
+  <div class="topic"><b>Recently</b></div>
+  <ion-scroll scrollX="true" direction="x">
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="insurgency.jpg"></ion-img>
+        <ion-card-header class="artist">
+          Song
+          <p class="desc2">Album by artist</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+  </ion-scroll>
+  <br>
+  <div class="topic"><b>Popular</b></div>
+  <ion-scroll scrollX="true" direction="x">
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="insurgency.jpg"></ion-img>
+        <ion-card-header class="artist">
+          Song
+          <p class="desc2">1,000 &nbsp; follower</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+  </ion-scroll>
+  <br>
+  <div class="topic"><b>Charts</b></div>
+  <ion-scroll scrollX="true" direction="x">
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="insurgency.jpg"></ion-img>
+        <ion-card-header class="artist">
+          Type
+          <p class="desc2">1,000 &nbsp; follower</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+  </ion-scroll>
+
+
+
+
+
 
 </ion-content>

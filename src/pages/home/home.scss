@@ -1,3 +1,71 @@
 page-home {
+    
+
+
+
+    ion-content{
+        background-color: black !important;
+        color: white !important;
+    }
+
+    div.topic{
+        text-align:center; 
+        font-size:13pt;
+    }
+
+    div.desc{
+        text-align:center; 
+        font-size:10pt;
+        color:white;
+        opacity: 0.8;
+    }
+
+    ion-card-header.artist{
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+     p.desc2{
+         color: white;
+         opacity: 0.5;
+         font-size: 12px;
+         font-weight: normal;
+     }
+
+
+    .scroll-zoom-wrapper {
+        white-space: nowrap;
+    }
+
+    ion-card {
+        width: 140px !important;
+        display: inline-block;
+        margin: -5px !important; 
+        margin-top: -5px !important;
+        background-color: black !important;
+    }
+
+    ion-card-header{
+        text-align: center; 
+        margin-top:-20px;
+        width: 125px !important;
+    }
+
+    ion-img{
+        width:125px;
+        height:125px;
+    }
+
+    ion-scroll {
+        min-height: 190px; 
+        height: auto;
+        color: white;
+        
+    
+        //     .scroll-content {
+        //     padding: 0px !important;
+        // }    
+    }
 
 }
