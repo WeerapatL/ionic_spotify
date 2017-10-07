@@ -1,8 +1,9 @@
 page-home {
     
-
-
-
+    ion-toolbar{        
+        opacity: 0.98;
+    }
+    
     ion-content{
         background-color: black !important;
         color: white !important;
@@ -61,11 +62,15 @@ page-home {
         min-height: 190px; 
         height: auto;
         color: white;
-        
-    
-        //     .scroll-content {
-        //     padding: 0px !important;
-        // }    
     }
+
+    ion-footer.footer{
+        height:40px;
+    }
+
+    ion-icon.buttonColor{
+        color: grey;
+    }
+    
 
 }

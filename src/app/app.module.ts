@@ -2,7 +2,9 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { ModalController } from 'ionic-angular';
 
+import { ModalsSongPage } from '../pages/modals-song/modals-song';
 import { SearchPage } from '../pages/search/search';
 import { SelectPage } from '../pages/select/select';
 import { HomePage } from '../pages/home/home';
@@ -19,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelectPage,
     HomePage,
     CollectionPage,
+    ModalsSongPage,
     TabsPage
   ],
   imports: [
@@ -32,6 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelectPage,
     HomePage,
     CollectionPage,
+    ModalsSongPage,
     TabsPage
   ],
   providers: [
