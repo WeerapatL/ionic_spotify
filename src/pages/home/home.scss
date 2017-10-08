@@ -1,9 +1,17 @@
 page-home {
+    
+    ion-title.title{
+        text-align: center;
+    }
 
-    ion-toolbar{
+    p.ptitle{
+        font-weight: 500;
+    }
+
+    ion-toolbar.nav{
         opacity: 0.98;
     }
-  
+
     ion-content{
         background-color: black !important;
         color: white !important;
@@ -18,22 +26,22 @@ page-home {
         text-align:center; 
         font-size:10pt;
         color:white;
-        opacity: 0.8;
+        opacity: 0.7;
+        font-weight: 200;
     }
 
     ion-card-header.artist{
         color: white;
         font-size: 13px;
-        font-weight: bold;
+        font-weight: 500;
     }
 
      p.desc2{
-         color: white;
-         opacity: 0.5;
-         font-size: 12px;
-         font-weight: normal;
+         color:white;
+         opacity: 0.7;
+         font-size: 10pt;
+         font-weight: 200;
      }
-
 
     .scroll-zoom-wrapper {
         white-space: nowrap;
@@ -64,13 +72,28 @@ page-home {
         color: white;
     }
 
-    ion-footer.footer{
-        height:40px;
-    }
-
     ion-icon.buttonColor{
-        color: grey;
+        // color: white;
+        color:lightgray;
     }
     
+    p.artist{
+        color: white;
+        font-size: 10pt !important; 
+        display: inline;
+        font-weight: 200;
+        opacity: 0.7;
+    }
 
+    div.song{
+        color: white;
+        font-size: 10pt !important;
+        font-weight: 200;
+    }
+
+    img.imgicon{
+        width: 23px;
+        height: 23px;
+    }
+    
 }

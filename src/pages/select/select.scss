@@ -1,3 +1,108 @@
 page-select {
 
+    // Header
+    ion-icon.buttonColor{
+        // color: white;
+        color:lightgray;
+    }
+
+    ion-title.title{
+        text-align: center;
+    }
+
+    ion-toolbar.nav{
+        opacity: 0.98;
+    }
+
+    p.ptitle{
+        font-weight: 500;
+    }
+
+    // content
+
+    div.topic{
+        text-align:center; 
+        font-size:13pt;
+    }
+
+    ion-card.type{
+        margin-top:0pt !important;
+        margin-left:0pt !important;
+        margin-bottom:-15pt !important;
+        padding: 0pt !important;
+        width: 150px !important;
+    }
+
+    ion-content{
+        background-color: #050000 !important;
+        color: white !important;
+    }
+
+    .scroll-zoom-wrapper {
+        white-space: nowrap;
+    }
+
+    ion-card {
+        width: 140px !important;
+        display: inline-block;
+        margin: -5px !important; 
+        margin-top: -5px !important;
+        background-color: black !important;
+    }
+
+    ion-scroll {
+       
+        min-height: 190px; 
+        height: auto;
+        color: white;
+    }
+
+    ion-img{
+        width:125px;
+        height:125px;
+    }
+
+    ion-img.img{
+        width:140px;
+        height:140px;
+    }
+
+    ion-card-header{
+        text-align: center; 
+        margin-top:-20px;
+        width: 125px !important;
+    }
+
+    ion-card-header.artist{
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .ion-content{
+        background-color: black;
+        color: white;
+        font-size: 15px;
+    }
+
+    // footer
+    p.artist{
+        color: white;
+        font-size: 10pt !important; 
+        display: inline;
+        font-weight: 200;
+        opacity: 0.7;
+    }
+
+    div.song{
+        color: white;
+        font-size: 10pt !important;
+        font-weight: 200;
+    }
+
+    img.imgicon{
+        width: 23px;
+        height: 23px;
+    }
+
 }

@@ -20,14 +20,16 @@ export class HomePage {
   constructor(private modalCtrl:ModalController,private statusBar:StatusBar,public navCtrl: NavController, public navParams: NavParams) {
     this.statusBar.styleLightContent()
   }
+  
+  modalsTapped(){
+    let modal = this.modalCtrl.create(ModalsSongPage);
+    modal.present();
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
 
-  modalsTapped(){
-    let modal = this.modalCtrl.create(ModalsSongPage);
-    modal.present();
-  }
+  
 
 }

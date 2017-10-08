@@ -24,9 +24,9 @@
               <button ion-button icon-only (click)="setting()">
                 <ion-icon name="settings"></ion-icon>
               </button>
-            </ion-buttons>
+    </ion-buttons>
 
-      </ion-navbar>
+  </ion-navbar>
 </ion-header>
 
 <ion-content class="ion-content" fullscreen >
@@ -55,15 +55,34 @@
           <button ion-item full outline class="ion-content">
               <ion-icon name="radio" item-start></ion-icon>
               Podcasts
-            </button>
-            
-            <ion-item class="ion-content">
-              <ion-label start>Recents</ion-label>
-              <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button>
-             </ion-item>
-            
-             
+    </button>
+    <ion-item class="ion-content">
+      <ion-label start>Recents</ion-label>
+      <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button>
+    </ion-item>
   </ion-list>
-    
-  
 </ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="dark" class="footer" (click)="modalsTapped()">
+    <ion-buttons class="button">
+      <button ion-button icon-right>
+          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>
+        </button>
+    </ion-buttons>
+
+    <ion-title class="title1">
+      <div class="song">
+        Songs -
+        <p class="artist">Artists</p>
+      </div>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button ion-left>
+            <img class="imgicon" src="play-button.png">        
+         </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -24,6 +24,11 @@ export class CollectionPage {
   this.ImageUrl = spotify.getImage();
   }
 
+  // modalsTapped(){
+  //   let modal = this.modalCtrl.create(ModalsSongPage);
+  //   modal.present();
+  // }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad CollectionPage');
   }

@@ -5,14 +5,90 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Select</ion-title>
-  </ion-navbar>
-
+  <ion-toolbar class="nav" color="dark">
+    <ion-title class="title">
+      <p class="ptitle">Select</p>
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
+<ion-content fullscreen>
+  <br>
+  <div class="topic"><b>Relax with song</b></div>
+  <ion-scroll scrollX="true" direction="x">
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="adele_-_21.png"></ion-img>
+        <ion-card-header class="artist">
+          Artists
+          <p class="desc2">location</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+  </ion-scroll>
 
-<ion-content padding>
+  <ion-list no-lines class="ion-content">
+    <button ion-item full outline class="ion-content">
+        <ion-icon name="trending-up" item-start></ion-icon>
+        Charts
+      </button>
+    <button ion-item full outline class="ion-content">
+          <ion-icon name="calendar" item-start></ion-icon>
+          New Releases
+      </button>
+    <button ion-item full outline class="ion-content">
+            <ion-icon c name="radio" item-start></ion-icon>
+            Podcast
+      </button>
+    <button ion-item full outline class="ion-content">
+              <ion-icon name="ionic" item-start></ion-icon>
+              Discover
+      </button>
+    <button ion-item full outline class="ion-content">
+                <ion-icon name="videocam" item-start></ion-icon>
+                Concert
+      </button>
+  </ion-list>
+
+
+  <div class="topic"><b>Type &amp; Emotion </b></div>
+  <ion-card class="type">
+    <ion-card-content>
+      <ion-img class="img" src="adele_-_21.png"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="type">
+    <ion-card-content>
+      <ion-img class="img" src="adele_-_21.png"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="type">
+    <ion-card-content>
+      <ion-img class="img" src="adele_-_21.png"></ion-img>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark" class="footer" (click)="modalsTapped()">
+    <ion-buttons class="button">
+      <button ion-button icon-right>
+          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>
+        </button>
+    </ion-buttons>
+
+    <ion-title class="title1">
+      <div class="song">
+        Songs -
+        <p class="artist">Artists</p>
+      </div>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button ion-left>
+            <img class="imgicon" src="play-button.png">        
+         </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
