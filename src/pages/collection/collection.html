@@ -14,14 +14,14 @@
               </button>
             </ion-buttons> -->
         
-            <ion-avatar style="padding-left:10px;" (click)="openModel()">
-                <img style="width: 30px; height: 30px;" src="user.png">
+            <ion-avatar style="padding-left:10px;" (click)="profile(profile)">
+                <img style="width: 30px; height: 30px;" src={{ImageUrl}}>
               </ion-avatar>
         
             <ion-title>My Collections</ion-title>
 
             <ion-buttons end>
-              <button ion-button icon-only (click)="openModel()">
+              <button ion-button icon-only (click)="setting()">
                 <ion-icon name="settings"></ion-icon>
               </button>
             </ion-buttons>
@@ -30,23 +30,28 @@
 </ion-header>
 
 <ion-content class="ion-content" fullscreen >
-  <ion-list no-lines class="ion-content">
+  <ion-list no-lines>
+
     <button ion-item full outline class="ion-content">
       <ion-icon name="musical-notes" item-start></ion-icon>
       Playlists
     </button>
+
     <button ion-item full outline class="ion-content">
         <ion-icon name="musical-note" item-start></ion-icon>
         Musics
       </button>
+
       <button ion-item full outline class="ion-content">
           <ion-icon name="disc" item-start></ion-icon>
           Albums
         </button>
+
         <button ion-item full outline class="ion-content">
             <ion-icon name="headset" item-start></ion-icon>
             Artists
           </button>
+          
           <button ion-item full outline class="ion-content">
               <ion-icon name="radio" item-start></ion-icon>
               Podcasts

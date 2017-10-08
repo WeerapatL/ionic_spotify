@@ -10,9 +10,13 @@ import { SelectPage } from '../pages/select/select';
 import { HomePage } from '../pages/home/home';
 import { CollectionPage } from '../pages/collection/collection';
 import { TabsPage } from '../pages/tabs/tabs';
+import { SettingPage } from '../pages/setting/setting';
+import { ProfilePage} from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SpotifydataProvider } from '../providers/spotifydata/spotifydata';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     CollectionPage,
     ModalsSongPage,
-    TabsPage
+    TabsPage,
+    SettingPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,12 +43,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     CollectionPage,
     ModalsSongPage,
-    TabsPage
+    TabsPage,
+    SettingPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SpotifydataProvider
   ]
 })
 export class AppModule {}

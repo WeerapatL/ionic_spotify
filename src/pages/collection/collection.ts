@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {SettingPage} from '../../pages/setting/setting';
+import 'rxjs/add/operator/map' ;
+import { Http } from '@angular/http' ;
+import { ProfilePage } from '../../pages/profile/profile';
+import { SpotifydataProvider } from '../../providers/spotifydata/spotifydata';
 
 /**
  * Generated class for the CollectionPage page.
@@ -13,12 +18,23 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'collection.html',
 })
 export class CollectionPage {
+  ImageUrl : String='';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(spotify:SpotifydataProvider,public navCtrl: NavController, public navParams: NavParams) {
+  this.ImageUrl = spotify.getImage();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CollectionPage');
   }
+
+  setting(){
+    this.navCtrl.push(SettingPage);
+  }
+
+  profile(profile){
+    this.navCtrl.push(ProfilePage,profile);
+  }
+
 
 }

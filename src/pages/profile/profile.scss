@@ -1,0 +1,44 @@
+page-profile {
+    .ion-content{
+        background-color:grey;
+        color: white;
+        }
+        
+    .picture{
+        width:120px;
+        height:120px;
+        position:fixed;
+        top:20%;
+        left:50%;
+        margin-left:-60px;
+        margin-top:-60px;
+        
+    }
+    .text{
+        font-size: 25px;
+        position:fixed;
+        top:33%;
+        left:9%;
+         
+    }
+    .text2{
+        font-size: 13px;
+        text-align: center;
+        position:fixed;
+        top:60%;
+        left: 20%;
+        right: 20%;
+        opacity: 0.5;
+    }
+    .button{
+        font-size: 13px;
+        position:fixed;
+        top:38%;
+        left:33%;
+        background: black;
+        color: white;
+        opacity: 0.5;
+    }
+    
+
+}
