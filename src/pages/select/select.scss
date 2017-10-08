@@ -25,14 +25,6 @@ page-select {
         font-size:13pt;
     }
 
-    ion-card.type{
-        margin-top:0pt !important;
-        margin-left:0pt !important;
-        margin-bottom:-15pt !important;
-        padding: 0pt !important;
-        width: 150px !important;
-    }
-
     ion-content{
         background-color: #050000 !important;
         color: white !important;
@@ -42,7 +34,7 @@ page-select {
         white-space: nowrap;
     }
 
-    ion-card {
+    ion-card.scroll {
         width: 140px !important;
         display: inline-block;
         margin: -5px !important; 
@@ -51,21 +43,16 @@ page-select {
     }
 
     ion-scroll {
-       
         min-height: 190px; 
         height: auto;
         color: white;
     }
 
-    ion-img{
+    ion-img.scroll{
         width:125px;
         height:125px;
     }
 
-    ion-img.img{
-        width:140px;
-        height:140px;
-    }
 
     ion-card-header{
         text-align: center; 
@@ -84,6 +71,56 @@ page-select {
         color: white;
         font-size: 15px;
     }
+
+    //type
+
+    button.type {
+        position: relative;
+        text-align: center;
+        width: 150px !important;
+        height: 150px !important;
+        display: inline-block;
+        margin: 0px !important; 
+        margin-top: 0px !important;
+        padding: 5px !important;
+        background-color: black !important;
+        text-align: center !important;
+    }
+
+    ion-card.type {
+        position: relative;
+        text-align: center;
+        width: 150px !important;
+        height: 150px !important;
+        display: inline-block;
+        margin: 0px !important; 
+        margin-top: 0px !important;
+        padding: 5px !important;
+        background-color: black !important;
+        text-align: center !important;
+    }
+
+    img.img{
+        opacity: 0.3;
+    }
+    
+      .card-title {
+        position: absolute;
+        top: 36%;
+        // font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        // font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+      }
+
 
     // footer
     p.artist{
