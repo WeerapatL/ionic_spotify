@@ -5,8 +5,10 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>Home</ion-title>
+  <ion-toolbar class="nav" color="dark">
+    <ion-title class="title">
+      <p class="ptitle">Home</p>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -26,7 +28,9 @@
       </ion-card-content>
     </ion-card>
   </ion-scroll>
+
   <br>
+  
   <div class="topic"><b>Recently</b></div>
   <ion-scroll scrollX="true" direction="x">
     <ion-card>
@@ -47,7 +51,7 @@
         <ion-img src="insurgency.jpg"></ion-img>
         <ion-card-header class="artist">
           Song
-          <p class="desc2">1,000 &nbsp; follower</p>
+          <p class="desc2">1,000 follower</p>
         </ion-card-header>
       </ion-card-content>
     </ion-card>
@@ -60,19 +64,33 @@
         <ion-img src="insurgency.jpg"></ion-img>
         <ion-card-header class="artist">
           Type
-          <p class="desc2">1,000 &nbsp; follower</p>
+          <p class="desc2">1,000 follower</p>
         </ion-card-header>
       </ion-card-content>
     </ion-card>
   </ion-scroll>
 
 </ion-content>
-<ion-footer class="footer" no-border>
-  <ion-toolbar>
-    <ion-buttons>
-      <button ion-button>
-        <ion-icon name="arrow-up" class="buttonColor"></ion-icon>
+
+<ion-footer>
+  <ion-toolbar color="dark" class="footer" (click)="modalsTapped()">
+    <ion-buttons class="button">
+      <button ion-button icon-right>
+        <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>
       </button>
+    </ion-buttons>
+
+    <ion-title class="title1">
+      <div class="song">
+        Songs -
+        <p class="artist">Artists</p>
+      </div>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button ion-left>
+          <img class="imgicon" src="play-button.png">        
+       </button>
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>

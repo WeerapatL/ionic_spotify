@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { ModalController } from 'ionic-angular';
+import { ModalsSongPage } from '../modals-song/modals-song';
 /**
  * Generated class for the CollectionPage page.
  *
@@ -14,11 +15,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CollectionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private modalCtrl:ModalController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  modalsTapped(){
+    let modal = this.modalCtrl.create(ModalsSongPage);
+    modal.present();
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad CollectionPage');
   }
 
+  
 }

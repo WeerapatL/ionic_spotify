@@ -17,8 +17,13 @@ export class ModalsSongPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  closeTapped(){
+    this.navCtrl.pop();
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalsSongPage');
   }
 
+  
 }
