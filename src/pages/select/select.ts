@@ -14,6 +14,7 @@ import { ModalsSongPage } from '../modals-song/modals-song';
   templateUrl: 'select.html',
 })
 export class SelectPage {
+status:boolean;
 
   constructor(private modalCtrl:ModalController,public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -21,6 +22,11 @@ export class SelectPage {
   modalsTapped(){
     let modal = this.modalCtrl.create(ModalsSongPage);
     modal.present();
+  }
+
+  changeButton(){
+    this.status=!this.status;
+    console.log(this.status);
   }
   
   ionViewDidLoad() {

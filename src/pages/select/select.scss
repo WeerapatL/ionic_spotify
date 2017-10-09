@@ -87,6 +87,9 @@ page-select {
         text-align: center !important;
     }
 
+    button.type:active{
+        opacity: 0.75;
+    }
     ion-card.type {
         position: relative;
         text-align: center;
@@ -106,9 +109,10 @@ page-select {
     
       .card-title {
         position: absolute;
-        top: 36%;
+        top: 23%;
         // font-size: 2.0em;
-        width: 100%;
+        width: auto;
+        height: 50px;
         font-weight: bold;
         color: #fff;
       }
@@ -116,7 +120,7 @@ page-select {
       .card-subtitle {
         // font-size: 1.0em;
         position: absolute;
-        top: 52%;
+        top: 68%;
         width: 100%;
         color: #fff;
       }
@@ -140,6 +144,10 @@ page-select {
     img.imgicon{
         width: 23px;
         height: 23px;
+    }
+
+    ion-title.postition{
+        position:absolute;
     }
 
 }

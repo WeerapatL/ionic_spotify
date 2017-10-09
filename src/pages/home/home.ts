@@ -16,20 +16,25 @@ import { ModalsSongPage } from '../modals-song/modals-song';
   templateUrl: 'home.html',
 })
 export class HomePage {
+status: boolean;
 
-  constructor(private modalCtrl:ModalController,private statusBar:StatusBar,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private modalCtrl: ModalController, private statusBar: StatusBar, public navCtrl: NavController, public navParams: NavParams) {
     this.statusBar.styleLightContent()
   }
-  
-  modalsTapped(){
+
+  modalsTapped() {
     let modal = this.modalCtrl.create(ModalsSongPage);
     modal.present();
+  }
+
+  changeButton() {
+    this.status = !this.status;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
 
-  
+
 
 }

@@ -14,7 +14,8 @@ import { ModalsSongPage } from '../modals-song/modals-song';
   templateUrl: 'search.html',
 })
 export class SearchPage {
-
+  status:boolean;
+  
   constructor(private modalCtrl:ModalController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -23,6 +24,10 @@ export class SearchPage {
     modal.present();
   }
   
+  changeButton() {
+    this.status = !this.status;
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage');
   }
