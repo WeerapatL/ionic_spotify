@@ -30,9 +30,36 @@
   </ion-scroll>
 
   <br>
-  
+
   <div class="topic"><b>Recently</b></div>
   <ion-scroll scrollX="true" direction="x">
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="insurgency.jpg"></ion-img>
+        <ion-card-header class="artist">
+          Song
+          <p class="desc2">Album by artist</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="insurgency.jpg"></ion-img>
+        <ion-card-header class="artist">
+          Song
+          <p class="desc2">Album by artist</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <ion-img src="insurgency.jpg"></ion-img>
+        <ion-card-header class="artist">
+          Song
+          <p class="desc2">Album by artist</p>
+        </ion-card-header>
+      </ion-card-content>
+    </ion-card>
     <ion-card>
       <ion-card-content>
         <ion-img src="insurgency.jpg"></ion-img>
@@ -74,33 +101,33 @@
 
 <ion-footer>
   <ion-toolbar color="dark" class="footer">
-    <ion-buttons class="button"  (click)="modalsTapped()">
-      <button ion-button icon-right  >
+    <ion-buttons class="button" (click)="modalsTapped()">
+      <button ion-button icon-right>
         <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>
       </button>
     </ion-buttons>
 
     <ion-title class="position" (click)="modalsTapped()">
-        <ion-slides>
-          <ion-slide>
-            <div class="song">
-              Songs -
-              <p class="artist">Artists</p>
-            </div>
-          </ion-slide>
-          <ion-slide>
-            <div class="song">
-              Songs2 -
-              <p class="artist">Artists2</p>
-            </div>
-          </ion-slide>
-        </ion-slides>
-      </ion-title>
-  
-      <ion-buttons end>
-        <button ion-button ion-left (click)="changeButton()">
+      <ion-slides>
+        <ion-slide>
+          <div class="song">
+            Songs -
+            <p class="artist">Artists</p>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="song">
+            Songs2 -
+            <p class="artist">Artists2</p>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button ion-left (click)="changeButton()">
               <img class="imgicon" [src]="status? 'pause-button.png':'play-button.png'"> 
         </button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-footer>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
