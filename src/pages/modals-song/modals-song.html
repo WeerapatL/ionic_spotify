@@ -1,9 +1,14 @@
-<ion-header>
+<ion-header no-border class="black">
   <ion-toolbar>
-    <ion-buttons class="button" (click)="closeTapped()">
+    <ion-buttons (click)="closeTapped()">
       <button ion-button icon-right>
-          <ion-icon  name="arrow-down" class="buttonColor"></ion-icon>
-        </button>
+        <ion-icon class="color" name="arrow-down"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end (click)="closeTapped()">
+      <button ion-button icon-left>
+        <ion-icon class="color" name="list"></ion-icon>
+      </button>
     </ion-buttons>
     <div class="artist">Playing music from
       <p class="artist">Adele</p>
@@ -11,7 +16,33 @@
   </ion-toolbar>
 </ion-header>
 
-
-<ion-content padding>
+<ion-content fullscreen>
+  <ion-slides spaceBetween="-60">
+    <ion-slide>
+      <img class="cover" src="SomeoneLikeYou.png">
+    </ion-slide>
+    <ion-slide>
+      <img class="cover" src="RollingIntheDeep.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img class="cover" src="SetFiretotheRain.jpeg">
+    </ion-slide>
+  </ion-slides>
+  <div class="div">
+    <ion-icon class="add" name="add"></ion-icon>
+    <div class="song">
+      <p class="p1">Someone Like You</p>
+      <p class="p2">Adele</p>
+    </div>
+    <ion-icon class="more" name="more"></ion-icon>
+  </div>
+  <br>
+  <div class="div">
+      <ion-icon class="shuffle" name="shuffle"></ion-icon>
+      <ion-icon class="backward" name="skip-backward"></ion-icon>
+      <ion-icon class="play" name="play"></ion-icon>
+      <ion-icon class="forward" name="skip-forward"></ion-icon>
+      <ion-icon class="repeat" name="repeat"></ion-icon>
+  </div>
 
 </ion-content>
