@@ -16541,7 +16541,7 @@ ion-range ion-icon {
 }
 
 .range-ios {
-  padding: 8px 16px;
+  padding: 8px 0px;
 }
 
 .range-ios [range-left] {
@@ -16597,12 +16597,12 @@ ion-range ion-icon {
 }
 
 .range-ios .range-knob {
-  left: 7px;
-  top: 7px;
+  left: 13.5px;
+  top: 13.5px;
   border-radius: 50%;
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 15px;
+  height: 15px;
   background: #fff;
   -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.13), 0 0 0 1px rgba(0, 0, 0, 0.02);
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.13), 0 0 0 1px rgba(0, 0, 0, 0.02);
@@ -16634,8 +16634,8 @@ ion-range ion-icon {
   display: inline-block;
   min-width: 28px;
   font-size: 12px;
-  color: #000;
-  background: transparent;
+  color: black;
+  background: white;
   -webkit-transition: -webkit-transform 120ms ease;
   transition: -webkit-transform 120ms ease;
   transition: transform 120ms ease;
@@ -20413,7 +20413,7 @@ ion-toast {
   bottom: 2px;
   border-radius: 16px;
   position: absolute;
-  background-color: #fff;
+  background-color: black;
   content: "";
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
@@ -20430,7 +20430,7 @@ ion-toast {
   position: absolute;
   width: 28px;
   height: 28px;
-  background-color: #fff;
+  background-color: white;
   -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16), 0 3px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16), 0 3px 1px rgba(0, 0, 0, 0.1);
   -webkit-transition: width 120ms ease-in-out 80ms, left 110ms ease-in-out 80ms, right 110ms ease-in-out 80ms, -webkit-transform 300ms;
@@ -25544,6 +25544,15 @@ page-collection img.imgicon {
   height: 23px;
 }
 
+page-collection .text2 {
+  font-size: 13px;
+  position: fixed;
+  top: 51.5%;
+  left: 15%;
+  opacity: 0.5;
+  text-align: center;
+}
+
 page-home ion-title.title {
   text-align: center;
 }
@@ -25738,46 +25747,163 @@ page-modals-song .play {
   padding: 17px;
 }
 
-page-profile .ion-content {
-  background-color: grey;
+page-playback .ion-content {
+  background-color: black;
   color: white;
 }
 
-page-profile .picture {
+page-playback .opacity {
+  opacity: 0.99;
+}
+
+page-playback .buttonLogout {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  width: 50%;
+}
+
+page-playback .text {
+  font-size: 13px;
+  margin-left: 5%;
+  margin-top: 5%;
+  opacity: 0.5;
+}
+
+page-playback .text2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+page-playback .listtext {
+  background: black;
+  color: white;
+  margin-top: 12%;
+}
+
+page-profile .ion-content {
+  background-color: black;
+  color: white;
+}
+
+page-profile .image {
   width: 120px;
   height: 120px;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  margin-left: -60px;
-  margin-top: -60px;
+  margin-left: 120px;
+  margin-top: 15px;
 }
 
-page-profile .text {
-  font-size: 25px;
-  position: fixed;
-  top: 33%;
-  left: 9%;
+page-profile .textName {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
-page-profile .text2 {
+page-profile .buttonFriend {
+  margin-top: 7px;
+  text-align: center;
+  background: #575353;
+}
+
+page-profile .textFriend {
+  margin-bottom: 25px;
   font-size: 13px;
+  color: white;
+  margin-top: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+page-profile .backIcon {
+  font-size: 25px;
+  margin-left: -95%;
+}
+
+page-profile .textActivity {
+  font-size: 18px;
+  position: fixed;
+  top: 67%;
+  left: 30%;
+}
+
+page-profile .textListen {
+  font-size: 15px;
   text-align: center;
   position: fixed;
-  top: 60%;
-  left: 20%;
+  top: 73%;
+  left: 18%;
   right: 20%;
   opacity: 0.5;
 }
 
-page-profile .button {
+page-profile .playList1 {
+  color: white;
   font-size: 13px;
   position: fixed;
-  top: 38%;
-  left: 33%;
-  background: black;
+  margin-top: 0%;
+  left: 11%;
+}
+
+page-profile .follower1 {
   color: white;
+  font-size: 13px;
+  position: fixed;
+  margin-top: 0%;
+  left: 48%;
+}
+
+page-profile .following1 {
+  color: white;
+  font-size: 13px;
+  position: fixed;
+  margin-top: 0%;
+  left: 82%;
+}
+
+page-profile .playList2 {
+  left: 0px;
+  margin-top: 15px;
+  position: fixed;
+  color: white;
+  font-size: 12px;
   opacity: 0.5;
+  margin-left: 5%;
+}
+
+page-profile .follower2 {
+  left: 0px;
+  margin-top: 15px;
+  position: fixed;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+  margin-left: 41.5%;
+}
+
+page-profile .following2 {
+  left: 0px;
+  margin-top: 15px;
+  position: fixed;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+  margin-left: 75%;
+}
+
+page-profile .toolbar-background-md {
+  background: -webkit-gradient(left top, #ee4649, #f6a72a);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ee4649), to(#f6a72a));
+  background: linear-gradient(to bottom right, #ee4649, #f6a72a);
+  background-repeat: repeat-x;
+}
+
+page-profile .toolbar-background-ios {
+  background: -webkit-gradient(left top, #ee4649, #f6a72a);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ee4649), to(#f6a72a));
+  background: linear-gradient(to bottom right, #ee4649, #f6a72a);
+  background-repeat: repeat-x;
 }
 
 page-search .ion-content {
@@ -25800,17 +25926,17 @@ page-search .text {
   font-size: 15px;
   position: fixed;
   top: 55%;
-  left: 37%;
+  left: 36%;
+  letter-spacing: 0.03cm;
 }
 
 page-search .text2 {
   font-size: 13px;
-  text-align: center;
   position: fixed;
   top: 60%;
   left: 20%;
-  right: 20%;
   opacity: 0.5;
+  text-align: center;
 }
 
 page-search .opacity {
@@ -25838,6 +25964,13 @@ page-search div.song {
 page-search img.imgicon {
   width: 23px;
   height: 23px;
+}
+
+page-search .searchCamera {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 page-select ion-icon.buttonColor {
@@ -25987,4 +26120,11 @@ page-setting .ion-content {
 
 page-setting .opacity {
   opacity: 0.99;
+}
+
+page-setting .buttonLogout {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  width: 50%;
 }

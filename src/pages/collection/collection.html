@@ -5,7 +5,7 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-    <ion-navbar color="dark" class="opacity"> 
+    <ion-navbar color="dark" class="opacity" hideBackButton> 
         
             <!-- <ion-buttons start>
               <button ion-button round (click)="openModel()">
@@ -24,6 +24,7 @@
               <button ion-button icon-only (click)="setting()">
                 <ion-icon name="settings"></ion-icon>
               </button>
+              
     </ion-buttons>
 
   </ion-navbar>
@@ -39,7 +40,7 @@
 
     <button ion-item full outline class="ion-content">
         <ion-icon name="musical-note" item-start></ion-icon>
-        Musics
+        Songs
       </button>
 
       <button ion-item full outline class="ion-content">
@@ -55,11 +56,16 @@
           <button ion-item full outline class="ion-content">
               <ion-icon name="radio" item-start></ion-icon>
               Podcasts
-    </button>
+          </button>
+
     <ion-item class="ion-content">
-      <ion-label start>Recents</ion-label>
-      <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button>
+      <ion-label start>Recently Played</ion-label>
+      <!-- <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button> -->
     </ion-item>
+    <div class="text2">
+        Get quick access to all your recently played<br>
+         content here.
+      </div>
   </ion-list>
 </ion-content>
 

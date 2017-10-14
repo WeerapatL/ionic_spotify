@@ -17,6 +17,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SpotifydataProvider } from '../providers/spotifydata/spotifydata';
 import { HttpModule } from '@angular/http';
+import { FindfriendsPage } from '../pages/findfriends/findfriends';
+import { PlaybackPage } from '../pages/playback/playback';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { HttpModule } from '@angular/http';
     ModalsSongPage,
     TabsPage,
     SettingPage,
-    ProfilePage
+    ProfilePage,
+    FindfriendsPage,
+    PlaybackPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,   
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,7 +49,9 @@ import { HttpModule } from '@angular/http';
     ModalsSongPage,
     TabsPage,
     SettingPage,
-    ProfilePage
+    ProfilePage,
+    FindfriendsPage,
+    PlaybackPage
   ],
   providers: [
     StatusBar,

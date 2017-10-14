@@ -1,43 +1,151 @@
 page-profile {
     .ion-content{
-        background-color:grey;
+        background-color:black;
         color: white;
         }
         
-    .picture{
+    .image{
         width:120px;
         height:120px;
-        position:fixed;
-        top:20%;
-        left:50%;
-        margin-left:-60px;
-        margin-top:-60px;
+        margin-left:120px;
+        margin-top:15px;
+        
         
     }
-    .text{
-        font-size: 25px;
-        position:fixed;
-        top:33%;
-        left:9%;
+    .textName{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+        // margin-left:70px;
+        font-weight: bold;
+        text-align: center;
          
     }
-    .text2{
+    // .text2{
+    //     font-size: 13px;
+    //     text-align: center;
+    //     position:fixed;
+    //     top:60%;
+    //     left: 20%;
+    //     right: 20%;
+    //     opacity: 0.5;
+    // }
+    .buttonFriend{   
+        margin-top: 7px;
+        text-align: center;
+        background: #575353;
+        // opacity: 0.5;
+        
+    }
+    .textFriend{
+        // // left:35%;
+        margin-bottom: 25px;
         font-size: 13px;
+        color: white;
+        margin-top: 25px;
+        // margin-left:70px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .backIcon{
+        font-size:25px;
+        margin-left: -95%;
+    }
+    
+    .textActivity{
+        font-size: 18px;
+        position:fixed;
+        top:67%;
+        left:30%;
+       
+        
+    }
+    .textListen{
+        font-size: 15px;
         text-align: center;
         position:fixed;
-        top:60%;
-        left: 20%;
+        top:73%;
+        left: 18%;
         right: 20%;
         opacity: 0.5;
     }
-    .button{
+    
+    .playList1{
+        color: white;
         font-size: 13px;
         position:fixed;
-        top:38%;
-        left:33%;
-        background: black;
+        margin-top:0%;
+        left:11%;
+    }
+
+    .follower1{
         color: white;
+        font-size: 13px;
+        position:fixed;
+        margin-top:0%;
+        left:48%;
+    }
+
+    .following1{
+        color: white;
+        font-size: 13px;
+        position:fixed;
+        margin-top:0%;
+        left:82%;
+    }
+
+    .playList2{
+        left: 0px;
+        margin-top: 15px;
+        position:fixed;
+        color: white;
+        font-size: 12px;
         opacity: 0.5;
+        margin-left:5%;
+    }
+
+    .follower2{
+        left: 0px;
+        margin-top: 15px;
+        position:fixed;
+        color: white;
+        font-size: 12px;
+        opacity: 0.5;
+        margin-left:41.5%;
+    }
+
+    .following2{
+        left: 0px;
+        margin-top: 15px;
+        position:fixed;
+        color: white;
+        font-size: 12px;
+        opacity: 0.5;
+        margin-left:75%;
+    }
+
+    $SIDEMENU_TOP: #ee4649;
+    $SIDEMENU_BOTTOM: #f6a72a;
+    $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+    
+    
+    .toolbar-background-md {
+        background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background-repeat: repeat-x;
+        
+    }
+    
+    .toolbar-background-ios{
+        background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background-repeat: repeat-x;
+        
     }
     
 

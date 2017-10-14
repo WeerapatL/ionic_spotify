@@ -45,6 +45,7 @@ export class CollectionPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CollectionPage');
+    
   }
 
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AlertController,ViewController,IonicPage,NavController, NavParams } from 'ionic-angular';
 import { CollectionPage } from '../../pages/collection/collection';
 import { HomePage } from '../../pages/home/home'; 
+import { PlaybackPage } from '../../pages/playback/playback';
 
 
 /**
@@ -29,7 +30,7 @@ export class SettingPage {
 
   presentConfirm() {
     const alert = this.alertCtrl.create({
-      title: 'Logout',
+      title: 'Log Out',
       message: 'Are you sure you want to log out?',
       buttons: [
         {
@@ -38,9 +39,10 @@ export class SettingPage {
           handler: () => {
             console.log('Cancel clicked');
           }
+          
         },
         {
-          text: 'Logout',
+          text: 'Log out',
           handler: () => {
             this.navCtrl.push(HomePage);
           }
@@ -48,6 +50,10 @@ export class SettingPage {
       ]
     });
     alert.present();
+  }
+
+  playback(){
+    this.navCtrl.push(PlaybackPage);
   }
 
 }

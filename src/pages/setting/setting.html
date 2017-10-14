@@ -17,12 +17,12 @@
       Account
     </button>
 <p></p>
-    <button ion-item full outline class="ion-content">
-      Playing
+    <button ion-item full outline class="ion-content" (click)="playback()">
+      Playback
     </button>
     <p></p>
     <button ion-item full outline class="ion-content">
-      Device
+      Devices
     </button>
     <p></p>
     <button ion-item full outline class="ion-content">
@@ -30,7 +30,7 @@
     </button>
     <p></p>
     <button ion-item full outline class="ion-content">
-      Sound
+      Music Quality
     </button>
     <p></p>
     <button ion-item full outline class="ion-content">
@@ -41,8 +41,8 @@
         About
       </button>
       <p></p>
-      <button ion-button color="light" round (click)="presentConfirm()">
-        Logout
+      <button ion-button class ="buttonLogout"round (click)="presentConfirm()">
+        LOG OUT
       </button>
 
 </ion-list>

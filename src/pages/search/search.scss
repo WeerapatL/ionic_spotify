@@ -2,6 +2,7 @@ page-search {
     .ion-content{
     background-color: black;
     color: white;
+ 
     }
 
     .picture{
@@ -18,18 +19,20 @@ page-search {
         font-size: 15px;
         position:fixed;
         top:55%;
-        left:37%;
+        left:36%;
+        letter-spacing: 0.03cm;
+        
        
         
     }
     .text2{
         font-size: 13px;
-        text-align: center;
         position:fixed;
-        top:60%;
+        top:60%;      
         left: 20%;
-        right: 20%;
+        // right: 20%;
         opacity: 0.5;
+        text-align: center;
     }
 
     .opacity{
@@ -59,4 +62,27 @@ page-search {
         width: 23px;
         height: 23px;
     }
+
+    //  .searchbar-ios .searchbar-input{
+    //      @include placeholder(white);
+    //      color:white;
+    //  }
+
+     .searchCamera{
+         display: flex ;
+     }
+
+    //  ::-webkit-input-placeholder {
+    //     text-align: center;
+    //  }
+     
+    //  ::-webkit-input-placeholder::before {
+    //     text-align: center;
+    //  }
+
+    //  ::-webkit-input-placeholder::after {
+    //     text-align: left;
+    //   }
+
+    
 }

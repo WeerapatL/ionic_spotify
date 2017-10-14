@@ -1,0 +1,70 @@
+<!--
+  Generated template for the PlaybackPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark" class="opacity">
+    <ion-title>Playback</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="ion-content" fullscreen>
+ 
+    <ion-list no-lines>
+    
+
+    <button ion-item full outline class="listtext">
+        Equaliser
+    </button>
+
+      <ion-item class="listtext">
+          <ion-label>Offline</ion-label>
+          <ion-toggle color="secondary"></ion-toggle>
+      </ion-item>
+
+      <div class="text">
+            When you go offline, you'll only be able to play the music
+            and podcasts you've downloaded.
+      </div>
+      <br><br>
+
+      <div text-center class="text2">
+        Crossfade
+      </div>   
+
+       <ion-item class="ion-content">
+          <ion-range min="0" max="12" pin="true"color="secondary">
+            <label range-left small>0s</label>
+            <label range-right small>12s</label>
+          </ion-range>
+       </ion-item>
+
+          
+       <ion-item class="ion-content">
+          <ion-label>Gapless Playback</ion-label>
+          <ion-toggle [(ngModel)]="data.gap" color="secondary"></ion-toggle>
+      </ion-item>
+
+      <ion-item class="listtext">
+          <ion-label>Hide Unplayable Songs</ion-label>
+          <ion-toggle [(ngModel)]="data.hide" color="secondary"></ion-toggle>
+      </ion-item>
+
+      <ion-item class="listtext">
+          <ion-label>Enable Audio Normalisation</ion-label>
+          <ion-toggle [(ngModel)]="data.enable" color="secondary"></ion-toggle>
+      </ion-item>
+
+      <ion-item class="listtext">
+          <ion-label>Play Feedback Sounds</ion-label>
+          <ion-toggle [(ngModel)]="data.play" color="secondary"></ion-toggle>
+      </ion-item>
+
+    </ion-list>
+
+</ion-content>
