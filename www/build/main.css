@@ -25655,6 +25655,7 @@ page-modals-song div.artist {
   margin-bottom: -10px;
   margin-left: 30px;
   opacity: 1 !important;
+  color: white;
 }
 
 page-modals-song p.artist {
@@ -25738,7 +25739,6 @@ page-modals-song .shuffle {
   color: green;
   font-size: 25px;
   padding: 17px;
-  font-weight: 700;
 }
 
 page-modals-song .notShuffle {
@@ -25748,6 +25748,12 @@ page-modals-song .notShuffle {
 }
 
 page-modals-song .repeat {
+  color: green;
+  font-size: 25px;
+  padding: 17px;
+}
+
+page-modals-song .notRepeat {
   opacity: 0.65;
   font-size: 25px;
   padding: 17px;
@@ -25780,6 +25786,10 @@ page-modals-song ion-label {
   color: white;
   opacity: 0.68 !important;
   font-size: 13px;
+}
+
+page-modals-song ion-toolbar {
+  color: black !important;
 }
 
 page-playback .ion-content {

@@ -15,10 +15,16 @@ import { NavController, NavParams } from 'ionic-angular';
 export class ModalsSongPage {
 
 status:boolean;
-
+statusButton:boolean;
+statusRepeat:boolean;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  shuffle() {
+    this.status = !this.status;
+  }
+  repeat(){
+    this.status = !this.status;
+  }
   changeButton() {
     this.status = !this.status;
   }

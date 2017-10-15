@@ -43,11 +43,11 @@
     </ion-range>
   </ion-item>
   <div class="div1">
-    <ion-icon Class="notShuffle" name="shuffle"></ion-icon>
+    <ion-icon [ngClass]="{notShuffle:status==false,shuffle:status==true}" (click)="shuffle()" name="shuffle"></ion-icon>
     <ion-icon class="backward" name="skip-backward"></ion-icon>
-    <ion-icon class="play" (click)="changeButton()" [name]="status? 'play':'pause'"></ion-icon>
+    <ion-icon class="play" (click)="changeButton()" [name]="statusButton? 'play':'pause'"></ion-icon>
     <ion-icon class="forward" name="skip-forward"></ion-icon>
-    <ion-icon class="repeat" name="repeat"></ion-icon>
+    <ion-icon [ngClass]="{notRepeat:statusRepeat==false,repeat:statusRepeat==true}" (click)="repeat()" name="repeat"></ion-icon>
   </div>
 
 </ion-content>
