@@ -36,13 +36,18 @@
     </div>
     <ion-icon class="more" name="more"></ion-icon>
   </div>
-  <br>
-  <div class="div">
-      <ion-icon class="shuffle" name="shuffle"></ion-icon>
-      <ion-icon class="backward" name="skip-backward"></ion-icon>
-      <ion-icon class="play" name="play"></ion-icon>
-      <ion-icon class="forward" name="skip-forward"></ion-icon>
-      <ion-icon class="repeat" name="repeat"></ion-icon>
+  <ion-item class="item" no-lines>
+    <ion-range min="0:00" max="4:00">
+      <ion-label range-left>0:00</ion-label>
+      <ion-label range-right>4:00</ion-label>
+    </ion-range>
+  </ion-item>
+  <div class="div1">
+    <ion-icon Class="notShuffle" name="shuffle"></ion-icon>
+    <ion-icon class="backward" name="skip-backward"></ion-icon>
+    <ion-icon class="play" (click)="changeButton()" [name]="status? 'play':'pause'"></ion-icon>
+    <ion-icon class="forward" name="skip-forward"></ion-icon>
+    <ion-icon class="repeat" name="repeat"></ion-icon>
   </div>
 
 </ion-content>

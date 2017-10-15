@@ -14,12 +14,20 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ModalsSongPage {
 
+status:boolean;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  changeButton() {
+    this.status = !this.status;
   }
 
   closeTapped(){
     this.navCtrl.pop();
   }
+
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalsSongPage');
