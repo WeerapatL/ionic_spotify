@@ -25655,6 +25655,7 @@ page-modals-song div.artist {
   margin-bottom: -10px;
   margin-left: 30px;
   opacity: 1 !important;
+  color: white;
 }
 
 page-modals-song p.artist {
@@ -25668,8 +25669,8 @@ page-modals-song .cover {
 }
 
 page-modals-song ion-slides {
-  margin-top: -100px;
-  margin-bottom: -120px;
+  height: 300px;
+  width: 300px;
 }
 
 page-modals-song .color {
@@ -25683,6 +25684,12 @@ page-modals-song ion-content {
 }
 
 page-modals-song .div {
+  text-align: center;
+  color: white;
+}
+
+page-modals-song .div1 {
+  margin-top: -15px !important;
   text-align: center;
   color: white;
 }
@@ -25705,9 +25712,17 @@ page-modals-song .p1 {
 
 page-modals-song .p2 {
   margin-top: 15px;
-  font-size: 11px;
+  font-size: 13px;
   color: whitesmoke;
-  opacity: 0.65;
+  opacity: 0.68;
+}
+
+page-modals-song .inline1 {
+  display: inline !important;
+}
+
+page-modals-song .inline3 {
+  display: inline !important;
 }
 
 page-modals-song .more {
@@ -25721,12 +25736,24 @@ page-modals-song .music {
 }
 
 page-modals-song .shuffle {
+  color: green;
+  font-size: 25px;
+  padding: 17px;
+}
+
+page-modals-song .notShuffle {
   opacity: 0.65;
   font-size: 25px;
   padding: 17px;
 }
 
 page-modals-song .repeat {
+  color: green;
+  font-size: 25px;
+  padding: 17px;
+}
+
+page-modals-song .notRepeat {
   opacity: 0.65;
   font-size: 25px;
   padding: 17px;
@@ -25745,6 +25772,24 @@ page-modals-song .backward {
 page-modals-song .play {
   font-size: 50px;
   padding: 17px;
+}
+
+page-modals-song .item {
+  background-color: black;
+}
+
+page-modals-song ion-range {
+  opacity: 0.68;
+}
+
+page-modals-song ion-label {
+  color: white;
+  opacity: 0.68 !important;
+  font-size: 13px;
+}
+
+page-modals-song ion-toolbar {
+  color: black !important;
 }
 
 page-playback .ion-content {
