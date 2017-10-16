@@ -25666,6 +25666,7 @@ page-modals-song p.artist {
 page-modals-song .cover {
   height: 260px;
   width: 240px;
+  margin-left: 70px;
 }
 
 page-modals-song ion-slides {
