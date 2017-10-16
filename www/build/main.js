@@ -845,12 +845,6 @@ var ModalsSongPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    ModalsSongPage.prototype.shuffle = function () {
-        this.status = !this.status;
-    };
-    ModalsSongPage.prototype.repeat = function () {
-        this.status = !this.status;
-    };
     ModalsSongPage.prototype.changeButton = function () {
         this.status = !this.status;
     };
