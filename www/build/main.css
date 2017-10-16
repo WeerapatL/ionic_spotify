@@ -25546,7 +25546,7 @@ page-collection img.imgicon {
 
 page-collection .text2 {
   font-size: 13px;
-  top: 51.5%;
+  margin-top: 3%;
   left: 15%;
   opacity: 0.5;
   text-align: center;
@@ -25576,7 +25576,8 @@ page-home div.topic {
 
 page-home div.desc {
   text-align: center;
-  font-size: 10pt;
+  font-size: 9pt;
+  margin-top: 3px;
   color: white;
   opacity: 0.7;
   font-weight: 200;
@@ -25602,7 +25603,7 @@ page-home .scroll-zoom-wrapper {
 page-home ion-card {
   width: 140px !important;
   display: inline-block;
-  margin: -5px !important;
+  margin: -2px !important;
   margin-top: -5px !important;
   background-color: black !important;
 }
@@ -26042,12 +26043,13 @@ page-select .ion-content {
 page-select button.type {
   position: relative;
   text-align: center;
-  width: 150px !important;
-  height: 150px !important;
+  width: 165px !important;
+  height: 165px !important;
   display: inline-block;
   margin: 0px !important;
-  margin-top: 0px !important;
-  padding: 5px !important;
+  margin-top: 8px !important;
+  margin-left: 8px !important;
+  padding: 0px !important;
   background-color: black !important;
   text-align: center !important;
 }
@@ -26070,7 +26072,7 @@ page-select ion-card.type {
 }
 
 page-select img.img {
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 page-select .card-title {

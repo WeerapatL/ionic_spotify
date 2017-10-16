@@ -5,32 +5,32 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-    <ion-navbar color="dark" class="opacity" hideBackButton> 
-        
-            <!-- <ion-buttons start>
+  <ion-navbar color="dark" class="opacity" hideBackButton>
+
+    <!-- <ion-buttons start>
               <button ion-button round (click)="openModel()">
                 <img src="user.png">
                 <ion-icon name="contact"></ion-icon>
               </button>
             </ion-buttons> -->
-        
-            <ion-avatar style="padding-left:10px;" (click)="profile(profile)">
-                <img style="width: 30px; height: 30px;" src={{ImageUrl}}>
-              </ion-avatar>
-        
-            <ion-title>My Collections</ion-title>
 
-            <ion-buttons end>
-              <button ion-button icon-only (click)="setting()">
+    <ion-avatar style="padding-left:10px;" (click)="profile(profile)">
+      <img style="width: 30px; height: 30px;" src={{ImageUrl}}>
+    </ion-avatar>
+
+    <ion-title>My Collections</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="setting()">
                 <ion-icon name="settings"></ion-icon>
               </button>
-              
+
     </ion-buttons>
 
   </ion-navbar>
 </ion-header>
 
-<ion-content class="ion-content" fullscreen >
+<ion-content class="ion-content" fullscreen>
   <ion-list no-lines>
 
     <button ion-item full outline class="ion-content">
@@ -43,17 +43,17 @@
         Songs
       </button>
 
-      <button ion-item full outline class="ion-content">
+    <button ion-item full outline class="ion-content">
           <ion-icon name="disc" item-start></ion-icon>
           Albums
         </button>
 
-        <button ion-item full outline class="ion-content">
+    <button ion-item full outline class="ion-content">
             <ion-icon name="headset" item-start></ion-icon>
             Artists
           </button>
-          
-          <button ion-item full outline class="ion-content">
+
+    <button ion-item full outline class="ion-content">
               <ion-icon name="radio" item-start></ion-icon>
               Podcasts
           </button>
@@ -62,44 +62,43 @@
       <ion-label start>Recently Played</ion-label>
       <!-- <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button> -->
     </ion-item>
-    
+
     <div class="text2">
-        Get quick access to all your recently played<br>
-         content here.
-      </div>
+      Music you've listened to will appear here.
+    </div>
   </ion-list>
 </ion-content>
 
 
 <ion-footer>
-  <ion-toolbar color="dark" class="footer" >
+  <ion-toolbar color="dark" class="footer">
     <ion-buttons class="button" (click)="modalsTapped()">
       <button ion-button icon-right>
           <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>
         </button>
     </ion-buttons>
-    
+
     <ion-title class="position" (click)="modalsTapped()">
-        <ion-slides>
-          <ion-slide>
-            <div class="song">
-              Songs -
-              <p class="artist">Artists</p>
-            </div>
-          </ion-slide>
-          <ion-slide>
-            <div class="song">
-              Songs2 -
-              <p class="artist">Artists2</p>
-            </div>
-          </ion-slide>
-        </ion-slides>
-      </ion-title>
-  
-      <ion-buttons end>
-        <button ion-button ion-left (click)="changeButton()">
+      <ion-slides>
+        <ion-slide>
+          <div class="song">
+            Songs -
+            <p class="artist">Artists</p>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="song">
+            Songs2 -
+            <p class="artist">Artists2</p>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button ion-left (click)="changeButton()">
               <img class="imgicon" [src]="status? 'pause-button.png':'play-button.png'"> 
         </button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-footer>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
