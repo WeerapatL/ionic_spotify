@@ -7,7 +7,7 @@
 <ion-header>
   <ion-toolbar color="dark" class="opacity">
 
-    <ion-searchbar placeholder="Search" showCancelButton></ion-searchbar>
+    <ion-searchbar placeholder="Search" showCancelButton (ionInput)="search($event)"></ion-searchbar>
     <ion-buttons end>
       <button ion-button icon-only (click)="camera()">
         <ion-icon name="camera"></ion-icon>
@@ -20,18 +20,29 @@
 
 <ion-content class="ion-content" fullscreen>
 
-  <img class="picture" src="search2.png">
+    <img ng-if="!isFiltered" class="picture" src="search2.png">
 
-  <div class="divtext">
-    <p class="text">
-    Search Spotify
-  </p>
+    <div ng-if="!isFiltered" class="divtext">
+      <p class="text">
+        Search Spotify
+      </p>
 
-  <p class="text2">
-    Find your favorite songs, artists,
-    <br> albums, podcasts, playlists and friends.
-    </p>
-  </div>
+      <p class="text2">
+        Find your favorite songs, artists,
+        <br> albums, podcasts, playlists and friends.
+      </p>
+    </div>
+
+  <!-- <div >
+    <ion-title>Popular Result</ion-title> -->
+    <ion-list *ngIf="isFiltered">
+      <ion-item *ngFor="let pointer of filterSong">
+        {{pointer.song}}
+      </ion-item>
+    </ion-list> 
+  <!-- </div> -->
+
+
 
 </ion-content>
 <ion-footer>
