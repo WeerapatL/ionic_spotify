@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  blacks: black
 );
 
 $range-ios-padding-horizontal:0px;
@@ -49,6 +50,12 @@ $range-ios-pin-color:black;
 
 $toggle-ios-background-color-off:black;
 $toggle-ios-handle-background-color:white;
+
+// $segment-button-md-font-size: 15px;
+$segment-button-md-border-bottom-width: 3px;
+
+
+
 
 
 

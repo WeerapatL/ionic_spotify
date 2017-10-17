@@ -20,6 +20,7 @@ import { HttpModule } from '@angular/http';
 import { FindfriendsPage } from '../pages/findfriends/findfriends';
 import { PlaybackPage } from '../pages/playback/playback';
 
+
 @NgModule({
   declarations: [
     MyApp,

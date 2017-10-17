@@ -6,15 +6,29 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="blacks">
     <ion-title>Find Friends</ion-title>
   </ion-navbar>
-  <ion-toolbar color="dark">
+  <ion-toolbar mode="md" color="dark">
+      <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">
+          <ion-segment-button value="friend">
+              <div class ="text">FRIENDS</div>
+          </ion-segment-button>
+          <ion-segment-button value="featured">
+              <div class ="text">FEATURED</div>
+          </ion-segment-button>
+      </ion-segment>
   </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content text-center class="ion-content">
+    <button class=" buttonFriend" ion-button round medium (click)="findfriends()"> 
+        <div class="textFriend">
+           FOLLOW ALL (241)
+          </div>
+    </button>
+    <ion-searchbar placeholder="Filter" showCancelButton></ion-searchbar>
 
 </ion-content>
