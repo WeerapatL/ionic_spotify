@@ -6,9 +6,9 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -66,13 +66,13 @@ HomePage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_setting_setting__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_profile_profile__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modals_song_modals_song__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -124,7 +124,7 @@ var CollectionPage = (function () {
 }());
 CollectionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-collection',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\collection\collection.html"*/'<!--\n\n  Generated template for the CollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="dark" class="opacity" hideBackButton>\n\n\n\n    <!-- <ion-buttons start>\n\n              <button ion-button round (click)="openModel()">\n\n                <img src="user.png">\n\n                <ion-icon name="contact"></ion-icon>\n\n              </button>\n\n            </ion-buttons> -->\n\n\n\n    <ion-avatar style="padding-left:10px;" (click)="profile(profile)">\n\n      <img style="width: 30px; height: 30px;" src={{ImageUrl}}>\n\n    </ion-avatar>\n\n\n\n    <ion-title>My Collections</ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="setting()">\n\n                <ion-icon name="settings"></ion-icon>\n\n              </button>\n\n\n\n    </ion-buttons>\n\n\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="ion-content" fullscreen>\n\n  <ion-list no-lines>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n      <ion-icon name="musical-notes" item-start></ion-icon>\n\n      Playlists\n\n    </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n        <ion-icon name="musical-note" item-start></ion-icon>\n\n        Songs\n\n      </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n          <ion-icon name="disc" item-start></ion-icon>\n\n          Albums\n\n        </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n            <ion-icon name="headset" item-start></ion-icon>\n\n            Artists\n\n          </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n              <ion-icon name="radio" item-start></ion-icon>\n\n              Podcasts\n\n          </button>\n\n\n\n    <ion-item class="ion-content">\n\n      <ion-label start>Recently Played</ion-label>\n\n      <!-- <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button> -->\n\n    </ion-item>\n\n\n\n    <div class="text2">\n\n      Music you\'ve listened to will appear here.\n\n    </div>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\collection\collection.html"*/,
+        selector: 'page-collection',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\collection\collection.html"*/'<!--\n\n  Generated template for the CollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="dark" class="opacity" hideBackButton>\n\n\n\n    <!-- <ion-buttons start>\n\n              <button ion-button round (click)="openModel()">\n\n                <img src="user.png">\n\n                <ion-icon name="contact"></ion-icon>\n\n              </button>\n\n            </ion-buttons> -->\n\n\n\n    <ion-avatar style="padding-left:10px;" (click)="profile(profile)">\n\n      <img class="avatar" src="user.png">\n\n    </ion-avatar>\n\n\n\n    <ion-title>Your Library</ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="setting()">\n\n                <ion-icon name="settings"></ion-icon>\n\n              </button>\n\n\n\n    </ion-buttons>\n\n\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="ion-content" fullscreen>\n\n  <ion-list no-lines>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n      <ion-icon name="musical-notes" item-start></ion-icon>\n\n      Playlists\n\n    </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n        <ion-icon name="musical-note" item-start></ion-icon>\n\n        Songs\n\n      </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n          <ion-icon name="disc" item-start></ion-icon>\n\n          Albums\n\n        </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n            <ion-icon name="headset" item-start></ion-icon>\n\n            Artists\n\n          </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n              <ion-icon name="radio" item-start></ion-icon>\n\n              Podcasts\n\n          </button>\n\n\n\n    <ion-item class="ion-content">\n\n      <ion-label start>Recently Played</ion-label>\n\n      <!-- <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button> -->\n\n    </ion-item>\n\n\n\n    <div class="text2">\n\n      Music you\'ve listened to will appear here.\n\n    </div>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\collection\collection.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], CollectionPage);
@@ -219,7 +219,7 @@ webpackEmptyAsyncContext.id = 154;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_search__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__select_select__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(101);
@@ -251,7 +251,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\tabs\tabs.html"*/'<ion-tabs color="dark">\n\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Select" tabIcon="musical-notes"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Collection" tabIcon="albums"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\tabs\tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\tabs\tabs.html"*/'<ion-tabs color="dark">\n\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Browse" tabIcon="musical-notes"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Your Library" tabIcon="albums"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\tabs\tabs.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], TabsPage);
@@ -266,8 +266,8 @@ TabsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -294,7 +294,42 @@ var SearchPage = (function () {
         this.modalCtrl = modalCtrl;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.filterSong = [];
+        this.songlists = [];
+        this.songlists = [
+            { song: "Someone Like You", artist: "Adele" },
+            { song: "I started a joke", artist: "Bee Gees" },
+            { song: "Reflection", artist: "Christina Aguilera" }
+        ];
     }
+    SearchPage.prototype.search = function (event) {
+        if (event.target.value) {
+            if (event.target.value.length > 0) {
+                var filterJson = this.songlists.filter(function (row) {
+                    if (row.song.indexOf(event.target.value) != -1) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                });
+                this.isFiltered = true;
+                this.filterSong = filterJson;
+                if (this.filterSong.length <= 0) {
+                    this.shown = false;
+                }
+                else {
+                    this.shown = true;
+                }
+            }
+            else {
+                this.isFiltered = false;
+            }
+        }
+        else {
+            this.isFiltered = false;
+        }
+    };
     SearchPage.prototype.modalsTapped = function () {
         var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__["a" /* ModalsSongPage */]);
         modal.present();
@@ -336,7 +371,7 @@ var SearchPage = (function () {
 }());
 SearchPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-search',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\search\search.html"*/'<!--\n\n  Generated template for the SearchPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-toolbar color="dark" class="opacity">\n\n\n\n    <ion-searchbar placeholder="Search" showCancelButton></ion-searchbar>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="camera()">\n\n                       <ion-icon name="camera"></ion-icon>\n\n                     </button>\n\n    </ion-buttons>\n\n\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content class="ion-content" fullscreen>\n\n\n\n  <img class="picture" src="search.png">\n\n\n\n  <div class="text">\n\n    Search Spotify\n\n  </div>\n\n  <div class="text2">\n\n    Find your favorite songs, artists,<br> albums, podcasts, playlists and friends.\n\n  </div>\n\n\n\n</ion-content>\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button">\n\n      <button ion-button icon-right (click)="modalsTapped()">\n\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n                <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n          </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\search\search.html"*/,
+        selector: 'page-search',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\search\search.html"*/'<!--\n\n  Generated template for the SearchPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-toolbar color="dark" class="opacity">\n\n\n\n    \n\n    <ion-searchbar placeholder="Search" showCancelButton (ionInput)="search($event)"></ion-searchbar>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="camera()">\n\n        <ion-icon name="camera"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content class="ion-content" fullscreen>\n\n  <span *ngIf="!isFiltered">\n\n    <img class="picture" src="search.png">\n\n    <div class="divtext">\n\n      <p class="text">\n\n        Search Spotify\n\n      </p>\n\n\n\n      <p class="text2">\n\n        Find your favorite songs, artists,\n\n        <br> albums, podcasts, playlists and friends.\n\n      </p>\n\n    </div>\n\n  </span>\n\n\n\n\n\n  <ion-list *ngIf="isFiltered" class="showResult" no-lines>\n\n\n\n    <span>\n\n      <p *ngIf="shown==true" class="result">Popular Result</p>\n\n      <ion-item *ngFor="let pointer of filterSong">\n\n        <img class="img" src="insurgency.jpg" align="left"> &nbsp; &nbsp; {{pointer.song}} \n\n        <p>&nbsp; &nbsp; {{pointer.artist}}</p>\n\n      </ion-item>\n\n      \n\n      <p *ngIf="shown==true" class="result">Artists</p>\n\n      <ion-item *ngFor="let pointer of filterSong">\n\n        <ion-avatar item-start>\n\n          <img src="insurgency.jpg">\n\n        </ion-avatar> {{pointer.artist}}\n\n      </ion-item>\n\n    </span>\n\n\n\n    <span *ngIf="shown==false">\n\n      <img class="picture" src="search2.png">\n\n      <div class="divtext">\n\n        <p class="text">\n\n          Search Spotify\n\n        </p>\n\n\n\n        <p class="text2">\n\n          Find your favorite songs, artists,\n\n          <br> albums, podcasts, playlists and friends.\n\n        </p>\n\n      </div>\n\n    </span>\n\n\n\n  </ion-list>\n\n\n\n\n\n\n\n\n\n</ion-content>\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button">\n\n      <button ion-button icon-right (click)="modalsTapped()">\n\n        <ion-icon name="arrow-up" class="buttonColor"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n        <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'">\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\search\search.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], SearchPage);
@@ -351,8 +386,8 @@ SearchPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -408,9 +443,10 @@ SelectPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_home_home__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_playback_playback__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -424,6 +460,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 /**
  * Generated class for the SettingPage page.
  *
@@ -431,7 +469,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var SettingPage = (function () {
-    function SettingPage(alertCtrl, viewCtrl, navCtrl, navParams) {
+    function SettingPage(modalCtrl, alertCtrl, viewCtrl, navCtrl, navParams) {
+        this.modalCtrl = modalCtrl;
         this.alertCtrl = alertCtrl;
         this.viewCtrl = viewCtrl;
         this.navCtrl = navCtrl;
@@ -467,13 +506,21 @@ var SettingPage = (function () {
     SettingPage.prototype.playback = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_playback_playback__["a" /* PlaybackPage */]);
     };
+    SettingPage.prototype.modalsTapped = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__modals_song_modals_song__["a" /* ModalsSongPage */]);
+        modal.present();
+    };
+    SettingPage.prototype.changeButton = function () {
+        this.status = !this.status;
+        console.log(this.status);
+    };
     return SettingPage;
 }());
 SettingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-setting',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\setting\setting.html"*/'<!--\n  Generated template for the CollectionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="dark" class="opacity">\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="ion-content" fullscreen text-center>\n  <ion-list no-lines>\n\n    <button ion-item full outline class="ion-content">\n      Account\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content" (click)="playback()">\n      Playback\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n      Devices\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n       Social\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n      Music Quality\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n        Notifications\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n        About\n      </button>\n    <p></p>\n    <button ion-button class="buttonLogout" round (click)="presentConfirm()">\n        LOG OUT\n      </button>\n\n  </ion-list>\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\setting\setting.html"*/,
+        selector: 'page-setting',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\setting\setting.html"*/'<!--\n  Generated template for the CollectionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="dark" class="opacity">\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="ion-content" fullscreen text-center>\n  <ion-list no-lines>\n\n    <button ion-item full outline class="ion-content">\n      Account\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content" (click)="playback()">\n      Playback\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n      Devices\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n       Social\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n      Music Quality\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n        Notifications\n    </button>\n    <p></p>\n    <button ion-item full outline class="ion-content">\n        About\n      </button>\n    <p></p>\n    <button ion-button class="buttonLogout" round (click)="presentConfirm()">\n        LOG OUT\n      </button>\n\n  </ion-list>\n\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="dark" class="footer">\n    <ion-buttons class="button" (click)="modalsTapped()">\n      <button ion-button icon-right>\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n        </button>\n    </ion-buttons>\n\n    <ion-title class="position" (click)="modalsTapped()">\n      <ion-slides>\n        <ion-slide>\n          <div class="song">\n            Songs -\n            <p class="artist">Artists</p>\n          </div>\n        </ion-slide>\n        <ion-slide>\n          <div class="song">\n            Songs2 -\n            <p class="artist">Artists2</p>\n          </div>\n        </ion-slide>\n      </ion-slides>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button ion-left (click)="changeButton()">\n            <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\setting\setting.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], SettingPage);
 
 //# sourceMappingURL=setting.js.map
@@ -486,7 +533,8 @@ SettingPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlaybackPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -498,6 +546,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 /**
  * Generated class for the PlaybackPage page.
  *
@@ -505,7 +555,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var PlaybackPage = (function () {
-    function PlaybackPage(viewCtrl, navCtrl, navParams) {
+    function PlaybackPage(modalCtrl, viewCtrl, navCtrl, navParams) {
+        this.modalCtrl = modalCtrl;
         this.viewCtrl = viewCtrl;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
@@ -520,13 +571,21 @@ var PlaybackPage = (function () {
         console.log('ionViewDidLoad PlaybackPage');
         this.viewCtrl.setBackButtonText('');
     };
+    PlaybackPage.prototype.modalsTapped = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__modals_song_modals_song__["a" /* ModalsSongPage */]);
+        modal.present();
+    };
+    PlaybackPage.prototype.changeButton = function () {
+        this.status = !this.status;
+        console.log(this.status);
+    };
     return PlaybackPage;
 }());
 PlaybackPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-playback',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\playback\playback.html"*/'<!--\n  Generated template for the PlaybackPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="dark" class="opacity">\n        <ion-title>Playback</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="ion-content" fullscreen>\n\n    <ion-list no-lines>\n\n\n        <button ion-item full outline class="listtext">\n        Equaliser\n    </button>\n\n        <ion-item class="listtext">\n            <ion-label>Offline</ion-label>\n            <ion-toggle color="secondary"></ion-toggle>\n        </ion-item>\n\n        <div class="text">\n            When you go offline, you\'ll only be able to play the music and podcasts you\'ve downloaded.\n        </div>\n        <br><br>\n\n        <div text-center class="text2">\n            Crossfade\n        </div>\n\n        <ion-item class="ion-content">\n            <ion-range min="0" max="12" pin="true" color="secondary">\n                <label range-left small>0s</label>\n                <label range-right small>12s</label>\n            </ion-range>\n        </ion-item>\n\n\n        <ion-item class="ion-content">\n            <ion-label>Gapless Playback</ion-label>\n            <ion-toggle [(ngModel)]="data.gap" color="secondary"></ion-toggle>\n        </ion-item>\n\n        <ion-item class="listtext">\n            <ion-label>Hide Unplayable Songs</ion-label>\n            <ion-toggle [(ngModel)]="data.hide" color="secondary"></ion-toggle>\n        </ion-item>\n\n        <ion-item class="listtext">\n            <ion-label>Enable Audio Normalisation</ion-label>\n            <ion-toggle [(ngModel)]="data.enable" color="secondary"></ion-toggle>\n        </ion-item>\n\n        <ion-item class="listtext">\n            <ion-label>Play Feedback Sounds</ion-label>\n            <ion-toggle [(ngModel)]="data.play" color="secondary"></ion-toggle>\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\playback\playback.html"*/,
+        selector: 'page-playback',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\playback\playback.html"*/'<!--\n  Generated template for the PlaybackPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="dark" class="opacity">\n        <ion-title>Playback</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="ion-content" fullscreen>\n\n    <ion-list no-lines>\n\n\n        <button ion-item full outline class="listtext">\n        Equaliser\n    </button>\n\n        <ion-item class="listtext">\n            <ion-label>Offline</ion-label>\n            <ion-toggle color="secondary"></ion-toggle>\n        </ion-item>\n\n        <div class="text">\n            When you go offline, you\'ll only be able to play the music and podcasts you\'ve downloaded.\n        </div>\n        <br><br>\n\n        <div text-center class="text2">\n            Crossfade\n        </div>\n\n        <ion-item class="ion-content">\n            <ion-range min="0" max="12" pin="true" color="secondary">\n                <label range-left small>0s</label>\n                <label range-right small>12s</label>\n            </ion-range>\n        </ion-item>\n\n\n        <ion-item class="ion-content">\n            <ion-label>Gapless Playback</ion-label>\n            <ion-toggle [(ngModel)]="data.gap" color="secondary"></ion-toggle>\n        </ion-item>\n\n        <ion-item class="listtext">\n            <ion-label>Hide Unplayable Songs</ion-label>\n            <ion-toggle [(ngModel)]="data.hide" color="secondary"></ion-toggle>\n        </ion-item>\n\n        <ion-item class="listtext">\n            <ion-label>Enable Audio Normalisation</ion-label>\n            <ion-toggle [(ngModel)]="data.enable" color="secondary"></ion-toggle>\n        </ion-item>\n\n        <ion-item class="listtext">\n            <ion-label>Play Feedback Sounds</ion-label>\n            <ion-toggle [(ngModel)]="data.play" color="secondary"></ion-toggle>\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="dark" class="footer">\n      <ion-buttons class="button" (click)="modalsTapped()">\n        <button ion-button icon-right>\n            <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n          </button>\n      </ion-buttons>\n  \n      <ion-title class="position" (click)="modalsTapped()">\n        <ion-slides>\n          <ion-slide>\n            <div class="song">\n              Songs -\n              <p class="artist">Artists</p>\n            </div>\n          </ion-slide>\n          <ion-slide>\n            <div class="song">\n              Songs2 -\n              <p class="artist">Artists2</p>\n            </div>\n          </ion-slide>\n        </ion-slides>\n      </ion-title>\n  \n      <ion-buttons end>\n        <button ion-button ion-left (click)="changeButton()">\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n        </button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\playback\playback.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], PlaybackPage);
 
 //# sourceMappingURL=playback.js.map
@@ -539,10 +598,11 @@ PlaybackPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_collection_collection__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_findfriends_findfriends__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modals_song_modals_song__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -557,6 +617,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 /**
  * Generated class for the ProfilePage page.
  *
@@ -564,7 +626,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ProfilePage = (function () {
-    function ProfilePage(viewCtrl, spotify, navCtrl, navParams) {
+    function ProfilePage(modalCtrl, viewCtrl, spotify, navCtrl, navParams) {
+        this.modalCtrl = modalCtrl;
         this.viewCtrl = viewCtrl;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
@@ -577,6 +640,14 @@ var ProfilePage = (function () {
     ProfilePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ProfilePage');
         // this.viewCtrl.setBackButtonText('');
+    };
+    ProfilePage.prototype.modalsTapped = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__modals_song_modals_song__["a" /* ModalsSongPage */]);
+        modal.present();
+    };
+    ProfilePage.prototype.changeButton = function () {
+        this.status = !this.status;
+        console.log(this.status);
     };
     ProfilePage.prototype.findfriends = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__pages_findfriends_findfriends__["a" /* FindfriendsPage */]);
@@ -597,9 +668,9 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\profile\profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar hideBackButton text-center>\n\n    <ion-icon name="arrow-back" class="backIcon" color="light" (click)="back()"></ion-icon>\n\n    <ion-avatar class="image">\n      <img src={{ImageUrl}}>\n    </ion-avatar>\n\n    <div class="textName">\n      Guy\'Sanook Assawaraksakul\n    </div>\n\n    <button class=" buttonFriend" ion-button round small (click)="findfriends()"> \n            <div class="textFriend">\n               FIND FRIENDS \n              </div>\n        </button>\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="ion-content" fullscreen>\n  <!-- <img src ={{ImageUrl}} class="picture">\n  <div class="text">\n    Mr.Spotify the Jook Slayer\n  </div>\n  <button ion-button color="light" round small class="button">\n      Find friends\n  </button> -->\n\n\n  <div class="playList1" (tap)="tapEvent1($event)">\n    {{tap1}}\n  </div>\n  <div class="follower1" (tap)="tapEvent2($event)">\n    {{tap2}}\n  </div>\n  <div class="following1" (tap)="tapEvent3($event)">\n    {{tap3}}\n  </div>\n\n\n  <div class="playList2">\n    PLAYLISTS\n  </div>\n\n  <div class="follower2">\n    FOLLOWERS\n  </div>\n\n  <div class="following2">\n    FOLLOWING\n  </div>\n\n\n  <div class="textActivity">\n    No recent activity.\n  </div>\n  <div class="textListen">\n    Check out some new music now\n  </div>\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\profile\profile.html"*/,
+        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\profile\profile.html"*/'<!--\n\n  Generated template for the ProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-toolbar hideBackButton>\n\n\n\n    <ion-icon name="arrow-back" class="backIcon" color="light" (click)="back()"></ion-icon>\n\n\n\n      <img class="image" src="user.png">\n\n    \n\n    <div class="textName">\n\n      Sukolawat\n\n    </div>\n\n  <div text-center>\n\n    <button class=" buttonFriend" ion-button round small (click)="findfriends()"> \n\n            <div class="textFriend">\n\n               FIND FRIENDS \n\n              </div>\n\n        </button>\n\n  </div>\n\n  </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding class="ion-content" fullscreen>\n\n  <!-- <img src ={{ImageUrl}} class="picture">\n\n  <div class="text">\n\n    Mr.Spotify the Jook Slayer\n\n  </div>\n\n  <button ion-button color="light" round small class="button">\n\n      Find friends\n\n  </button> -->\n\n\n\n\n\n  <div class="playList1" (tap)="tapEvent1($event)">\n\n    {{tap1}}\n\n  </div>\n\n  <div class="follower1" (tap)="tapEvent2($event)">\n\n    {{tap2}}\n\n  </div>\n\n  <div class="following1" (tap)="tapEvent3($event)">\n\n    {{tap3}}\n\n  </div>\n\n\n\n\n\n  <div class="playList2">\n\n    PLAYLISTS\n\n  </div>\n\n\n\n  <div class="follower2">\n\n    FOLLOWERS\n\n  </div>\n\n\n\n  <div class="following2">\n\n    FOLLOWING\n\n  </div>\n\n\n\n\n\n  <div class="textActivity">\n\n    No recent activity.\n\n  </div>\n\n  <div class="textListen">\n\n    Check out some new music now\n\n  </div>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n            <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\profile\profile.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], ProfilePage);
 
 //# sourceMappingURL=profile.js.map
@@ -612,7 +683,7 @@ ProfilePage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindfriendsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -644,7 +715,7 @@ var FindfriendsPage = (function () {
 }());
 FindfriendsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-findfriends',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\findfriends\findfriends.html"*/'<!--\n  Generated template for the FindfriendsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="blacks">\n    <ion-title>Find Friends</ion-title>\n  </ion-navbar>\n  <ion-toolbar mode="md" color="dark">\n      <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">\n          <ion-segment-button value="friend">\n              <div class ="text">FRIENDS</div>\n          </ion-segment-button>\n          <ion-segment-button value="featured">\n              <div class ="text">FEATURED</div>\n          </ion-segment-button>\n      </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content text-center class="ion-content">\n    <button class=" buttonFriend" ion-button round medium (click)="findfriends()"> \n        <div class="textFriend">\n           FOLLOW ALL (241)\n          </div>\n    </button>\n    <ion-searchbar placeholder="Filter" showCancelButton></ion-searchbar>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\findfriends\findfriends.html"*/,
+        selector: 'page-findfriends',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\findfriends\findfriends.html"*/'<!--\n\n  Generated template for the FindfriendsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="toolbar">\n\n    <ion-title>Find Friends</ion-title>\n\n  </ion-navbar>\n\n  <ion-toolbar mode="md" color="dark">\n\n      <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">\n\n          <ion-segment-button value="friend">\n\n              <div class ="text">FRIENDS</div>\n\n          </ion-segment-button>\n\n          <ion-segment-button value="featured">\n\n              <div class ="text">FEATURED</div>\n\n          </ion-segment-button>\n\n      </ion-segment>\n\n  </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content text-center class="ion-content">\n\n    <button class=" buttonFriend" ion-button round medium (click)="findfriends()"> \n\n        <div class="textFriend">\n\n           FOLLOW ALL (241)\n\n          </div>\n\n    </button>\n\n    <ion-searchbar placeholder="Filter" showCancelButton></ion-searchbar>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\findfriends\findfriends.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], FindfriendsPage);
@@ -673,10 +744,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_modals_song_modals_song__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_modals_song_modals_song__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_select__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(101);
@@ -768,13 +839,71 @@ AppModule = __decorate([
 
 /***/ }),
 
+/***/ 25:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsSongPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ModalsSongPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalsSongPage = (function () {
+    function ModalsSongPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.startSong = 0.00;
+    }
+    ModalsSongPage.prototype.changeShuffle = function () {
+        this.shuffle = !this.shuffle;
+    };
+    ModalsSongPage.prototype.changeRepeat = function () {
+        this.repeat = !this.repeat;
+    };
+    ModalsSongPage.prototype.changeButton = function () {
+        this.status = !this.status;
+    };
+    ModalsSongPage.prototype.closeTapped = function () {
+        this.navCtrl.pop();
+    };
+    ModalsSongPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalsSongPage');
+    };
+    return ModalsSongPage;
+}());
+ModalsSongPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n\n  <ion-toolbar color="toolbar">\n\n    <ion-buttons (click)="closeTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-buttons end (click)="closeTapped()">\n\n      <button ion-button icon-left>\n\n        <ion-icon class="color" name="list"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <div class="artist">Playing music from\n\n      <p class="artist">The Blaze</p>\n\n    </div>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content fullscreen>\n\n  <ion-slides spaceBetween="-60">\n\n    <ion-slide>\n\n      <img class="cover" src="blaze.png">\n\n    </ion-slide>\n\n    <ion-slide>       \n\n      <img class="cover" src="RollingIntheDeep.jpg">\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img class="cover" src="SetFiretotheRain.jpeg">\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n  \n\n  <div class="div">\n\n    <ion-icon class="add" name="add"></ion-icon>\n\n    <div class="song">\n\n      <p class="p1">Territory</p>\n\n      <p class="p2">The Blaze</p>\n\n    </div>\n\n    <ion-icon class="more" name="more"></ion-icon>\n\n  </div>\n\n  <ion-item class="item" no-lines>\n\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n\n      <ion-label range-left>0:00</ion-label>\n\n      <ion-label range-right>4:00</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n  <div class="div1">\n\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n\n    <ion-icon class="play" (click)="changeButton()" [name]="status? \'play\':\'pause\'"></ion-icon>\n\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], ModalsSongPage);
+
+//# sourceMappingURL=modals-song.js.map
+
+/***/ }),
+
 /***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(197);
@@ -813,63 +942,6 @@ MyApp = __decorate([
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 40:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsSongPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the ModalsSongPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ModalsSongPage = (function () {
-    function ModalsSongPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    ModalsSongPage.prototype.shuffle = function () {
-        this.status = !this.status;
-    };
-    ModalsSongPage.prototype.repeat = function () {
-        this.status = !this.status;
-    };
-    ModalsSongPage.prototype.changeButton = function () {
-        this.status = !this.status;
-    };
-    ModalsSongPage.prototype.closeTapped = function () {
-        this.navCtrl.pop();
-    };
-    ModalsSongPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ModalsSongPage');
-    };
-    return ModalsSongPage;
-}());
-ModalsSongPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n\n  <ion-toolbar color="blacks">\n\n    <ion-buttons (click)="closeTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-buttons end (click)="closeTapped()">\n\n      <button ion-button icon-left>\n\n        <ion-icon class="color" name="list"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <div class="artist">Playing music from\n\n      <p class="artist">Adele</p>\n\n    </div>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content fullscreen>\n\n  <ion-slides spaceBetween="-60">\n\n    <ion-slide>\n\n      <img class="cover" src="blaze.png">\n\n    </ion-slide>\n\n    <ion-slide>       \n\n      <!-- <img class="cover" src="RollingIntheDeep.jpg"> -->\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <!-- <img class="cover" src="SetFiretotheRain.jpeg"> -->\n\n    </ion-slide>\n\n  </ion-slides>\n\n  <div class="div">\n\n    <ion-icon class="add" name="add"></ion-icon>\n\n    <div class="song">\n\n      <p class="p1">Territory</p>\n\n      <p class="p2">The Blaze</p>\n\n    </div>\n\n    <ion-icon class="more" name="more"></ion-icon>\n\n  </div>\n\n  <ion-item class="item" no-lines>\n\n    <ion-range min="0:00" max="4:00">\n\n      <ion-label range-left>0:00</ion-label>\n\n      <ion-label range-right>4:00</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n  <div class="div1">\n\n    <ion-icon [ngClass]="{notShuffle:status==false,shuffle:status==true}" (click)="shuffle()" name="shuffle"></ion-icon>\n\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n\n    <ion-icon class="play" (click)="changeButton()" [name]="statusButton? \'play\':\'pause\'"></ion-icon>\n\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n\n    <ion-icon [ngClass]="{notRepeat:statusRepeat==false,repeat:statusRepeat==true}" (click)="repeat()" name="repeat"></ion-icon>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], ModalsSongPage);
-
-//# sourceMappingURL=modals-song.js.map
 
 /***/ })
 

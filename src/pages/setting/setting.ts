@@ -4,6 +4,9 @@ import { CollectionPage } from '../../pages/collection/collection';
 import { HomePage } from '../../pages/home/home'; 
 import { PlaybackPage } from '../../pages/playback/playback';
 
+import { ModalController } from 'ionic-angular';
+import { ModalsSongPage } from '../modals-song/modals-song';
+
 
 /**
  * Generated class for the SettingPage page.
@@ -17,9 +20,9 @@ import { PlaybackPage } from '../../pages/playback/playback';
   templateUrl: 'setting.html',
 })
 export class SettingPage {
-  
+  status:boolean;
 
-  constructor(public alertCtrl: AlertController,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private modalCtrl:ModalController,public alertCtrl: AlertController,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
   
   }
 
@@ -54,6 +57,16 @@ export class SettingPage {
 
   playback(){
     this.navCtrl.push(PlaybackPage);
+  }
+
+  modalsTapped(){
+    let modal = this.modalCtrl.create(ModalsSongPage);
+    modal.present();
+  }
+
+  changeButton(){
+    this.status=!this.status;
+    console.log(this.status);
   }
 
 }

@@ -10,35 +10,51 @@ page-search {
         height:80px;
         position:fixed;
         top:45%;
-        left:50%;
+        left:48%;
         margin-left:-40px;
         margin-top:-40px;
         opacity: 0.5;
     }
+    .divtext{
+        padding-top: 230px; 
+    }
     .text{
         font-size: 15px;
-        position:fixed;
-        top:55%;
-        left:36%;
+        text-align: center;
         letter-spacing: 0.03cm;
-        
-       
-        
+        margin-top: 18%;
     }
     .text2{
         font-size: 13px;
-        position:fixed;
-        top:60%;      
-        left: 20%;
-        // right: 20%;
+        
         opacity: 0.5;
         text-align: center;
     }
-
+    .showResult{
+        color: white;
+        background-color: black;
+    }
+    .result{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .img{
+        width: 35px;
+        height: 35px;
+    }
     .opacity{
         opacity: 0.99;
     }
-
+    .item{
+        padding-left: 16px;
+        border-radius: 0;
+        position: relative;
+        font-size: 16px;;
+        font-weight: 500;
+        color: #fdfdfd;
+        background-color: #000;
+    }
     ion-icon.buttonColor{
         // color: white;
         color:lightgray;
@@ -63,26 +79,30 @@ page-search {
         height: 23px;
     }
 
-    //  .searchbar-ios .searchbar-input{
-    //      @include placeholder(white);
-    //      color:white;
-    //  }
+    ion-searchbar{
+         color: white;
+     }
 
      .searchCamera{
          display: flex ;
      }
 
-    //  ::-webkit-input-placeholder {
-    //     text-align: center;
-    //  }
-     
-    //  ::-webkit-input-placeholder::before {
-    //     text-align: center;
-    //  }
+     .toolbar .searchbar-ios .searchbar-input .input-placeholder {
+        background: #000;
+    }
 
-    //  ::-webkit-input-placeholder::after {
-    //     text-align: left;
-    //   }
+    .toolbar .searchbar .searchbar-input {
+        color:black;
+        background: #ffffff;
+    }
 
-    
+    .toolbar .searchbar .searchbar-search-icon {
+        color: #000000;
+        background-image: url('../search.png');
+    }
+
+    .searchbar-ios .searchbar-input {
+        @include placeholder($searchbar-ios-input-placeholder-color);
+    }
+
 }

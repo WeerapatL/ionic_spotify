@@ -67,3 +67,36 @@
     </ion-list>
 
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar color="dark" class="footer">
+      <ion-buttons class="button" (click)="modalsTapped()">
+        <button ion-button icon-right>
+            <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>
+          </button>
+      </ion-buttons>
+  
+      <ion-title class="position" (click)="modalsTapped()">
+        <ion-slides>
+          <ion-slide>
+            <div class="song">
+              Songs -
+              <p class="artist">Artists</p>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="song">
+              Songs2 -
+              <p class="artist">Artists2</p>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </ion-title>
+  
+      <ion-buttons end>
+        <button ion-button ion-left (click)="changeButton()">
+              <img class="imgicon" [src]="status? 'pause-button.png':'play-button.png'"> 
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>

@@ -16,15 +16,51 @@ import { AlertController } from 'ionic-angular';
 })
 export class SearchPage {
   status:boolean;
-  
+  filterSong:Array<any>=[];
+  isFiltered:boolean;
+  songlists:Array<any>=[];
+  shown:boolean;
+
   constructor(public alertCtrl: AlertController,private modalCtrl:ModalController,public navCtrl: NavController, public navParams: NavParams) {
+    this.songlists=[
+      {song:"Someone Like You",artist:"Adele"},
+      {song:"I started a joke",artist:"Bee Gees"},
+      {song:"Reflection",artist:"Christina Aguilera"}
+    ];
+    
+  }
+
+  search(event){
+  	if(event.target.value){
+  		if(event.target.value.length>0){
+  			let filterJson = this.songlists.filter(row=>{
+  					if(row.song.indexOf(event.target.value)!=-1){
+              return true;
+  					}else{
+  						return false;
+  					}
+  				}
+  			);
+  			this.isFiltered=true;
+        this.filterSong=filterJson;
+          if(this.filterSong.length<=0){
+            this.shown=false;
+          }else{
+            this.shown=true;
+          }
+  		}else{
+  			this.isFiltered=false;
+  		}
+  	}else{
+  		this.isFiltered=false;
+  	}
   }
 
   modalsTapped(){
     let modal = this.modalCtrl.create(ModalsSongPage);
     modal.present();
   }
-  
+
   changeButton() {
     this.status = !this.status;
   }
@@ -61,9 +97,4 @@ export class SearchPage {
     alert.present();
   }
 
- 
-
-
-
-  
 }

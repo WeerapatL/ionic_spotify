@@ -1,5 +1,5 @@
 <ion-header no-border class="black">
-  <ion-toolbar color="blacks">
+  <ion-toolbar color="toolbar">
     <ion-buttons (click)="closeTapped()">
       <button ion-button icon-right>
         <ion-icon class="color" name="arrow-down"></ion-icon>
@@ -11,7 +11,7 @@
       </button>
     </ion-buttons>
     <div class="artist">Playing music from
-      <p class="artist">Adele</p>
+      <p class="artist">The Blaze</p>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -22,12 +22,14 @@
       <img class="cover" src="blaze.png">
     </ion-slide>
     <ion-slide>       
-      <!-- <img class="cover" src="RollingIntheDeep.jpg"> -->
+      <img class="cover" src="RollingIntheDeep.jpg">
     </ion-slide>
     <ion-slide>
-      <!-- <img class="cover" src="SetFiretotheRain.jpeg"> -->
+      <img class="cover" src="SetFiretotheRain.jpeg">
     </ion-slide>
   </ion-slides>
+
+  
   <div class="div">
     <ion-icon class="add" name="add"></ion-icon>
     <div class="song">
@@ -37,17 +39,17 @@
     <ion-icon class="more" name="more"></ion-icon>
   </div>
   <ion-item class="item" no-lines>
-    <ion-range min="0:00" max="4:00">
+    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">
       <ion-label range-left>0:00</ion-label>
       <ion-label range-right>4:00</ion-label>
     </ion-range>
   </ion-item>
   <div class="div1">
-    <ion-icon [ngClass]="{notShuffle:status==false,shuffle:status==true}" (click)="shuffle()" name="shuffle"></ion-icon>
+    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>
     <ion-icon class="backward" name="skip-backward"></ion-icon>
-    <ion-icon class="play" (click)="changeButton()" [name]="statusButton? 'play':'pause'"></ion-icon>
+    <ion-icon class="play" (click)="changeButton()" [name]="status? 'play':'pause'"></ion-icon>
     <ion-icon class="forward" name="skip-forward"></ion-icon>
-    <ion-icon [ngClass]="{notRepeat:statusRepeat==false,repeat:statusRepeat==true}" (click)="repeat()" name="repeat"></ion-icon>
+    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>
   </div>
 
 </ion-content>

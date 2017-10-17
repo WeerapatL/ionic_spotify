@@ -15,16 +15,21 @@ import { NavController, NavParams } from 'ionic-angular';
 export class ModalsSongPage {
 
 status:boolean;
-statusButton:boolean;
-statusRepeat:boolean;
+shuffle:boolean;
+repeat:boolean;
+startSong:any=0.00;
+
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  shuffle() {
-    this.status = !this.status;
+  changeShuffle(){
+    this.shuffle= !this.shuffle;
   }
-  repeat(){
-    this.status = !this.status;
+
+  changeRepeat(){
+    this.repeat= !this.repeat;
   }
+
   changeButton() {
     this.status = !this.status;
   }
@@ -32,9 +37,7 @@ statusRepeat:boolean;
   closeTapped(){
     this.navCtrl.pop();
   }
-
   
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalsSongPage');
   }

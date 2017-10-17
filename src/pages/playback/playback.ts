@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import {ViewController, NavController, NavParams } from 'ionic-angular';
 
+import { ModalController } from 'ionic-angular';
+import { ModalsSongPage } from '../modals-song/modals-song';
+
 /**
  * Generated class for the PlaybackPage page.
  *
@@ -13,8 +16,9 @@ import {ViewController, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'playback.html',
 })
 export class PlaybackPage {
+  status:boolean;
 
-  constructor(public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private modalCtrl:ModalController,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -28,5 +32,15 @@ export class PlaybackPage {
     enable: true,
     play: true  
   };
+
+  modalsTapped(){
+    let modal = this.modalCtrl.create(ModalsSongPage);
+    modal.present();
+  }
+
+  changeButton(){
+    this.status=!this.status;
+    console.log(this.status);
+  }
 
 }

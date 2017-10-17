@@ -15,9 +15,8 @@ page-modals-song {
     .cover{
         height: 260px;
         width: 240px;
-        margin-left: 70px;
+        // margin-left: 70px;
     }
-
     ion-slides{
         height: 300px;
         width: 300px;
@@ -82,7 +81,7 @@ page-modals-song {
         color: green;
         font-size: 25px;
         padding: 17px;
-        // font-weight:700 
+        font-weight:700 
     }
     .notShuffle{
         opacity: 0.65;
@@ -93,6 +92,7 @@ page-modals-song {
         color: green;
         font-size: 25px;
         padding: 17px;
+        font-weight:700 
     }
     .notRepeat{
         opacity: 0.65;
