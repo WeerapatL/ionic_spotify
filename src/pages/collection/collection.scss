@@ -32,12 +32,16 @@ page-collection {
     }
 
     .text2{
-        font-size: 13px;
-        top:50%;      
+        font-size: 13px;     
+        margin-top:3%;      
+        left: 15%;
         // right: 20%;
         opacity: 0.5;
         text-align: center;
     }
-
-    
+    .avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
 }

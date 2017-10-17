@@ -11,7 +11,7 @@
       </button>
     </ion-buttons>
     <div class="artist">Playing music from
-      <p class="artist">Adele</p>
+      <p class="artist">The Blaze</p>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -19,35 +19,37 @@
 <ion-content fullscreen>
   <ion-slides spaceBetween="-60">
     <ion-slide>
-      <img class="cover" src="SomeoneLikeYou.png">
+      <img class="cover" src="blaze.png">
     </ion-slide>
-    <ion-slide>
+    <ion-slide>       
       <img class="cover" src="RollingIntheDeep.jpg">
     </ion-slide>
     <ion-slide>
       <img class="cover" src="SetFiretotheRain.jpeg">
     </ion-slide>
   </ion-slides>
+
+  
   <div class="div">
     <ion-icon class="add" name="add"></ion-icon>
     <div class="song">
-      <p class="p1">Someone Like You</p>
-      <p class="p2">Adele</p>
+      <p class="p1">Territory</p>
+      <p class="p2">The Blaze</p>
     </div>
     <ion-icon class="more" name="more"></ion-icon>
   </div>
   <ion-item class="item" no-lines>
-    <ion-range min="0:00" max="4:00">
+    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">
       <ion-label range-left>0:00</ion-label>
       <ion-label range-right>4:00</ion-label>
     </ion-range>
   </ion-item>
   <div class="div1">
-    <ion-icon class="notShuffle" name="shuffle"></ion-icon>
+    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>
     <ion-icon class="backward" name="skip-backward"></ion-icon>
     <ion-icon class="play" (click)="changeButton()" [name]="status? 'play':'pause'"></ion-icon>
     <ion-icon class="forward" name="skip-forward"></ion-icon>
-    <ion-icon class="notRepeat" name="repeat"></ion-icon>
+    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>
   </div>
 
 </ion-content>

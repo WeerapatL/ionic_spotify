@@ -29,11 +29,31 @@ page-search {
         opacity: 0.5;
         text-align: center;
     }
-
+    .showResult{
+        color: white;
+        background-color: black;
+    }
+    .result{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .img{
+        width: 35px;
+        height: 35px;
+    }
     .opacity{
         opacity: 0.99;
     }
-
+    .item{
+        padding-left: 16px;
+        border-radius: 0;
+        position: relative;
+        font-size: 16px;;
+        font-weight: 500;
+        color: #fdfdfd;
+        background-color: #000;
+    }
     ion-icon.buttonColor{
         // color: white;
         color:lightgray;
@@ -70,7 +90,18 @@ page-search {
         background: #000;
     }
 
-    //  .searchbar-input {
-    //     color: #000;
-    //     }
+    .toolbar .searchbar .searchbar-input {
+        color:black;
+        background: #ffffff;
+    }
+
+    .toolbar .searchbar .searchbar-search-icon {
+        color: #000000;
+        background-image: url('../search.png');
+    }
+
+    .searchbar-ios .searchbar-input {
+        @include placeholder($searchbar-ios-input-placeholder-color);
+    }
+
 }

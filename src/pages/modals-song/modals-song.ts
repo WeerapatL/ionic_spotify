@@ -15,8 +15,19 @@ import { NavController, NavParams } from 'ionic-angular';
 export class ModalsSongPage {
 
 status:boolean;
+shuffle:boolean;
+repeat:boolean;
+startSong:any=0.00;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+  changeShuffle(){
+    this.shuffle= !this.shuffle;
+  }
+
+  changeRepeat(){
+    this.repeat= !this.repeat;
   }
 
   changeButton() {

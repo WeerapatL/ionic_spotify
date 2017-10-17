@@ -5,25 +5,24 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-      
-     <ion-toolbar hideBackButton text-center>
-       
-      <ion-icon name="arrow-back" class ="backIcon" color ="light" (click)="back()"></ion-icon>
+
+  <ion-toolbar hideBackButton text-center>
+
+    <ion-icon name="arrow-back" class="backIcon" color="secondary" (click)="back()"></ion-icon>
+
+      <img class="image" src="avatar.jpg">
     
-        <ion-avatar class="image">
-            <img src={{ImageUrl}}>
-          </ion-avatar>
 
-         <div class="textName">
-          Guy'Sanook Assawaraksakul
-        </div>
+    <div class="textName">
+      Sukolawat
+    </div>
 
-        <button class=" buttonFriend" ion-button round small (click)="findfriends()"> 
+    <button class=" buttonFriend" ion-button round small (click)="findfriends()"> 
             <div class="textFriend">
                FIND FRIENDS 
               </div>
         </button>
-      </ion-toolbar>
+  </ion-toolbar>
 
 </ion-header>
 
@@ -37,38 +36,38 @@
   <button ion-button color="light" round small class="button">
       Find friends
   </button> -->
-  
-  
-      <div class="playList1" (tap)="tapEvent1($event)">
-          {{tap1}}
-      </div>
-      <div class="follower1" (tap)="tapEvent2($event)">
-          {{tap2}}
-      </div>
-      <div class="following1" (tap)="tapEvent3($event)">
-          {{tap3}}
-      </div>
-   
-  
-        <div class="playList2">
-          PLAYLISTS
-        </div>
 
-        <div class="follower2">
-          FOLLOWERS
-        </div>
 
-        <div class="following2">
-          FOLLOWING
-        </div>
-  
-  
+  <div class="playList1" (tap)="tapEvent1($event)">
+    {{tap1}}
+  </div>
+  <div class="follower1" (tap)="tapEvent2($event)">
+    {{tap2}}
+  </div>
+  <div class="following1" (tap)="tapEvent3($event)">
+    {{tap3}}
+  </div>
+
+
+  <div class="playList2">
+    PLAYLISTS
+  </div>
+
+  <div class="follower2">
+    FOLLOWERS
+  </div>
+
+  <div class="following2">
+    FOLLOWING
+  </div>
+
+
   <div class="textActivity">
-      No recent activity.
-    </div>
-    <div class="textListen">
-        Check out some new music now
-    </div>
+    No recent activity.
+  </div>
+  <div class="textListen">
+    Check out some new music now
+  </div>
 
 
 

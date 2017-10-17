@@ -22,6 +22,7 @@ page-select {
     div.topic{
         text-align:center; 
         font-size:13pt;
+        
     }
 
     ion-content{
@@ -76,12 +77,43 @@ page-select {
     button.type {
         position: relative;
         text-align: center;
-        width: 150px !important;
-        height: 150px !important;
+        width: 140px !important;
+        height: 140px !important;
         display: inline-block;
         margin: 0px !important; 
-        margin-top: 0px !important;
-        padding: 5px !important;
+        margin-top: 8px !important;
+        margin-left: 8px !important;
+        padding: 0px !important;
+        background-color: black !important;
+        text-align: center !important;
+    }
+
+    button.type1 {
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: 44%;
+        float: left ;
+        display: inline-block;
+        margin: 0px !important; 
+        margin-top: 8px !important;
+        margin-left: 8px !important;
+        padding: 0px !important;
+        background-color: black !important;
+        text-align: center !important;
+    }
+
+    button.type2 {
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: 47%;
+        float: right ;
+        display: inline-block;
+        margin: 0px !important; 
+        margin-top: 8px !important;
+        margin-right: 8px !important;
+        padding: 0px !important;
         background-color: black !important;
         text-align: center !important;
     }
@@ -103,7 +135,7 @@ page-select {
     }
 
     img.img{
-        opacity: 0.3;
+        opacity: 0.9;
     }
     
       .card-title {
