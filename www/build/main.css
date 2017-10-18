@@ -30431,6 +30431,16 @@ page-findfriends .ion-content {
   color: white;
 }
 
+page-findfriends .item {
+  padding-left: 16px;
+  border-radius: 0;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fdfdfd;
+  background-color: #000;
+}
+
 page-home ion-title.title {
   text-align: center;
 }
