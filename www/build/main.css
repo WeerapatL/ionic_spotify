@@ -30968,33 +30968,6 @@ page-search .searchCamera {
   display: flex;
 }
 
-page-search .toolbar .searchbar-ios .searchbar-input .input-placeholder {
-  background: #000;
-}
-
-page-search .toolbar .searchbar .searchbar-input {
-  color: black;
-  background: #ffffff;
-}
-
-page-search .toolbar .searchbar .searchbar-search-icon {
-  color: #000000;
-  background-image: url("../search.png");
-}
-
-page-search .searchbar-ios .searchbar-input::-moz-placeholder {
-  color: transparent;
-}
-
-page-search .searchbar-ios .searchbar-input:-ms-input-placeholder {
-  color: transparent;
-}
-
-page-search .searchbar-ios .searchbar-input::-webkit-input-placeholder {
-  text-indent: 0;
-  color: transparent;
-}
-
 page-select ion-icon.buttonColor {
   color: lightgray;
 }
@@ -31070,7 +31043,6 @@ page-select button.type1 {
   float: left;
   display: inline-block;
   margin: 0px !important;
-  margin-top: 8px !important;
   margin-left: 8px !important;
   padding: 0px !important;
   background-color: black !important;
@@ -31085,7 +31057,6 @@ page-select button.type2 {
   float: right;
   display: inline-block;
   margin: 0px !important;
-  margin-top: 8px !important;
   margin-right: 8px !important;
   padding: 0px !important;
   background-color: black !important;

@@ -15,48 +15,59 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'search.html',
 })
 export class SearchPage {
-  status:boolean;
-  filterSong:Array<any>=[];
-  isFiltered:boolean;
-  songlists:Array<any>=[];
-  shown:boolean;
+  status: boolean;
+  filterSong: Array<any> = [];
+  isFiltered: boolean;
+  songlists: Array<any> = [];
+  shown: boolean;
+  shownArtist:boolean;
+  filterArtist: Array<any> = [];
 
-  constructor(public alertCtrl: AlertController,private modalCtrl:ModalController,public navCtrl: NavController, public navParams: NavParams) {
-    this.songlists=[
-      {song:"Someone Like You",artist:"Adele"},
-      {song:"I started a joke",artist:"Bee Gees"},
-      {song:"Reflection",artist:"Christina Aguilera"}
+  constructor(public alertCtrl: AlertController, private modalCtrl: ModalController, public navCtrl: NavController, public navParams: NavParams) {
+    this.songlists = [
+      { song: "Someone Like You", artist: "Adele" },
+      { song: "I started a joke", artist: "Bee Gees" },
+      { song: "Reflection", artist: "Christina Aguilera" }
     ];
-    
+
   }
 
-  search(event){
-  	if(event.target.value){
-  		if(event.target.value.length>0){
-  			let filterJson = this.songlists.filter(row=>{
-  					if(row.song.indexOf(event.target.value)!=-1){
-              return true;
-  					}else{
-  						return false;
-  					}
-  				}
-  			);
-  			this.isFiltered=true;
-        this.filterSong=filterJson;
-          if(this.filterSong.length<=0){
-            this.shown=false;
-          }else{
-            this.shown=true;
+  search(event) {
+    if (event.target.value) {
+      if (event.target.value.length > 0) {
+        let filterJsonSong = this.songlists.filter(row => {
+          if (row.song.indexOf(event.target.value) != -1) {
+            return true;
+          } else {
+            return false;
           }
-  		}else{
-  			this.isFiltered=false;
-  		}
-  	}else{
-  		this.isFiltered=false;
-  	}
+        }
+        );
+        let filterJsonArtist = this.songlists.filter(row => {
+          if (row.artist.indexOf(event.target.value) != -1) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+        );
+        this.isFiltered = true;
+        this.filterSong = filterJsonSong;
+        this.filterArtist = filterJsonArtist;
+        if (this.filterSong.length <= 0&&this.filterArtist.length <= 0) {
+          this.shown = false;
+        } else {
+          this.shown = true;
+        }
+      } else {
+        this.isFiltered = false;
+      }
+    } else {
+      this.isFiltered = false;
+    }
   }
 
-  modalsTapped(){
+  modalsTapped() {
     let modal = this.modalCtrl.create(ModalsSongPage);
     modal.present();
   }
@@ -83,13 +94,13 @@ export class SearchPage {
         {
           text: 'Settings',
           handler: () => {
-                const alert = this.alertCtrl.create({
-                title: 'Couldn'+ '&apos;' +'t Open Link',
-                 subTitle: 'The link you tried to open appeared to be a Spotify link, but Spotify was unable to open it.',
-                 buttons: ['OK']
-    });
-    alert.present();
-  
+            const alert = this.alertCtrl.create({
+              title: 'Couldn' + '&apos;' + 't Open Link',
+              subTitle: 'The link you tried to open appeared to be a Spotify link, but Spotify was unable to open it.',
+              buttons: ['OK']
+            });
+            alert.present();
+
           }
         }
       ]

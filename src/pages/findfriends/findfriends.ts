@@ -13,7 +13,7 @@ import {ViewController, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'findfriends.html',
 })
 export class FindfriendsPage {
-
+  song
   constructor(public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
   
   }
