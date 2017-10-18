@@ -30441,6 +30441,29 @@ page-findfriends .item {
   background-color: #000;
 }
 
+page-findfriends p.artist {
+  color: white;
+  font-size: 10pt !important;
+  display: inline;
+  font-weight: 200;
+  opacity: 0.7;
+}
+
+page-findfriends div.song {
+  color: white;
+  font-size: 10pt !important;
+  font-weight: 200;
+}
+
+page-findfriends img.imgicon {
+  width: 23px;
+  height: 23px;
+}
+
+page-findfriends ion-title.postition {
+  position: absolute;
+}
+
 page-home ion-title.title {
   text-align: center;
 }
