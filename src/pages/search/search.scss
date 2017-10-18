@@ -87,22 +87,22 @@ page-search {
          display: flex ;
      }
 
-     .toolbar .searchbar-ios .searchbar-input .input-placeholder {
-        background: #000;
-    }
+    //  .toolbar .searchbar-ios .searchbar-input .input-placeholder {
+    //     background: #000;
+    // }
 
-    .toolbar .searchbar .searchbar-input {
-        color:black;
-        background: #ffffff;
-    }
+    // .toolbar .searchbar .searchbar-input {
+    //     color:black;
+    //     background: #ffffff;
+    // }
 
-    .toolbar .searchbar .searchbar-search-icon {
-        color: #000000;
-        background-image: url('../search.png');
-    }
+    // .toolbar .searchbar .searchbar-search-icon {
+    //     color: #000000;
+    //     background-image: url('../search.png');
+    // }
 
-    .searchbar-ios .searchbar-input {
-        @include placeholder($searchbar-ios-input-placeholder-color);
-    }
+    // .searchbar-ios .searchbar-input {
+    //     @include placeholder($searchbar-ios-input-placeholder-color);
+    // }
 
 }

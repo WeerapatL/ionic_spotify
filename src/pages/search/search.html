@@ -40,20 +40,20 @@
     <span>
       <p *ngIf="shown==true" class="result">Popular Result</p>
       <ion-item *ngFor="let pointer of filterSong">
-        <img class="img" src="insurgency.jpg" align="left"> &nbsp; &nbsp; {{pointer.song}} 
+        <img class="img" src="{{pointer.artist}}.jpg" align="left"> &nbsp; &nbsp; {{pointer.song}} 
         <p>&nbsp; &nbsp; {{pointer.artist}}</p>
       </ion-item>
       
       <p *ngIf="shown==true" class="result">Artists</p>
-      <ion-item *ngFor="let pointer of filterSong">
+      <ion-item *ngFor="let pointer of filterArtist">
         <ion-avatar item-start>
-          <img src="insurgency.jpg">
+          <img src="{{pointer.artist}}.jpg">
         </ion-avatar> {{pointer.artist}}
       </ion-item>
     </span>
 
     <span *ngIf="shown==false">
-      <img class="picture" src="search2.png">
+      <img class="picture" src="search.png">
       <div class="divtext">
         <p class="text">
           Search Spotify

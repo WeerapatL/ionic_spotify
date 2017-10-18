@@ -6,29 +6,59 @@
 -->
 <ion-header>
 
-  <ion-navbar color="toolbar">
-    <ion-title>Find Friends</ion-title>
-  </ion-navbar>
-  <ion-toolbar mode="md" color="dark">
-      <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">
-          <ion-segment-button value="friend">
-              <div class ="text">FRIENDS</div>
-          </ion-segment-button>
-          <ion-segment-button value="featured">
-              <div class ="text">FEATURED</div>
-          </ion-segment-button>
-      </ion-segment>
-  </ion-toolbar>
+    <ion-navbar color="toolbar">
+        <ion-title>Find Friends</ion-title>
+    </ion-navbar>
+    <ion-toolbar mode="md" color="dark">
+        <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">
+            <ion-segment-button value="friend">
+                <div class="text">FRIENDS</div>
+            </ion-segment-button>
+            <ion-segment-button value="featured">
+                <div class="text">FEATURED</div>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content text-center class="ion-content">
-    <button class=" buttonFriend" ion-button round medium (click)="findfriends()"> 
-        <div class="textFriend">
-           FOLLOW ALL (241)
-          </div>
-    </button>
-    <ion-searchbar placeholder="Filter" showCancelButton></ion-searchbar>
+<ion-content text-center class="ion-content" fullscreen>
+    <span *ngIf="selectedTab=='friend'">
+        <button class=" buttonFriend" ion-button round medium>
+            <div class="textFriend">
+                FOLLOW ALL ({{amountFriend}})
+            </div>
+        </button>
+        <ion-searchbar placeholder="Filter" showCancelButton (ionInput)="searchFriend($event)"></ion-searchbar>
+
+        <ion-list *ngIf="!isFiltered" no-lines>
+            <ion-item *ngFor="let pointer of friendLists">
+                <ion-avatar item-start>
+                    <img src="{{pointer.image}}.jpg">
+                </ion-avatar> {{pointer.name}}
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="isFiltered" no-lines>
+            <ion-item *ngFor="let pointer of filterFriend">
+                <ion-avatar item-start>
+                    <img src="{{pointer.image}}.jpg">
+                </ion-avatar> {{pointer.name}}
+            </ion-item>
+        </ion-list>
+    </span>
+
+    <span *ngIf="selectedTab=='featured'">
+
+        <ion-list no-lines>
+            <ion-item *ngFor="let pointer of featuredLists">
+                <ion-avatar item-start>
+                    <img src="{{pointer.image}}.jpg">
+                </ion-avatar> {{pointer.name}}
+            </ion-item>
+        </ion-list>
+
+    </span>
 
 </ion-content>
