@@ -38,7 +38,7 @@
   <ion-list *ngIf="isFiltered" class="showResult" no-lines>
 
     <span>
-      <p *ngIf="shown==true" class="result">Popular Result</p>
+      <p *ngIf="shown==true" class="result">Top Result</p>
       <ion-item *ngFor="let pointer of filterSong">
         <img class="img" src="{{pointer.artist}}.jpg" align="left"> &nbsp; &nbsp; {{pointer.song}} 
         <p>&nbsp; &nbsp; {{pointer.artist}}</p>

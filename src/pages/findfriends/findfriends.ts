@@ -23,6 +23,7 @@ export class FindfriendsPage {
   filterFriend: Array<any> = [];
   isFiltered: boolean;
   featuredLists:Array<any>=[];
+  status:boolean;
 
   constructor(private modalCtrl:ModalController,public alertCtrl: AlertController,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
     this.friendLists=[

@@ -31096,7 +31096,7 @@ page-select button.type2 {
   text-align: center !important;
 }
 
-page-select button.type:active {
+page-select button:active {
   opacity: 0.75;
 }
 
