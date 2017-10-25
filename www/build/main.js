@@ -163,6 +163,7 @@ webpackEmptyAsyncContext.id = 155;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -177,6 +178,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -184,7 +186,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var LoginPage = (function () {
-    function LoginPage(nativeStorage, navCtrl, navParams, facebook) {
+    function LoginPage(socialSharing, nativeStorage, navCtrl, navParams, facebook) {
+        this.socialSharing = socialSharing;
         this.nativeStorage = nativeStorage;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
@@ -200,11 +203,9 @@ var LoginPage = (function () {
             .then(function (response) {
             var userId = response.authResponse.userID;
             var params = new Array();
-            //Getting name and gender properties
             _this.facebook.api("/me?fields=name,gender", params)
                 .then(function (user) {
                 user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
-                //now we have the users info, let's save it in the NativeStorage
                 _this.nativeStorage.setItem('user', {
                     name: user.name,
                     gender: user.gender,
@@ -220,6 +221,14 @@ var LoginPage = (function () {
             console.log(error);
         });
     };
+    LoginPage.prototype.share = function () {
+        var _this = this;
+        this.socialSharing.canShareVia('twitter', 'Hello', 'ionic', '', '').then(function () {
+            _this.socialSharing.shareViaTwitter('Hello Pome', '', '');
+        }).catch(function () {
+            console.log('Error');
+        });
+    };
     LoginPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LoginPage');
     };
@@ -227,11 +236,12 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-buttons>\n    <button ion-button (click)="loginFB()">\n      facebook\n    </button>\n  </ion-buttons>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n\n<ion-content fullscreen>\n  <ion-title>Log in</ion-title>\n\n  <ion-buttons>\n    <button class="fb" ion-button (click)="loginFB()">\n      login with FACEBOOK\n    </button>\n    <button ion-button (click)="share()">Sharing</button>\n  </ion-buttons>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\login\login.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]) === "function" && _e || Object])
 ], LoginPage);
 
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=login.js.map
 
 /***/ }),
@@ -940,12 +950,14 @@ ModalsSongPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_facebook__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_native_storage__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_login_login__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_social_sharing__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1017,6 +1029,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_19__ionic_native_facebook__["a" /* Facebook */],
             __WEBPACK_IMPORTED_MODULE_20__ionic_native_native_storage__["a" /* NativeStorage */],
+            __WEBPACK_IMPORTED_MODULE_22__ionic_native_social_sharing__["a" /* SocialSharing */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
             __WEBPACK_IMPORTED_MODULE_15__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */]
         ]

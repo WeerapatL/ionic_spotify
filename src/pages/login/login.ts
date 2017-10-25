@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { HomePage } from '../home/home';
+import { SocialSharing } from '@ionic-native/social-sharing';
 /**
  * Generated class for the LoginPage page.
  *
@@ -18,7 +19,7 @@ export class LoginPage {
 
   FB_APP_ID: 312414275832004;
 
-  constructor(public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
+  constructor(private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
     this.facebook.browserInit(this.FB_APP_ID);
   }
 
@@ -34,11 +35,9 @@ export class LoginPage {
         let userId = response.authResponse.userID;
         let params = new Array<string>();
 
-        //Getting name and gender properties
         this.facebook.api("/me?fields=name,gender", params)
           .then((user) => {
             user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
-            //now we have the users info, let's save it in the NativeStorage
             this.nativeStorage.setItem('user',
               {
                 name: user.name,
@@ -54,6 +53,14 @@ export class LoginPage {
       }, (error) => {
         console.log(error);
       });
+  }
+
+  share(){
+    this.socialSharing.canShareVia('twitter','Hello','ionic','','').then(() => {
+      this.socialSharing.shareViaTwitter('Hello Pome','','');
+    }).catch(() => {
+      console.log('Error');
+    });
   }
 
   ionViewDidLoad() {
