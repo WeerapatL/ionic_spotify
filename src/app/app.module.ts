@@ -13,13 +13,16 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SettingPage } from '../pages/setting/setting';
 import { ProfilePage} from '../pages/profile/profile';
 
+import { FormsModule } from '@angular/forms';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SpotifydataProvider } from '../providers/spotifydata/spotifydata';
 import { HttpModule } from '@angular/http';
 import { FindfriendsPage } from '../pages/findfriends/findfriends';
 import { PlaybackPage } from '../pages/playback/playback';
-
+import { Facebook } from '@ionic-native/facebook';
+import { NativeStorage } from '@ionic-native/native-storage';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -33,12 +36,14 @@ import { PlaybackPage } from '../pages/playback/playback';
     SettingPage,
     ProfilePage,
     FindfriendsPage,
-    PlaybackPage
+    PlaybackPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule,   
+    HttpModule,  
+    FormsModule 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -52,11 +57,14 @@ import { PlaybackPage } from '../pages/playback/playback';
     SettingPage,
     ProfilePage,
     FindfriendsPage,
-    PlaybackPage
+    PlaybackPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Facebook,
+    NativeStorage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SpotifydataProvider
   ]
