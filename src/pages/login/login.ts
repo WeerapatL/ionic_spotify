@@ -4,6 +4,7 @@ import { Facebook } from '@ionic-native/facebook';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { HomePage } from '../home/home';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { NativeAudio } from '@ionic-native/native-audio';
 /**
  * Generated class for the LoginPage page.
  *
@@ -19,7 +20,7 @@ export class LoginPage {
 
   FB_APP_ID: 312414275832004;
 
-  constructor(private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
+  constructor(private nativeAudio: NativeAudio,private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
     this.facebook.browserInit(this.FB_APP_ID);
   }
 

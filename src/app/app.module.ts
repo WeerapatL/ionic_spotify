@@ -24,6 +24,8 @@ import { Facebook } from '@ionic-native/facebook';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { LoginPage } from '../pages/login/login';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { NativeAudio } from '@ionic-native/native-audio';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -65,6 +67,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     SplashScreen,
     Facebook,
     NativeStorage,
+    NativeAudio,
     SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SpotifydataProvider
