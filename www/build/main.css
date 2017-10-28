@@ -30560,6 +30560,11 @@ page-home img.imgicon {
   height: 23px;
 }
 
+page-login .fb {
+  border-radius: 30px;
+  background-color: #3B5998;
+}
+
 page-modals-song div.artist {
   text-align: center;
   font-size: 10px !important;
