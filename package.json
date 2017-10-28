@@ -22,9 +22,11 @@
         "@angular/platform-browser-dynamic": "4.4.3",
         "@ionic-native/core": "4.3.0",
         "@ionic-native/keyboard": "^4.3.1",
+        "@ionic-native/native-audio": "^4.3.2",
         "@ionic-native/splash-screen": "4.3.0",
         "@ionic-native/status-bar": "4.3.0",
         "@ionic/storage": "2.0.1",
+        "cordova-plugin-nativeaudio": "^3.0.9",
         "cordova-plugin-statusbar": "git+https://github.com/apache/cordova-plugin-statusbar.git",
         "ionic-angular": "3.7.1",
         "ionic-plugin-keyboard": "^2.2.1",
@@ -41,7 +43,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-statusbar": {},
-            "ionic-plugin-keyboard": {}
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-nativeaudio": {}
         }
     }
 }

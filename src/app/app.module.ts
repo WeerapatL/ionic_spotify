@@ -20,6 +20,9 @@ import { HttpModule } from '@angular/http';
 import { FindfriendsPage } from '../pages/findfriends/findfriends';
 import { PlaybackPage } from '../pages/playback/playback';
 
+import { NativeAudio } from '@ionic-native/native-audio';
+
+
 
 @NgModule({
   declarations: [
@@ -58,7 +61,8 @@ import { PlaybackPage } from '../pages/playback/playback';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SpotifydataProvider
+    SpotifydataProvider,
+    NativeAudio
   ]
 })
 export class AppModule {}
