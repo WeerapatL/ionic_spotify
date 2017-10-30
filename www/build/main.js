@@ -4,75 +4,14 @@ webpackJsonp([0],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the HomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HomePage = (function () {
-    function HomePage(modalCtrl, statusBar, navCtrl, navParams) {
-        this.modalCtrl = modalCtrl;
-        this.statusBar = statusBar;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.statusBar.styleLightContent();
-    }
-    HomePage.prototype.modalsTapped = function () {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__["a" /* ModalsSongPage */]);
-        modal.present();
-    };
-    HomePage.prototype.changeButton = function () {
-        this.status = !this.status;
-    };
-    HomePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HomePage');
-    };
-    return HomePage;
-}());
-HomePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\home\home.html"*/'<!--\n\n  Generated template for the HomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-toolbar class="nav" color="dark">\n\n    <ion-title class="title">\n\n      <p class="ptitle">Home</p>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content fullscreen>\n\n  <br>\n\n  <div class="topic"><b>Concerts Near You</b></div>\n\n  <div class="desc">Upcoming Concerts by Artists You Love</div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="ben21.jpg"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Ben Hobbs\n\n          <p class="desc2">JAM CAFE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="tw.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          The Rocket Whale\n\n          <p class="desc2">CHANGCHUI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="11nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          JMSN\n\n          <p class="desc2">ROCKADEMY</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="17nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Ducktails\n\n          <p class="desc2">ROCKADEMY</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="21nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Pond\n\n          <p class="desc2">NAKARIN THEATRE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="02dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          PREP, Telex Telexs\n\n          <p class="desc2">VOICE SPACE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="11dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Shawn Mendes\n\n          <p class="desc2">IMPACT ARENA, MUANG THONG THANI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="14dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Wonderfruit Festival 2017\n\n          <p class="desc2">THE FIELDS AT SIAM COUNTRY CLUB, PATTAYA</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="01jan.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          DJ ARGY\n\n          <p class="desc2">IMPACT ARENA, MUANG THONG THANI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n  </ion-scroll>\n\n\n\n  <br>\n\n\n\n  <div class="topic"><b>Recently Played</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="mint.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          mint\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaihit.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงฮิตประเทศไทย\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiyod.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงไทยยอดนิยม\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaitop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Top 50\n\n          <p class="desc2">Playlist • by spotifycharts</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n  </ion-scroll>\n\n\n\n  <br>\n\n  <div class="topic"><b>Popular Playlists</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiyod.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงไทยยอดนิยม\n\n          <p class="desc2">15,710 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaihit.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงฮิตประเทศไทย\n\n          <p class="desc2">12,037 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="newmusic.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          New Music Friday Thailand\n\n          <p class="desc2">4,058 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="mint.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          mint\n\n          <p class="desc2">4,530,875 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="vivalatino.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Viva Latino-Top 50\n\n          <p class="desc2">6,168,761 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="anime.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          アニメ&amp;ANIME!\n\n          <p class="desc2"> 35,671 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="jrock.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          J-Rock Now\n\n          <p class="desc2"> 39,247 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="rockanthems.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Rock Anthems Japan\n\n          <p class="desc2"> 13,110 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="dream.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          This is: DREAMS COME TRUE\n\n          <p class="desc2"> 11,025 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n  </ion-scroll>\n\n  <br>\n\n\n\n  <div class="topic"><b>Charts</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="globaltop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Global Top 50\n\n          <p class="desc2">10,462,457 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaitop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Top 50\n\n          <p class="desc2"> 7,853 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiviral.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Viral 50\n\n          <p class="desc2"> 2,616 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n  </ion-scroll>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\home\home.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], HomePage);
-
-//# sourceMappingURL=home.js.map
-
-/***/ }),
-
-/***/ 105:
-// /***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_setting_setting__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_setting_setting__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_profile_profile__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_profile_profile__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modals_song_modals_song__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -127,22 +66,21 @@ CollectionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-collection',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\collection\collection.html"*/'<!--\n\n  Generated template for the CollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="dark" class="opacity" hideBackButton>\n\n\n\n    <!-- <ion-buttons start>\n\n              <button ion-button round (click)="openModel()">\n\n                <img src="user.png">\n\n                <ion-icon name="contact"></ion-icon>\n\n              </button>\n\n            </ion-buttons> -->\n\n\n\n    <ion-avatar style="padding-left:10px;" (click)="profile(profile)">\n\n      <img class="avatar" src="user.png">\n\n    </ion-avatar>\n\n\n\n    <ion-title>Your Library</ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="setting()">\n\n                <ion-icon name="settings"></ion-icon>\n\n              </button>\n\n\n\n    </ion-buttons>\n\n\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="ion-content" fullscreen>\n\n  <ion-list no-lines>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n      <ion-icon name="musical-notes" item-start></ion-icon>\n\n      Playlists\n\n    </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n        <ion-icon name="musical-note" item-start></ion-icon>\n\n        Songs\n\n      </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n          <ion-icon name="disc" item-start></ion-icon>\n\n          Albums\n\n        </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n            <ion-icon name="headset" item-start></ion-icon>\n\n            Artists\n\n          </button>\n\n\n\n    <button ion-item full outline class="ion-content">\n\n              <ion-icon name="radio" item-start></ion-icon>\n\n              Podcasts\n\n          </button>\n\n\n\n    <ion-item class="ion-content">\n\n      <ion-label start>Recently Played</ion-label>\n\n      <!-- <button ion-button clear item-end class="ion-content" (click)="openModel()">Edit</button> -->\n\n    </ion-item>\n\n\n\n    <div class="text2">\n\n      Music you\'ve listened to will appear here.\n\n    </div>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\collection\collection.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], CollectionPage);
 
-var _a, _b, _c, _d;
 //# sourceMappingURL=collection.js.map
 
 /***/ }),
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpotifydataProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -181,7 +119,7 @@ SpotifydataProvider = __decorate([
 
 /***/ }),
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -194,11 +132,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 113;
+webpackEmptyAsyncContext.id = 114;
 
 /***/ }),
 
-/***/ 155:
+/***/ 156:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -211,7 +149,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 155;
+webpackEmptyAsyncContext.id = 156;
 
 /***/ }),
 
@@ -222,10 +160,11 @@ webpackEmptyAsyncContext.id = 155;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_audio__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -241,6 +180,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -248,7 +188,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var LoginPage = (function () {
-    function LoginPage(socialSharing, nativeStorage, navCtrl, navParams, facebook) {
+    function LoginPage(nativeAudio, socialSharing, nativeStorage, navCtrl, navParams, facebook) {
+        this.nativeAudio = nativeAudio;
         this.socialSharing = socialSharing;
         this.nativeStorage = nativeStorage;
         this.navCtrl = navCtrl;
@@ -291,34 +232,50 @@ var LoginPage = (function () {
             console.log('Error');
         });
     };
+    LoginPage.prototype.share2 = function () {
+        var _this = this;
+        this.socialSharing.canShareViaEmail().then(function () {
+            _this.socialSharing.shareViaEmail('Hello', 'Subject', ['guysanook14@gmail.com']);
+        }).catch(function () {
+            console.log('Error');
+        });
+    };
     LoginPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LoginPage');
+    };
+    LoginPage.prototype.play = function () {
+        var _this = this;
+        this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(function () {
+            _this.nativeAudio.play('clickSound').then(_this.onSuccessPlaying, _this.onError);
+        }).catch(function () {
+            console.log('Error');
+        });
     };
     return LoginPage;
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n\n<ion-content fullscreen>\n  <ion-title>Log in</ion-title>\n\n  <ion-buttons>\n    <button class="fb" ion-button (click)="loginFB()">\n      login with FACEBOOK\n    </button>\n    <button ion-button (click)="share()">Sharing</button>\n  </ion-buttons>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n\n\n<ion-content fullscreen>\n\n  <ion-title>Log in</ion-title>\n\n\n\n  <ion-buttons>\n\n    <button class="fb" ion-button (click)="loginFB()">\n\n      login with FACEBOOK\n\n    </button>\n\n    <button ion-button (click)="share2()">Sharing</button>\n\n\n\n    <button ion-button (click)="play()">Play</button>\n\n  </ion-buttons>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\login\login.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_audio__["a" /* NativeAudio */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_audio__["a" /* NativeAudio */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]) === "function" && _f || Object])
 ], LoginPage);
 
-var _a, _b, _c, _d, _e;
+var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=login.js.map
 
 /***/ }),
 
-/***/ 200:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_search__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__select_select__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_search__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__select_select__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collection_collection__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collection_collection__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -348,15 +305,14 @@ var TabsPage = (function () {
 TabsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\tabs\tabs.html"*/'<ion-tabs color="dark">\n\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Browse" tabIcon="musical-notes"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Your Library" tabIcon="albums"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\tabs\tabs.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], TabsPage);
 
-var _a, _b;
 //# sourceMappingURL=tabs.js.map
 
 /***/ }),
 
-/***/ 201:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -486,7 +442,7 @@ SearchPage = __decorate([
 
 /***/ }),
 
-/***/ 202:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -543,7 +499,7 @@ SelectPage = __decorate([
 
 /***/ }),
 
-/***/ 203:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -551,7 +507,7 @@ SelectPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_home_home__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_playback_playback__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_playback_playback__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modals_song_modals_song__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -633,7 +589,7 @@ SettingPage = __decorate([
 
 /***/ }),
 
-/***/ 204:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -698,16 +654,16 @@ PlaybackPage = __decorate([
 
 /***/ }),
 
-/***/ 206:
+/***/ 208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_collection_collection__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_findfriends_findfriends__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_collection_collection__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_findfriends_findfriends__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modals_song_modals_song__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -783,7 +739,76 @@ ProfilePage = __decorate([
 
 /***/ }),
 
-/***/ 208:
+/***/ 21:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsSongPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__ = __webpack_require__(103);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the ModalsSongPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalsSongPage = (function () {
+    function ModalsSongPage(nativeAudio, navCtrl, navParams) {
+        var _this = this;
+        this.nativeAudio = nativeAudio;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.startSong = 0.00;
+        this.onSuccessPreloading = function (data) {
+            console.log('success preloading', data);
+            _this.nativeAudio.play('track1').then(_this.onSuccessPlaying, _this.onError);
+        };
+    }
+    ModalsSongPage.prototype.play = function () {
+        this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(this.onSuccessPreloading, this.onError);
+    };
+    ModalsSongPage.prototype.changeShuffle = function () {
+        this.shuffle = !this.shuffle;
+    };
+    ModalsSongPage.prototype.changeRepeat = function () {
+        this.repeat = !this.repeat;
+    };
+    ModalsSongPage.prototype.changeButton = function () {
+        this.status = !this.status;
+    };
+    ModalsSongPage.prototype.closeTapped = function () {
+        this.navCtrl.pop();
+    };
+    ModalsSongPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalsSongPage');
+    };
+    return ModalsSongPage;
+}());
+ModalsSongPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n\n  <ion-toolbar color="toolbar">\n\n    <ion-buttons (click)="closeTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-buttons end (click)="closeTapped()">\n\n      <button ion-button icon-left>\n\n        <ion-icon class="color" name="list"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <div class="artist">Playing music from\n\n      <p class="artist">The Blaze</p>\n\n    </div>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content fullscreen>\n\n  <ion-slides spaceBetween="-60">\n\n    <ion-slide>\n\n      <img class="cover" src="blaze.png">\n\n    </ion-slide>\n\n    <ion-slide>       \n\n      <img class="cover" src="RollingIntheDeep.jpg">\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img class="cover" src="SetFiretotheRain.jpeg">\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n  \n\n  <div class="div">\n\n    <ion-icon class="add" name="add"></ion-icon>\n\n    <div class="song">\n\n      <p class="p1">Territory</p>\n\n      <p class="p2">The Blaze</p>\n\n    </div>\n\n    <ion-icon class="more" name="more"></ion-icon>\n\n  </div>\n\n  <ion-item class="item" no-lines>\n\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n\n      <ion-label range-left>0:00</ion-label>\n\n      <ion-label range-right>4:00</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n  <div class="div1">\n\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n\n    <ion-icon class="play" (click)="changeButton()" [name]="status? \'play\':\'pause\'"></ion-icon>\n\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], ModalsSongPage);
+
+//# sourceMappingURL=modals-song.js.map
+
+/***/ }),
+
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -905,7 +930,7 @@ var FindfriendsPage = (function () {
 }());
 FindfriendsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-findfriends',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\findfriends\findfriends.html"*/'<!--\n\n  Generated template for the FindfriendsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar color="toolbar">\n\n        <ion-title>Find Friends</ion-title>\n\n    </ion-navbar>\n\n    <ion-toolbar mode="md" color="dark">\n\n        <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">\n\n            <ion-segment-button value="friend">\n\n                <div class="text">FRIENDS</div>\n\n            </ion-segment-button>\n\n            <ion-segment-button value="featured">\n\n                <div class="text">FEATURED</div>\n\n            </ion-segment-button>\n\n        </ion-segment>\n\n    </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content text-center class="ion-content" fullscreen>\n\n    <span *ngIf="selectedTab==\'friend\'">\n\n        <button class=" buttonFriend" ion-button round medium (click)="follow(amountFriend)">\n\n            <div class="textFriend">\n\n                FOLLOW ALL ({{amountFriend}})\n\n            </div>\n\n        </button>\n\n        <ion-searchbar placeholder="Filter" showCancelButton (ionInput)="searchFriend($event)"></ion-searchbar>\n\n\n\n        <ion-list *ngIf="!isFiltered" no-lines>\n\n            <ion-item *ngFor="let pointer of friendLists">\n\n                <ion-avatar item-start>\n\n                    <img src="asset/{{pointer.image}}.jpg">\n\n                </ion-avatar> {{pointer.name}}\n\n            </ion-item>\n\n        </ion-list>\n\n\n\n        <ion-list *ngIf="isFiltered" no-lines>\n\n            <ion-item *ngFor="let pointer of filterFriend">\n\n                <ion-avatar item-start>\n\n                    <img src="asset/{{pointer.image}}.jpg">\n\n                </ion-avatar> {{pointer.name}}\n\n            </ion-item>\n\n        </ion-list>\n\n    </span>\n\n\n\n    <span *ngIf="selectedTab==\'featured\'">\n\n\n\n        <ion-list no-lines>\n\n            <ion-item *ngFor="let pointer of featuredLists">\n\n                <ion-avatar item-start>\n\n                    <img src="{{pointer.image}}.jpg">\n\n                </ion-avatar> {{pointer.name}}\n\n            </ion-item>\n\n        </ion-list>\n\n\n\n    </span>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <ion-toolbar color="dark" class="footer">\n\n      <ion-buttons class="button" (click)="modalsTapped()">\n\n        <button ion-button icon-right>\n\n            <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n          </button>\n\n      </ion-buttons>\n\n  \n\n      <ion-title class="position" (click)="modalsTapped()">\n\n        <ion-slides>\n\n          <ion-slide>\n\n            <div class="song">\n\n              Songs -\n\n              <p class="artist">Artists</p>\n\n            </div>\n\n          </ion-slide>\n\n          <ion-slide>\n\n            <div class="song">\n\n              Songs2 -\n\n              <p class="artist">Artists2</p>\n\n            </div>\n\n          </ion-slide>\n\n        </ion-slides>\n\n      </ion-title>\n\n  \n\n      <ion-buttons end>\n\n        <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n      </ion-buttons>\n\n    </ion-toolbar>\n\n  </ion-footer>'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\findfriends\findfriends.html"*/,
+        selector: 'page-findfriends',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\findfriends\findfriends.html"*/'<!--\n\n  Generated template for the FindfriendsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar color="toolbar">\n\n        <ion-title>Find Friends</ion-title>\n\n    </ion-navbar>\n\n    <ion-toolbar mode="md" color="dark">\n\n        <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">\n\n            <ion-segment-button value="friend">\n\n                <div class="text">FRIENDS</div>\n\n            </ion-segment-button>\n\n            <ion-segment-button value="featured">\n\n                <div class="text">FEATURED</div>\n\n            </ion-segment-button>\n\n        </ion-segment>\n\n    </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content text-center class="ion-content" fullscreen>\n\n    <span *ngIf="selectedTab==\'friend\'">\n\n        <button class=" buttonFriend" ion-button round medium (click)="follow(amountFriend)">\n\n            <div class="textFriend">\n\n                FOLLOW ALL ({{amountFriend}})\n\n            </div>\n\n        </button>\n\n        <ion-searchbar placeholder="Filter" showCancelButton (ionInput)="searchFriend($event)"></ion-searchbar>\n\n\n\n        <ion-list *ngIf="!isFiltered" no-lines>\n\n            <ion-item *ngFor="let pointer of friendLists">\n\n                <ion-avatar item-start>\n\n                    <img src="asset/{{pointer.image}}.jpg">\n\n                </ion-avatar> {{pointer.name}}\n\n            </ion-item>\n\n        </ion-list>\n\n\n\n        <ion-list *ngIf="isFiltered" no-lines>\n\n            <ion-item *ngFor="let pointer of filterFriend">\n\n                <ion-avatar item-start>\n\n                    <img src="asset/{{pointer.image}}.jpg">\n\n                </ion-avatar> {{pointer.name}}\n\n            </ion-item>\n\n        </ion-list>\n\n    </span>\n\n\n\n    <span *ngIf="selectedTab==\'featured\'">\n\n\n\n        <ion-list no-lines>\n\n            <ion-item *ngFor="let pointer of featuredLists">\n\n                <ion-avatar item-start>\n\n                    <img src="{{pointer.image}}.jpg">\n\n                </ion-avatar> {{pointer.name}}\n\n            </ion-item>\n\n        </ion-list>\n\n\n\n    </span>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <ion-toolbar color="dark" class="footer">\n\n      <ion-buttons class="button" (click)="modalsTapped()">\n\n        <button ion-button icon-right>\n\n            <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n          </button>\n\n      </ion-buttons>\n\n  \n\n      <ion-title class="position" (click)="modalsTapped()">\n\n        <ion-slides>\n\n          <ion-slide>\n\n            <div class="song">\n\n              Songs -\n\n              <p class="artist">Artists</p>\n\n            </div>\n\n          </ion-slide>\n\n          <ion-slide>\n\n            <div class="song">\n\n              Songs2 -\n\n              <p class="artist">Artists2</p>\n\n            </div>\n\n          </ion-slide>\n\n        </ion-slides>\n\n      </ion-title>\n\n  \n\n      <ion-buttons end>\n\n        <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n      </ion-buttons>\n\n    </ion-toolbar>\n\n  </ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\findfriends\findfriends.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], FindfriendsPage);
@@ -914,13 +939,13 @@ FindfriendsPage = __decorate([
 
 /***/ }),
 
-/***/ 209:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(230);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -928,65 +953,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 21:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsSongPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the ModalsSongPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ModalsSongPage = (function () {
-    function ModalsSongPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.startSong = 0.00;
-    }
-    ModalsSongPage.prototype.changeShuffle = function () {
-        this.shuffle = !this.shuffle;
-    };
-    ModalsSongPage.prototype.changeRepeat = function () {
-        this.repeat = !this.repeat;
-    };
-    ModalsSongPage.prototype.changeButton = function () {
-        this.status = !this.status;
-    };
-    ModalsSongPage.prototype.closeTapped = function () {
-        this.navCtrl.pop();
-    };
-    ModalsSongPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ModalsSongPage');
-    };
-    return ModalsSongPage;
-}());
-ModalsSongPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n\n  <ion-toolbar color="toolbar">\n\n    <ion-buttons (click)="closeTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-buttons end (click)="closeTapped()">\n\n      <button ion-button icon-left>\n\n        <ion-icon class="color" name="list"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <div class="artist">Playing music from\n\n      <p class="artist">The Blaze</p>\n\n    </div>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content fullscreen>\n\n  <ion-slides spaceBetween="-60">\n\n    <ion-slide>\n\n      <img class="cover" src="blaze.png">\n\n    </ion-slide>\n\n    <ion-slide>       \n\n      <img class="cover" src="RollingIntheDeep.jpg">\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img class="cover" src="SetFiretotheRain.jpeg">\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n  \n\n  <div class="div">\n\n    <ion-icon class="add" name="add"></ion-icon>\n\n    <div class="song">\n\n      <p class="p1">Territory</p>\n\n      <p class="p2">The Blaze</p>\n\n    </div>\n\n    <ion-icon class="more" name="more"></ion-icon>\n\n  </div>\n\n  <ion-item class="item" no-lines>\n\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n\n      <ion-label range-left>0:00</ion-label>\n\n      <ion-label range-right>4:00</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n  <div class="div1">\n\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n\n    <ion-icon class="play" (click)="changeButton()" [name]="status? \'play\':\'pause\'"></ion-icon>\n\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], ModalsSongPage);
-
-//# sourceMappingURL=modals-song.js.map
-
-/***/ }),
-
-/***/ 228:
+/***/ 230:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -994,32 +961,34 @@ ModalsSongPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_modals_song_modals_song__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_select__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_select__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_collection_collection__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_setting_setting__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_profile_profile__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_collection_collection__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_setting_setting__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_profile_profile__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_forms__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_spotifydata_spotifydata__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_http__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_findfriends_findfriends__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_playback_playback__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_facebook__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_native_storage__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_login_login__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_social_sharing__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_spotifydata_spotifydata__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_http__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_findfriends_findfriends__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_playback_playback__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_facebook__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_native_storage__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_login_login__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_social_sharing__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_native_audio__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1092,9 +1061,11 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_19__ionic_native_facebook__["a" /* Facebook */],
             __WEBPACK_IMPORTED_MODULE_20__ionic_native_native_storage__["a" /* NativeStorage */],
+            __WEBPACK_IMPORTED_MODULE_23__ionic_native_native_audio__["a" /* NativeAudio */],
             __WEBPACK_IMPORTED_MODULE_22__ionic_native_social_sharing__["a" /* SocialSharing */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
-            __WEBPACK_IMPORTED_MODULE_15__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */]
+            __WEBPACK_IMPORTED_MODULE_15__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */],
+            __WEBPACK_IMPORTED_MODULE_23__ionic_native_native_audio__["a" /* NativeAudio */]
         ]
     })
 ], AppModule);
@@ -1103,7 +1074,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 268:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1111,9 +1082,9 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1151,12 +1122,11 @@ __decorate([
     __metadata("design:type", Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\app\app.html"*/'<ion-nav #myNav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\app\app.html"*/'<ion-nav #myNav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
-var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -1212,7 +1182,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\home\home.html"*/'<!--\n\n  Generated template for the HomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-toolbar class="nav" color="dark">\n\n    <ion-title class="title">\n\n      <p class="ptitle">Home</p>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content fullscreen>\n\n  <br>\n\n  <div class="topic"><b>Concerts Near You</b></div>\n\n  <div class="desc">Upcoming Concerts by Artists You Love</div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="ben21.jpg"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Ben Hobbs\n\n          <p class="desc2">JAM CAFE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="tw.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          The Rocket Whale\n\n          <p class="desc2">CHANGCHUI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="11nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          JMSN\n\n          <p class="desc2">ROCKADEMY</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="17nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Ducktails\n\n          <p class="desc2">ROCKADEMY</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="21nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Pond\n\n          <p class="desc2">NAKARIN THEATRE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="02dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          PREP, Telex Telexs\n\n          <p class="desc2">VOICE SPACE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="11dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Shawn Mendes\n\n          <p class="desc2">IMPACT ARENA, MUANG THONG THANI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="14dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Wonderfruit Festival 2017\n\n          <p class="desc2">THE FIELDS AT SIAM COUNTRY CLUB, PATTAYA</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="01jan.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          DJ ARGY\n\n          <p class="desc2">IMPACT ARENA, MUANG THONG THANI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n  </ion-scroll>\n\n\n\n  <br>\n\n\n\n  <div class="topic"><b>Recently Played</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="mint.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          mint\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaihit.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงฮิตประเทศไทย\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiyod.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงไทยยอดนิยม\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaitop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Top 50\n\n          <p class="desc2">Playlist • by spotifycharts</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n  </ion-scroll>\n\n\n\n  <br>\n\n  <div class="topic"><b>Popular Playlists</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiyod.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงไทยยอดนิยม\n\n          <p class="desc2">15,710 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaihit.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงฮิตประเทศไทย\n\n          <p class="desc2">12,037 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="newmusic.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          New Music Friday Thailand\n\n          <p class="desc2">4,058 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="mint.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          mint\n\n          <p class="desc2">4,530,875 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="vivalatino.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Viva Latino-Top 50\n\n          <p class="desc2">6,168,761 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="anime.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          アニメ&amp;ANIME!\n\n          <p class="desc2"> 35,671 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="jrock.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          J-Rock Now\n\n          <p class="desc2"> 39,247 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="rockanthems.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Rock Anthems Japan\n\n          <p class="desc2"> 13,110 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="dream.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          This is: DREAMS COME TRUE\n\n          <p class="desc2"> 11,025 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n  </ion-scroll>\n\n  <br>\n\n\n\n  <div class="topic"><b>Charts</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="globaltop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Global Top 50\n\n          <p class="desc2">10,462,457 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaitop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Top 50\n\n          <p class="desc2"> 7,853 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiviral.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Viral 50\n\n          <p class="desc2"> 2,616 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n  </ion-scroll>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\home\home.html"*/,
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\home\home.html"*/'<!--\n\n  Generated template for the HomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-toolbar class="nav" color="dark">\n\n    <ion-title class="title">\n\n      <p class="ptitle">Home</p>\n\n    </ion-title>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content fullscreen>\n\n  <br>\n\n  <div class="topic"><b>Concerts Near You</b></div>\n\n  <div class="desc">Upcoming Concerts by Artists You Love</div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="ben21.jpg"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Ben Hobbs\n\n          <p class="desc2">JAM CAFE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="tw.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          The Rocket Whale\n\n          <p class="desc2">CHANGCHUI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="11nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          JMSN\n\n          <p class="desc2">ROCKADEMY</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="17nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Ducktails\n\n          <p class="desc2">ROCKADEMY</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="21nov.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Pond\n\n          <p class="desc2">NAKARIN THEATRE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="02dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          PREP, Telex Telexs\n\n          <p class="desc2">VOICE SPACE</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="11dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Shawn Mendes\n\n          <p class="desc2">IMPACT ARENA, MUANG THONG THANI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="14dec.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Wonderfruit Festival 2017\n\n          <p class="desc2">THE FIELDS AT SIAM COUNTRY CLUB, PATTAYA</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="01jan.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          DJ ARGY\n\n          <p class="desc2">IMPACT ARENA, MUANG THONG THANI</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n  </ion-scroll>\n\n\n\n  <br>\n\n\n\n  <div class="topic"><b>Recently Played</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="mint.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          mint\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaihit.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงฮิตประเทศไทย\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiyod.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงไทยยอดนิยม\n\n          <p class="desc2">Playlist • by Spotify</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaitop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Top 50\n\n          <p class="desc2">Playlist • by spotifycharts</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n  </ion-scroll>\n\n\n\n  <br>\n\n  <div class="topic"><b>Popular Playlists</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiyod.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงไทยยอดนิยม\n\n          <p class="desc2">15,710 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaihit.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          เพลงฮิตประเทศไทย\n\n          <p class="desc2">12,037 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="newmusic.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          New Music Friday Thailand\n\n          <p class="desc2">4,058 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="mint.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          mint\n\n          <p class="desc2">4,530,875 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="vivalatino.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Viva Latino-Top 50\n\n          <p class="desc2">6,168,761 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="anime.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          アニメ&amp;ANIME!\n\n          <p class="desc2"> 35,671 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="jrock.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          J-Rock Now\n\n          <p class="desc2"> 39,247 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="rockanthems.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Rock Anthems Japan\n\n          <p class="desc2"> 13,110 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="dream.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          This is: DREAMS COME TRUE\n\n          <p class="desc2"> 11,025 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n  </ion-scroll>\n\n  <br>\n\n\n\n  <div class="topic"><b>Charts</b></div>\n\n  <ion-scroll scrollX="true" direction="x">\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="globaltop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Global Top 50\n\n          <p class="desc2">10,462,457 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaitop.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Top 50\n\n          <p class="desc2"> 7,853 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <ion-card-content>\n\n        <ion-img src="thaiviral.png"></ion-img>\n\n        <ion-card-header class="artist">\n\n          Thailand Viral 50\n\n          <p class="desc2"> 2,616 FOLLOWERS</p>\n\n        </ion-card-header>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n  </ion-scroll>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n        </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\Spotify\ionic_spotify\src\pages\home\home.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], HomePage);
@@ -1221,5 +1191,5 @@ HomePage = __decorate([
 
 /***/ })
 
-},[209]);
+},[211]);
 //# sourceMappingURL=main.js.map

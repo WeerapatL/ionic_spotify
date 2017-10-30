@@ -83,9 +83,10 @@
     <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
-        <variable name="APP_ID" value="312414275832004" />
-        <variable name="APP_NAME" value="ionic_assignment" />
+        <variable name="APP_ID" value="123456789" />
+        <variable name="APP_NAME" value="myApplication" />
     </plugin>
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.2.1" />
     <plugin name="cordova-plugin-nativestorage" spec="^2.2.2" />
     <plugin name="cordova-plugin-nativeaudio" spec="^3.0.9" />
 </widget>

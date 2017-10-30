@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { NativeAudio } from '@ionic-native/native-audio';
 /**
  * Generated class for the ModalsSongPage page.
  *
@@ -20,8 +20,18 @@ repeat:boolean;
 startSong:any=0.00;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public nativeAudio: NativeAudio,public navCtrl: NavController, public navParams: NavParams) {
+  
   }
+
+  play(){
+    this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(this.onSuccessPreloading, this.onError);
+  }
+  onSuccessPreloading = (data) => {
+    console.log('success preloading', data);
+    this.nativeAudio.play('track1').then(this.onSuccessPlaying, this.onError);
+  }
+  
   changeShuffle(){
     this.shuffle= !this.shuffle;
   }

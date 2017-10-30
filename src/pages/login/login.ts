@@ -20,7 +20,7 @@ export class LoginPage {
 
   FB_APP_ID: 312414275832004;
 
-  constructor(private nativeAudio: NativeAudio,private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
+  constructor(public nativeAudio: NativeAudio,private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
     this.facebook.browserInit(this.FB_APP_ID);
   }
 
@@ -64,8 +64,53 @@ export class LoginPage {
     });
   }
 
+  share2(){
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Hello', 'Subject', ['guysanook14@gmail.com']);
+    }).catch(() => {
+  console.log('Error');
+    });
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
+
+  play(){
+    this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(() => {
+  
+    this.nativeAudio.play('clickSound').then(this.onSuccessPlaying, this.onError);
+  }).catch(() => {
+  console.log('Error');
+    });
+  }
+
+
+//   $ionicPlatform.ready(function() {
+// $cordovaNativeAudio.preloadSimple('click', 'js/click.mp3').then(function (msg) {
+// console.log(msg);
+// }, function (error) {
+// console.log(error);
+// });
+// $cordovaNativeAudio.preloadComplex('click', 'js/click.mp3', 1, 1)
+// .then(function (msg) {
+// console.log(msg);
+// }, function (error) {
+// console.error(error);
+// });
+// });
+
+// $scope.playAudio = function () {
+// $cordovaNativeAudio.play('click');
+// };
+// $scope.loopAudio = function () {
+// $cordovaNativeAudio.loop('click');
+// $timeout(function () {
+// $cordovaNativeAudio.stop('click');
+// $cordovaNativeAudio.unload('click');
+// }, 5000);
+// }
+
+  
 
 }
