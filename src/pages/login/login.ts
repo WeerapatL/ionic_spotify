@@ -6,6 +6,8 @@ import { HomePage } from '../home/home';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { AlertController } from 'ionic-angular';
+import { LoginfacePage } from '../../pages/loginface/loginface';
+
 
 /**
  * Generated class for the LoginPage page.
@@ -66,34 +68,46 @@ export class LoginPage {
     });
   }
 
+  share3(){
+    this.socialSharing.canShareVia('com.apple.social.facebook', 'hello', 'subject', 'image', 'url').then(() => {
+      this.socialSharing.shareViaFacebook('hello', 'image', 'url');
+    }).catch(() => {
+  console.log('Error');
+    });
+  }
+
   ionViewDidLoad(){
     this.nativeAudio.preloadSimple('audio1','audio/TheBlaze.mp3');
-    this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 2, 0)
+    this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
     console.log('ionViewDidLoad LoginPage');
   }
 
-  playAudio(){
-    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
-
-    const alert = this.alertCtrl.create({
-      title: 'Played',
-      subTitle: 'Song has played',
-      buttons: ['OK']
-    });
-    alert.present();
+  loginface() {
+    this.navCtrl.push(LoginfacePage);
   }
 
-  stopAudio(){
-    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+  // playAudio(){
+  //   this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
 
-    const alert = this.alertCtrl.create({
-      title: 'Stopped',
-      subTitle: 'Song has stopped',
-      buttons: ['OK']
-    });
-    alert.present();
+  //   const alert = this.alertCtrl.create({
+  //     title: 'Played',
+  //     subTitle: 'Song has played',
+  //     buttons: ['OK']
+  //   });
+  //   alert.present();
+  // }
+
+  // stopAudio(){
+  //   this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+
+  //   const alert = this.alertCtrl.create({
+  //     title: 'Stopped',
+  //     subTitle: 'Song has stopped',
+  //     buttons: ['OK']
+  //   });
+  //   alert.present();
     
-  }
+  // }
 
   // play(){
   //   this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(() => {

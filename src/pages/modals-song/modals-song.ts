@@ -32,25 +32,59 @@ startSong:any=0.00;
   //   this.nativeAudio.play('track1').then(this.onSuccessPlaying, this.onError);
   // }
   
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ModalsSongPage');
+    this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
+  }
+
+  playAudio(){
+    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
+
+    // const alert = this.alertCtrl.create({
+    //   title: 'Played',
+    //   subTitle: 'Song has played',
+    //   buttons: ['OK']
+    // });
+    // alert.present();
+  }
+
+  stopAudio(){
+    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+
+    // const alert = this.alertCtrl.create({
+    //   title: 'Stopped',
+    //   subTitle: 'Song has stopped',
+    //   buttons: ['OK']
+    // });
+    // alert.present();
+    
+  }
+  
   changeShuffle(){
     this.shuffle= !this.shuffle;
   }
 
   changeRepeat(){
     this.repeat= !this.repeat;
+    if(this.repeat==true){
+      this.nativeAudio.loop('audio2');
+    }
   }
 
   changeButton() {
     this.status = !this.status;
+    if(this.status==true){
+      this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
+    }else{
+      this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+    }
   }
 
   closeTapped(){
     this.navCtrl.pop();
   }
   
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ModalsSongPage');
-  }
+  
 
   
 }

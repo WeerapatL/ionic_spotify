@@ -47,7 +47,7 @@
   <div class="div1">
     <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>
     <ion-icon class="backward" name="skip-backward"></ion-icon>
-    <ion-icon class="play" (click)="changeButton()" [name]="status? 'play':'pause'"></ion-icon>
+    <ion-icon class="play" (click)="changeButton()" [name]="status? 'pause':'play'"></ion-icon>
     <ion-icon class="forward" name="skip-forward"></ion-icon>
     <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>
   </div>

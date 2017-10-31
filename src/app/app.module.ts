@@ -25,6 +25,7 @@ import { NativeStorage } from '@ionic-native/native-storage';
 import { LoginPage } from '../pages/login/login';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { NativeAudio } from '@ionic-native/native-audio';
+import { LoginfacePage } from '../pages/loginface/loginface';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NativeAudio } from '@ionic-native/native-audio';
     ProfilePage,
     FindfriendsPage,
     PlaybackPage,
-    LoginPage
+    LoginPage,
+    LoginfacePage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,8 @@ import { NativeAudio } from '@ionic-native/native-audio';
     ProfilePage,
     FindfriendsPage,
     PlaybackPage,
-    LoginPage
+    LoginPage,
+    LoginfacePage
   ],
   providers: [
     StatusBar,

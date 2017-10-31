@@ -1,0 +1,40 @@
+page-loginface {
+    .fb{
+        font-weight: bold;
+        background-color:#3B5998;
+        color: white;
+        width: 80%;
+        margin-top: 15px;
+        letter-spacing: 1.5px;
+
+    }
+    .content{
+        background-color: black;
+    }
+    .or{
+        font-size: 15px;
+        color: white;
+        opacity: 0.50;
+        margin-top: 10px;
+        margin-bottom: 15px; 
+    }
+
+    .login{
+        font-weight: bold;   
+        color: white;
+        width: 50%;
+        letter-spacing: 1.5px;
+        background-color:#4BD35A;
+        margin-top: -10px;
+        
+    }
+
+    .forgot{
+        font-size: 15px;
+        color: white;
+        opacity: 0.50;
+        margin-top: 25px;
+        
+    }
+
+}
