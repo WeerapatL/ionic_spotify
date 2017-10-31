@@ -24,13 +24,13 @@ startSong:any=0.00;
   
   }
 
-  play(){
-    this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(this.onSuccessPreloading, this.onError);
-  }
-  onSuccessPreloading = (data) => {
-    console.log('success preloading', data);
-    this.nativeAudio.play('track1').then(this.onSuccessPlaying, this.onError);
-  }
+  // play(){
+  //   this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(this.onSuccessPreloading, this.onError);
+  // }
+  // onSuccessPreloading = (data) => {
+  //   console.log('success preloading', data);
+  //   this.nativeAudio.play('track1').then(this.onSuccessPlaying, this.onError);
+  // }
   
   changeShuffle(){
     this.shuffle= !this.shuffle;
