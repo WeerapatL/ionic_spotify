@@ -22,7 +22,33 @@ import { LoginfacePage } from '../../pages/loginface/loginface';
 })
 export class LoginPage {
 
-  // FB_APP_ID: 312414275832004;
+  slides = [
+    {
+      title: "Welcome",
+      description: "Sign up for free music on your phone, tablet and computer.",
+      
+    },
+    {
+      title: "Browse",
+      description: "Explore top tracks, new releases and the right playlist for every moment.",
+      
+    },
+    {
+      title: "Search",
+      description: "Looking for that special album or artist? <br>Just search and hit Play!",
+      
+    },
+    {
+      title: "Running",
+      description: "Music that perfectly matches <br> your tempo.",
+      
+    },
+    {
+      title: "Your Library",
+      description: "save any song, album or artist to your own music collection.",
+      
+    }
+  ];
 
   constructor(public alertCtrl: AlertController,public nativeAudio: NativeAudio,private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
     // this.facebook.browserInit(this.FB_APP_ID);

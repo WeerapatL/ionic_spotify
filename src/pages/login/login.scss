@@ -17,7 +17,7 @@ page-login {
     width: 80%;
     letter-spacing: 1.5px;
     background-color:rgb(53, 226, 71);
-    margin-top: 320px;
+    margin-top: 100px;
    }
    
    .already{
@@ -35,6 +35,44 @@ page-login {
     margin-top: 7px;
     
     }
+
+    .tutorial-page {
+        
+        //   .toolbar-background {
+        //     background: #fff;
+        //     border-color: transparent;
+        //   }
+        
+        //   .slide-zoom {
+        //     height: 100%;
+        //   }
+        
+          .slide-title {
+            margin-top: 2.8rem;
+          }
+        
+        //   .slide-image {
+        //     max-height: 50%;
+        //     max-width: 60%;
+        //     margin: 18px 0;
+        //   }
+        
+          b {
+            font-weight: 500;
+          }
+        
+          p {
+            padding: 0 40px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #60646B;
+        
+            b {
+              color: #000000;
+            }
+          }
+        
+        }
 
     
     }

@@ -36,7 +36,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var LoginPage = (function () {
-    // FB_APP_ID: 312414275832004;
     function LoginPage(alertCtrl, nativeAudio, socialSharing, nativeStorage, navCtrl, navParams, facebook) {
         this.alertCtrl = alertCtrl;
         this.nativeAudio = nativeAudio;
@@ -45,6 +44,28 @@ var LoginPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.facebook = facebook;
+        this.slides = [
+            {
+                title: "Welcome",
+                description: "Sign up for free music on your phone, tablet and computer.",
+            },
+            {
+                title: "Browse",
+                description: "Explore top tracks, new releases and the right playlist for every moment.",
+            },
+            {
+                title: "Search",
+                description: "Looking for that special album or artist? <br>Just search and hit Play!",
+            },
+            {
+                title: "Running",
+                description: "Music that perfectly matches <br> your tempo.",
+            },
+            {
+                title: "Your Library",
+                description: "save any song, album or artist to your own music collection.",
+            }
+        ];
         // this.facebook.browserInit(this.FB_APP_ID);
     }
     // loginFB() {
@@ -102,11 +123,12 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n\n\n<ion-content fullscreen>\n\n    <img class="picture" src="spotify_logo.png">\n\n<!-- \n\n    <ion-slides pager>\n\n        <ion-slide *ngFor="let slide of slides">\n\n          <ion-toolbar>\n\n            <ion-buttons end>\n\n              <button ion-button color="primary">Skip</button>\n\n            </ion-buttons>\n\n          </ion-toolbar>\n\n          <img [src]="slide.image" class="slide-image"/>\n\n          <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n          <p [innerHTML]="slide.description"></p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-toolbar>\n\n          </ion-toolbar>\n\n          <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>\n\n          <h2 class="slide-title">Ready to Play?</h2>\n\n          <button ion-button large clear icon-end color="primary">\n\n            Continue\n\n            <ion-icon name="arrow-forward"></ion-icon>\n\n          </button>\n\n        </ion-slide>\n\n      </ion-slides> -->\n\n\n\n  <!-- <ion-buttons>\n\n    <button class="fb" ion-button (click)="loginFB()">\n\n      login with FACEBOOK\n\n    </button>\n\n    <button ion-button (click)="share2()">Sharing</button>\n\n    <button ion-button (click)="share3()">Sharing</button>\n\n\n\n    <button ion-button (click)="playAudio()">Play</button>\n\n    <button ion-button (click)="stopAudio()">Stop</button>\n\n\n\n    <button ion-button (click)="loginface()">LOG IN</button>\n\n    \n\n  </ion-buttons> -->\n\n  <ion-buttons text-center>\n\n      <button ion-button class="create" round>\n\n        CREATE ACCOUNT\n\n      </button>\n\n    </ion-buttons>\n\n\n\n    <div class="already" text-center>\n\n      Already a user?\n\n    </div>\n\n\n\n  <ion-buttons text-center>\n\n      <button ion-button class="login" round (click)="loginface()">\n\n        LOG IN\n\n      </button>\n\n    </ion-buttons>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n\n\n<!-- <ion-content fullscreen class="tutorial-page">\n\n\n\n  <img class="picture" src="spotify_logo.png">\n\n\n\n  <ion-slides pager>\n\n    <ion-slide *ngFor="let slide of slides">\n\n      <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n      <p [innerHTML]="slide.description"></p>\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <h2 class="slide-title">Ready to Play?</h2>\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n\n\n  <ion-buttons text-center>\n\n    <button ion-button class="create" round>\n\n      CREATE ACCOUNT\n\n    </button>\n\n  </ion-buttons>\n\n\n\n  <div class="already" text-center>\n\n    Already a user?\n\n  </div>\n\n\n\n  <ion-buttons text-center>\n\n    <button ion-button class="login" round (click)="loginface()">\n\n      LOG IN\n\n    </button>\n\n  </ion-buttons>\n\n</ion-content> -->\n\n\n\n  \n\n  <ion-content fullscreen class="tutorial-page">\n\n\n\n      <img class="picture" src="spotify_logo.png">\n\n\n\n    <ion-slides pager style="max-height:200px;margin-top: 100px">\n\n      <ion-slide *ngFor="let slide of slides">   \n\n        <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n        <p [innerHTML]="slide.description"></p>\n\n      </ion-slide>\n\n    </ion-slides>\n\n\n\n    <ion-buttons text-center>\n\n        <button ion-button class="create" round>\n\n          CREATE ACCOUNT\n\n        </button>\n\n      </ion-buttons>\n\n    \n\n      <div class="already" text-center>\n\n        Already a user?\n\n      </div>\n\n    \n\n      <ion-buttons text-center>\n\n        <button ion-button class="login" round (click)="loginface()">\n\n          LOG IN\n\n        </button>\n\n      </ion-buttons>\n\n  </ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\login\login.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_audio__["a" /* NativeAudio */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_audio__["a" /* NativeAudio */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]) === "function" && _g || Object])
 ], LoginPage);
 
+var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=login.js.map
 
 /***/ }),

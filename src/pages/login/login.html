@@ -7,58 +7,63 @@
 
 
 
-<ion-content fullscreen>
-    <img class="picture" src="spotify_logo.png">
-<!-- 
-    <ion-slides pager>
-        <ion-slide *ngFor="let slide of slides">
-          <ion-toolbar>
-            <ion-buttons end>
-              <button ion-button color="primary">Skip</button>
-            </ion-buttons>
-          </ion-toolbar>
-          <img [src]="slide.image" class="slide-image"/>
-          <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-          <p [innerHTML]="slide.description"></p>
-        </ion-slide>
-        <ion-slide>
-          <ion-toolbar>
-          </ion-toolbar>
-          <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
-          <h2 class="slide-title">Ready to Play?</h2>
-          <button ion-button large clear icon-end color="primary">
-            Continue
-            <ion-icon name="arrow-forward"></ion-icon>
-          </button>
-        </ion-slide>
-      </ion-slides> -->
+<!-- <ion-content fullscreen class="tutorial-page">
 
-  <!-- <ion-buttons>
-    <button class="fb" ion-button (click)="loginFB()">
-      login with FACEBOOK
+  <img class="picture" src="spotify_logo.png">
+
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <h2 class="slide-title">Ready to Play?</h2>
+    </ion-slide>
+  </ion-slides>
+
+
+  <ion-buttons text-center>
+    <button ion-button class="create" round>
+      CREATE ACCOUNT
     </button>
-    <button ion-button (click)="share2()">Sharing</button>
-    <button ion-button (click)="share3()">Sharing</button>
+  </ion-buttons>
 
-    <button ion-button (click)="playAudio()">Play</button>
-    <button ion-button (click)="stopAudio()">Stop</button>
+  <div class="already" text-center>
+    Already a user?
+  </div>
 
-    <button ion-button (click)="loginface()">LOG IN</button>
+  <ion-buttons text-center>
+    <button ion-button class="login" round (click)="loginface()">
+      LOG IN
+    </button>
+  </ion-buttons>
+</ion-content> -->
+
+  
+  <ion-content fullscreen class="tutorial-page">
+
+      <img class="picture" src="spotify_logo.png">
+
+    <ion-slides pager style="max-height:200px;margin-top: 100px">
+      <ion-slide *ngFor="let slide of slides">   
+        <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+        <p [innerHTML]="slide.description"></p>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-buttons text-center>
+        <button ion-button class="create" round>
+          CREATE ACCOUNT
+        </button>
+      </ion-buttons>
     
-  </ion-buttons> -->
-  <ion-buttons text-center>
-      <button ion-button class="create" round>
-        CREATE ACCOUNT
-      </button>
-    </ion-buttons>
-
-    <div class="already" text-center>
-      Already a user?
-    </div>
-
-  <ion-buttons text-center>
-      <button ion-button class="login" round (click)="loginface()">
-        LOG IN
-      </button>
-    </ion-buttons>
-</ion-content>
+      <div class="already" text-center>
+        Already a user?
+      </div>
+    
+      <ion-buttons text-center>
+        <button ion-button class="login" round (click)="loginface()">
+          LOG IN
+        </button>
+      </ion-buttons>
+  </ion-content>

@@ -30577,7 +30577,7 @@ page-login .create {
   width: 80%;
   letter-spacing: 1.5px;
   background-color: #35e247;
-  margin-top: 320px;
+  margin-top: 100px;
 }
 
 page-login .already {
@@ -30592,6 +30592,25 @@ page-login .login {
   letter-spacing: 1.5px;
   background-color: white;
   margin-top: 7px;
+}
+
+page-login .tutorial-page .slide-title {
+  margin-top: 2.8rem;
+}
+
+page-login .tutorial-page b {
+  font-weight: 500;
+}
+
+page-login .tutorial-page p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #60646B;
+}
+
+page-login .tutorial-page p b {
+  color: #000000;
 }
 
 page-loginface .fb {
