@@ -60,13 +60,7 @@ export class LoginPage {
   //     });
   // }
 
-  share2(){
-    this.socialSharing.canShareViaEmail().then(() => {
-      this.socialSharing.shareViaEmail('Hello', 'Subject', ['guysanook14@gmail.com']);
-    }).catch(() => {
-  console.log('Error');
-    });
-  }
+  
 
   share3(){
     this.socialSharing.canShareVia('com.apple.social.facebook', 'hello', 'subject', 'image', 'url').then(() => {
