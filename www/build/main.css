@@ -30563,7 +30563,7 @@ page-home img.imgicon {
 page-login .picture {
   width: 200px;
   margin: auto auto;
-  margin-top: 80px;
+  margin-top: 100px;
   display: block;
 }
 
@@ -30577,7 +30577,7 @@ page-login .create {
   width: 80%;
   letter-spacing: 1.5px;
   background-color: #35e247;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 page-login .already {
@@ -30596,6 +30596,8 @@ page-login .login {
 
 page-login .tutorial-page .slide-title {
   margin-top: 2.8rem;
+  color: white;
+  font-size: 20px;
 }
 
 page-login .tutorial-page b {
@@ -30736,7 +30738,7 @@ page-modals-song .inline3 {
   display: inline !important;
 }
 
-page-modals-song .more {
+page-modals-song .share-alt {
   opacity: 0.65;
   padding-left: 50px;
   font-size: 25px;

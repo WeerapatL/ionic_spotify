@@ -26,15 +26,15 @@ export class LoginfacePage {
   loginFB() {
     let permissions = new Array<string>();
     let nav = this.navCtrl;
-
-
+  
+  
     permissions = ["public_profile"];
-
+  
     this.facebook.login(permissions)
       .then((response) => {
         let userId = response.authResponse.userID;
         let params = new Array<string>();
-
+  
         this.facebook.api("/me?fields=name,gender", params)
           .then((user) => {
             user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
@@ -56,7 +56,6 @@ export class LoginfacePage {
   }
 
   ionViewDidLoad() {
-    
     console.log('ionViewDidLoad LoginfacePage');
     this.viewCtrl.setBackButtonText('');
   }

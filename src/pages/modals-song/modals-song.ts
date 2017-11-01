@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NativeAudio } from '@ionic-native/native-audio';
+import { SocialSharing } from '@ionic-native/social-sharing';
 /**
  * Generated class for the ModalsSongPage page.
  *
@@ -20,7 +21,7 @@ repeat:boolean;
 startSong:any=0.00;
 
 
-  constructor(public nativeAudio: NativeAudio,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private socialSharing:SocialSharing,public nativeAudio: NativeAudio,public navCtrl: NavController, public navParams: NavParams) {
   
   }
 
@@ -46,6 +47,14 @@ startSong:any=0.00;
     //   buttons: ['OK']
     // });
     // alert.present();
+  }
+
+  share2(){
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotufy', 'Spotify Sharing', ['']);
+    }).catch(() => {
+  console.log('Error');
+    });
   }
 
   stopAudio(){

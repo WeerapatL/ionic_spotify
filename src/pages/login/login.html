@@ -44,7 +44,7 @@
 
       <img class="picture" src="spotify_logo.png">
 
-    <ion-slides pager style="max-height:200px;margin-top: 100px">
+    <ion-slides pager style="max-height:200px;margin-top: 80px" autoplay="3800" loop="true" speed="500">
       <ion-slide *ngFor="let slide of slides">   
         <h2 class="slide-title" [innerHTML]="slide.title"></h2>
         <p [innerHTML]="slide.description"></p>
