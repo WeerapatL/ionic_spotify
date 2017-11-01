@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { SharePage } from '../share/share';
 /**
  * Generated class for the ModalsSongPage page.
  *
@@ -38,6 +39,10 @@ startSong:any=0.00;
     this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
   }
 
+  sharePage(){
+    this.navCtrl.push(SharePage);
+  }
+
   playAudio(){
     this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
 
@@ -49,13 +54,7 @@ startSong:any=0.00;
     // alert.present();
   }
 
-  share2(){
-    this.socialSharing.canShareViaEmail().then(() => {
-      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
-    }).catch(() => {
-  console.log('Error');
-    });
-  }
+ 
 
   stopAudio(){
     this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');

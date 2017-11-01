@@ -36,7 +36,7 @@
       <p class="p1">Territory</p>
       <p class="p2">The Blaze</p>
     </div>
-    <ion-icon class="share-alt" name="share-alt" (click)="share2()"></ion-icon>
+    <ion-icon class="share-alt" name="share-alt" (click)="sharePage()"></ion-icon>
   </div>
   <ion-item class="item" no-lines>
     <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">
@@ -47,7 +47,7 @@
   <div class="div1">
     <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>
     <ion-icon class="backward" name="skip-backward"></ion-icon>
-    <ion-icon class="play" (click)="changeButton()" [name]="status? 'pause':'play'"></ion-icon>
+    <ion-icon class="play"  (click)="changeButton()" [name]="status? 'pause':'play'"></ion-icon>
     <ion-icon class="forward" name="skip-forward"></ion-icon>
     <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>
   </div>

@@ -1,0 +1,31 @@
+<!--
+  Generated template for the SharePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="toolbar">
+    <ion-title>Share</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+  <ion-list no-lines>
+    <button class="background" ion-item full (click)="shareEmail()">
+      <ion-icon class="icon" name="mail" item-start></ion-icon>
+      Email
+    </button>
+    <button class="background" ion-item full (click)="shareTwitter()">
+      <ion-icon class="icon" name="twitter" item-start></ion-icon>
+      Twitter
+    </button>
+    <button class="background" ion-item full (click)="shareFacebook()">
+      <ion-icon class="icon" name="facebook" item-start></ion-icon>
+      Facebook
+    </button>
+  </ion-list>
+</ion-content>
