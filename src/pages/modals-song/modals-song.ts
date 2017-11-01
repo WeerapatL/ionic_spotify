@@ -51,7 +51,7 @@ startSong:any=0.00;
 
   share2(){
     this.socialSharing.canShareViaEmail().then(() => {
-      this.socialSharing.shareViaEmail('Invite to listen music on Spotufy', 'Spotify Sharing', ['']);
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
     }).catch(() => {
   console.log('Error');
     });
