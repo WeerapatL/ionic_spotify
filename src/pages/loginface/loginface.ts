@@ -3,7 +3,6 @@ import { ViewController,NavController, NavParams } from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { HomePage } from '../home/home';
-
 /**
  * Generated class for the LoginfacePage page.
  *
@@ -22,6 +21,7 @@ export class LoginfacePage {
   constructor(public nativeStorage: NativeStorage,public facebook: Facebook,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
     this.facebook.browserInit(this.FB_APP_ID);
   }
+
 
   loginFB() {
     let permissions = new Array<string>();
@@ -56,6 +56,7 @@ export class LoginfacePage {
   }
 
   ionViewDidLoad() {
+    
     console.log('ionViewDidLoad LoginfacePage');
     this.viewCtrl.setBackButtonText('');
   }
