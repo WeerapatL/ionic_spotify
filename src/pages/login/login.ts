@@ -62,6 +62,14 @@ export class LoginPage {
     this.navCtrl.push(LoginfacePage);
   }
 
+  share2(){
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+    }).catch(() => {
+  console.log('Error');
+    });
+  }
+
 
 
 }

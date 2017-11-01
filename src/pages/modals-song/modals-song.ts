@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { AlertController, NavController, NavParams } from 'ionic-angular';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { SocialSharing } from '@ionic-native/social-sharing';
 /**
@@ -15,14 +15,14 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 })
 export class ModalsSongPage {
 
-status:boolean;
-shuffle:boolean;
-repeat:boolean;
-startSong:any=0.00;
+  status: boolean;
+  shuffle: boolean;
+  repeat: boolean;
+  startSong: any = 0.00;
 
 
-  constructor(private socialSharing:SocialSharing,public nativeAudio: NativeAudio,public navCtrl: NavController, public navParams: NavParams) {
-  
+  constructor(public alertCtrl: AlertController, private socialSharing: SocialSharing, public nativeAudio: NativeAudio, public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   // play(){
@@ -32,14 +32,22 @@ startSong:any=0.00;
   //   console.log('success preloading', data);
   //   this.nativeAudio.play('track1').then(this.onSuccessPlaying, this.onError);
   // }
-  
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalsSongPage');
     this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
   }
 
-  playAudio(){
-    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
+  share2() {
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+    }).catch(() => {
+      console.log('Error');
+    });
+  }
+
+  playAudio() {
+    this.nativeAudio.play('audio2', () => console.log('audio2 is done playing'));
 
     // const alert = this.alertCtrl.create({
     //   title: 'Played',
@@ -49,16 +57,8 @@ startSong:any=0.00;
     // alert.present();
   }
 
-  share2(){
-    this.socialSharing.canShareViaEmail().then(() => {
-      this.socialSharing.shareViaEmail('Invite to listen music on Spotufy', 'Spotify Sharing', ['']);
-    }).catch(() => {
-  console.log('Error');
-    });
-  }
-
-  stopAudio(){
-    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+  stopAudio() {
+    this.nativeAudio.stop('audio2'), () => console.log('audio2 is done stopped');
 
     // const alert = this.alertCtrl.create({
     //   title: 'Stopped',
@@ -66,34 +66,34 @@ startSong:any=0.00;
     //   buttons: ['OK']
     // });
     // alert.present();
-    
-  }
-  
-  changeShuffle(){
-    this.shuffle= !this.shuffle;
+
   }
 
-  changeRepeat(){
-    this.repeat= !this.repeat;
-    if(this.repeat==true){
+  changeShuffle() {
+    this.shuffle = !this.shuffle;
+  }
+
+  changeRepeat() {
+    this.repeat = !this.repeat;
+    if (this.repeat == true) {
       this.nativeAudio.loop('audio2');
     }
   }
 
   changeButton() {
     this.status = !this.status;
-    if(this.status==true){
-      this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
-    }else{
-      this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+    if (this.status == true) {
+      this.nativeAudio.play('audio2', () => console.log('audio2 is done playing'));
+    } else {
+      this.nativeAudio.stop('audio2'), () => console.log('audio2 is done stopped');
     }
   }
 
-  closeTapped(){
+  closeTapped() {
     this.navCtrl.pop();
   }
-  
-  
 
-  
+
+
+
 }
