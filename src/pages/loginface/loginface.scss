@@ -14,7 +14,7 @@ page-loginface {
     .or{
         font-size: 15px;
         color: white;
-        opacity: 0.50;
+        opacity: 0.8;
         margin-top: 10px;
         margin-bottom: 15px; 
     }
@@ -25,16 +25,25 @@ page-loginface {
         width: 50%;
         letter-spacing: 1.5px;
         background-color:#4BD35A;
-        margin-top: -10px;
+        margin-top: 25px;
+        opacity: 0.6;
         
     }
 
     .forgot{
         font-size: 15px;
         color: white;
-        opacity: 0.50;
+        opacity: 0.8;
         margin-top: 25px;
         
+    }
+
+    .padding{
+        margin: auto auto;
+        width: 90%;
+        color: white;
+        background-color: rgb(54, 54, 54);
+        opacity: 0.9;
     }
 
 }

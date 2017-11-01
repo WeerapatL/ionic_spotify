@@ -6,6 +6,7 @@ import { PlaybackPage } from '../../pages/playback/playback';
 
 import { ModalController } from 'ionic-angular';
 import { ModalsSongPage } from '../modals-song/modals-song';
+import {LoginPage} from '../../pages/login/login';
 
 
 /**
@@ -47,7 +48,7 @@ export class SettingPage {
         {
           text: 'Log out',
           handler: () => {
-            this.navCtrl.push(HomePage);
+            this.navCtrl.push(LoginPage);
           }
         }
       ]

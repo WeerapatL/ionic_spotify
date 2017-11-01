@@ -22,43 +22,43 @@ import { LoginfacePage } from '../../pages/loginface/loginface';
 })
 export class LoginPage {
 
-  FB_APP_ID: 312414275832004;
+  // FB_APP_ID: 312414275832004;
 
   constructor(public alertCtrl: AlertController,public nativeAudio: NativeAudio,private socialSharing:SocialSharing,public nativeStorage: NativeStorage, public navCtrl: NavController, public navParams: NavParams, public facebook: Facebook) {
-    this.facebook.browserInit(this.FB_APP_ID);
+    // this.facebook.browserInit(this.FB_APP_ID);
   }
 
-  loginFB() {
-    let permissions = new Array<string>();
-    let nav = this.navCtrl;
+  // loginFB() {
+  //   let permissions = new Array<string>();
+  //   let nav = this.navCtrl;
 
 
-    permissions = ["public_profile"];
+  //   permissions = ["public_profile"];
 
-    this.facebook.login(permissions)
-      .then((response) => {
-        let userId = response.authResponse.userID;
-        let params = new Array<string>();
+  //   this.facebook.login(permissions)
+  //     .then((response) => {
+  //       let userId = response.authResponse.userID;
+  //       let params = new Array<string>();
 
-        this.facebook.api("/me?fields=name,gender", params)
-          .then((user) => {
-            user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
-            this.nativeStorage.setItem('user',
-              {
-                name: user.name,
-                gender: user.gender,
-                picture: user.picture
-              })
-              .then(() => {
-                nav.push(HomePage);
-              }, (error) => {
-                console.log(error);
-              })
-          })
-      }, (error) => {
-        console.log(error);
-      });
-  }
+  //       this.facebook.api("/me?fields=name,gender", params)
+  //         .then((user) => {
+  //           user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
+  //           this.nativeStorage.setItem('user',
+  //             {
+  //               name: user.name,
+  //               gender: user.gender,
+  //               picture: user.picture
+  //             })
+  //             .then(() => {
+  //               nav.push(HomePage);
+  //             }, (error) => {
+  //               console.log(error);
+  //             })
+  //         })
+  //     }, (error) => {
+  //       console.log(error);
+  //     });
+  // }
 
   share2(){
     this.socialSharing.canShareViaEmail().then(() => {
@@ -76,11 +76,11 @@ export class LoginPage {
     });
   }
 
-  ionViewDidLoad(){
-    this.nativeAudio.preloadSimple('audio1','audio/TheBlaze.mp3');
-    this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
-    console.log('ionViewDidLoad LoginPage');
-  }
+  // ionViewDidLoad(){
+  //   this.nativeAudio.preloadSimple('audio1','audio/TheBlaze.mp3');
+  //   this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
+  //   console.log('ionViewDidLoad LoginPage');
+  // }
 
   loginface() {
     this.navCtrl.push(LoginfacePage);

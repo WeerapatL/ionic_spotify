@@ -8,9 +8,32 @@
 
 
 <ion-content fullscreen>
-  <ion-title>Log in</ion-title>
+    <img class="picture" src="spotify_logo.png">
+<!-- 
+    <ion-slides pager>
+        <ion-slide *ngFor="let slide of slides">
+          <ion-toolbar>
+            <ion-buttons end>
+              <button ion-button color="primary">Skip</button>
+            </ion-buttons>
+          </ion-toolbar>
+          <img [src]="slide.image" class="slide-image"/>
+          <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+          <p [innerHTML]="slide.description"></p>
+        </ion-slide>
+        <ion-slide>
+          <ion-toolbar>
+          </ion-toolbar>
+          <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+          <h2 class="slide-title">Ready to Play?</h2>
+          <button ion-button large clear icon-end color="primary">
+            Continue
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-slide>
+      </ion-slides> -->
 
-  <ion-buttons>
+  <!-- <ion-buttons>
     <button class="fb" ion-button (click)="loginFB()">
       login with FACEBOOK
     </button>
@@ -22,5 +45,20 @@
 
     <button ion-button (click)="loginface()">LOG IN</button>
     
-  </ion-buttons>
+  </ion-buttons> -->
+  <ion-buttons text-center>
+      <button ion-button class="create" round>
+        CREATE ACCOUNT
+      </button>
+    </ion-buttons>
+
+    <div class="already" text-center>
+      Already a user?
+    </div>
+
+  <ion-buttons text-center>
+      <button ion-button class="login" round (click)="loginface()">
+        LOG IN
+      </button>
+    </ion-buttons>
 </ion-content>

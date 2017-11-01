@@ -1,7 +1,41 @@
 page-login {
-    .fb{
-        border-radius: 30px;
-        background-color:#3B5998;
+   .picture{
+    width: 200px;  
+    margin: auto auto;
+    margin-top: 80px;
+    display: block;
+    
+   }
+   .content{
+       background-color: skyblue;
 
+   }
+   
+   .create{
+    font-weight: bold;   
+    color: white;
+    width: 80%;
+    letter-spacing: 1.5px;
+    background-color:rgb(53, 226, 71);
+    margin-top: 320px;
+   }
+   
+   .already{
+    color: white;
+    margin-top: 7px;
+        
     }
-}
+
+   .login{
+    font-weight: bold;   
+    color: black;
+    width: 80%;
+    letter-spacing: 1.5px;
+    background-color:white;
+    margin-top: 7px;
+    
+    }
+
+    
+    }
+

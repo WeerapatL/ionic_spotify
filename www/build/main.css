@@ -14052,16 +14052,16 @@ ion-textarea {
 }
 
 .text-input::-moz-placeholder {
-  color: #000;
+  color: #fff;
 }
 
 .text-input:-ms-input-placeholder {
-  color: #000;
+  color: #fff;
 }
 
 .text-input::-webkit-input-placeholder {
   text-indent: 0;
-  color: #000;
+  color: #fff;
 }
 
 textarea.text-input {
@@ -30560,9 +30560,38 @@ page-home img.imgicon {
   height: 23px;
 }
 
-page-login .fb {
-  border-radius: 30px;
-  background-color: #3B5998;
+page-login .picture {
+  width: 200px;
+  margin: auto auto;
+  margin-top: 80px;
+  display: block;
+}
+
+page-login .content {
+  background-color: skyblue;
+}
+
+page-login .create {
+  font-weight: bold;
+  color: white;
+  width: 80%;
+  letter-spacing: 1.5px;
+  background-color: #35e247;
+  margin-top: 320px;
+}
+
+page-login .already {
+  color: white;
+  margin-top: 7px;
+}
+
+page-login .login {
+  font-weight: bold;
+  color: black;
+  width: 80%;
+  letter-spacing: 1.5px;
+  background-color: white;
+  margin-top: 7px;
 }
 
 page-loginface .fb {
@@ -30581,7 +30610,7 @@ page-loginface .content {
 page-loginface .or {
   font-size: 15px;
   color: white;
-  opacity: 0.50;
+  opacity: 0.8;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -30592,14 +30621,23 @@ page-loginface .login {
   width: 50%;
   letter-spacing: 1.5px;
   background-color: #4BD35A;
-  margin-top: -10px;
+  margin-top: 25px;
+  opacity: 0.6;
 }
 
 page-loginface .forgot {
   font-size: 15px;
   color: white;
-  opacity: 0.50;
+  opacity: 0.8;
   margin-top: 25px;
+}
+
+page-loginface .padding {
+  margin: auto auto;
+  width: 90%;
+  color: white;
+  background-color: #363636;
+  opacity: 0.9;
 }
 
 page-modals-song div.artist {
