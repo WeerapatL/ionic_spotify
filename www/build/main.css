@@ -31295,3 +31295,12 @@ page-setting img.imgicon {
 page-setting ion-title.postition {
   position: absolute;
 }
+
+page-share .background {
+  background-color: black;
+  color: white;
+}
+
+page-share ion-icon.buttonColor {
+  color: white;
+}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
+import { AlertController,NavController, NavParams } from 'ionic-angular';
+import { SocialSharing } from '@ionic-native/social-sharing';
 /**
  * Generated class for the SharePage page.
  *
@@ -14,7 +14,49 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class SharePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private socialSharing:SocialSharing,public navCtrl: NavController, public navParams: NavParams,private alertCtrl:AlertController) {
+    
+  }
+
+  share2(){
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+    }).catch(() => {
+  console.log('Error');
+    });
+  }
+
+  shareEmail(){
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+    }).catch(() => {
+  console.log('Error');
+
+  const alert = this.alertCtrl.create({
+    title: 'Log Out',
+    message: 'Are you sure you want to log out?',
+    buttons: [
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+        
+      }
+      
+    ]
+});
+  alert.present();
+    });
+  }
+
+  shareTwitter(){
+    this.socialSharing.shareViaTwitter('ionic test',null,null);
+  }
+
+  shareFacebook(){
+    this.socialSharing.shareViaFacebook('ionic test',null,null);
   }
 
   ionViewDidLoad() {

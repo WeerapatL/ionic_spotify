@@ -3,6 +3,8 @@ import { ViewController,NavController, NavParams } from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { HomePage } from '../home/home';
+import { TabsPage } from '../../pages/tabs/tabs';
+
 /**
  * Generated class for the LoginfacePage page.
  *
@@ -45,7 +47,7 @@ export class LoginfacePage {
                 picture: user.picture
               })
               .then(() => {
-                nav.push(HomePage);
+                nav.push(TabsPage);
               }, (error) => {
                 console.log(error);
               })
@@ -58,6 +60,9 @@ export class LoginfacePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginfacePage');
     this.viewCtrl.setBackButtonText('');
+  }
+  home(){
+    this.navCtrl.push(TabsPage);
   }
 
 }

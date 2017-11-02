@@ -11,7 +11,7 @@ import { LoginfacePage } from '../pages/loginface/loginface';
 })
 export class MyApp {
   
-  // @ViewChild('myNav')nav;
+  @ViewChild('myNav')nav;
 
   rootPage:any = TabsPage;
 
@@ -26,7 +26,7 @@ export class MyApp {
   }
 
   ngAfterViewInit(){
-    // this.nav.push(LoginPage);
+    this.nav.push(LoginPage);
   }
 
 

@@ -70,6 +70,32 @@ export class LoginPage {
     });
   }
 
+  shareEmail(){
+    this.socialSharing.canShareViaEmail().then(() => {
+      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+   
+    }).catch(() => {
+  console.log('Error');
+
+  const alert = this.alertCtrl.create({
+    title: 'Log Out',
+    message: 'Are you sure you want to log out?',
+    buttons: [
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+        
+      }
+      
+    ]
+});
+  alert.present();
+    });
+  }
+
 
 
 }

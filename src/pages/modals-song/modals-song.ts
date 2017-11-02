@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AlertController, NavController, NavParams } from 'ionic-angular';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { SharePage } from '../share/share';
 /**
  * Generated class for the ModalsSongPage page.
  *
@@ -38,16 +39,12 @@ export class ModalsSongPage {
     this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
   }
 
-  share2() {
-    this.socialSharing.canShareViaEmail().then(() => {
-      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
-    }).catch(() => {
-      console.log('Error');
-    });
+  sharePage(){
+    this.navCtrl.push(SharePage);
   }
 
-  playAudio() {
-    this.nativeAudio.play('audio2', () => console.log('audio2 is done playing'));
+  playAudio(){
+    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
 
     // const alert = this.alertCtrl.create({
     //   title: 'Played',
@@ -57,8 +54,10 @@ export class ModalsSongPage {
     // alert.present();
   }
 
-  stopAudio() {
-    this.nativeAudio.stop('audio2'), () => console.log('audio2 is done stopped');
+ 
+
+  stopAudio(){
+    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
 
     // const alert = this.alertCtrl.create({
     //   title: 'Stopped',
