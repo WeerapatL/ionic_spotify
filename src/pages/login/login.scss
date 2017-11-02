@@ -6,8 +6,12 @@ page-login {
     display: block;
     
    }
-   .content{
-       background-color: skyblue;
+  //  .content{
+  //      background-color: skyblue;
+
+  //  }
+   ion-content{
+     background: url("../blackc.jpg") no-repeat center;
 
    }
    
@@ -67,7 +71,7 @@ page-login {
             padding: 0 40px;
             font-size: 14px;
             line-height: 1.5;
-            color: #60646B;
+            color: white;
         
             b {
               color: #000000;

@@ -92,6 +92,12 @@ export class ModalsSongPage {
     this.navCtrl.pop();
   }
 
+  slideData = [
+    {image: "blaze.png"},
+    {image:"RollingIntheDeep.jpg"},
+    {image:"SetFiretotheRain.jpeg"}
+  ]
+
 
 
 

@@ -17,18 +17,24 @@
 </ion-header>
 
 <ion-content fullscreen>
-  <ion-slides spaceBetween="-60">
+  <!-- <ion-slides>
     <ion-slide>
-      <img class="cover" src="blaze.png">
+      <img class="slide-image" src="blaze.png">
     </ion-slide>
     <ion-slide>       
-      <img class="cover" src="RollingIntheDeep.jpg">
+      <img class="slide-image" src="RollingIntheDeep.jpg">
     </ion-slide>
     <ion-slide>
-      <img class="cover" src="SetFiretotheRain.jpeg">
+      <img class="slide-image" src="SetFiretotheRain.jpeg">
     </ion-slide>
+  </ion-slides> -->
+<div class="slide">
+  <ion-slides>
+<ion-slide *ngFor = "let slide of slideData">
+  <img src="{{slide.image}}">
+</ion-slide>
   </ion-slides>
-
+</div>
   
   <div class="div">
     <ion-icon class="add" name="add"></ion-icon>

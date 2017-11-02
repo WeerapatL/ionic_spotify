@@ -30567,8 +30567,8 @@ page-login .picture {
   display: block;
 }
 
-page-login .content {
-  background-color: skyblue;
+page-login ion-content {
+  background: url("../blackc.jpg") no-repeat center;
 }
 
 page-login .create {
@@ -30608,7 +30608,7 @@ page-login .tutorial-page p {
   padding: 0 40px;
   font-size: 14px;
   line-height: 1.5;
-  color: #60646B;
+  color: white;
 }
 
 page-login .tutorial-page p b {
@@ -30679,6 +30679,15 @@ page-modals-song p.artist {
 page-modals-song .cover {
   height: 260px;
   width: 240px;
+}
+
+page-modals-song .slide-image {
+  height: 300px;
+  width: 100%;
+}
+
+page-modals-song .slide {
+  padding-left: 30px;
 }
 
 page-modals-song ion-slides {
