@@ -39,39 +39,6 @@ export class ModalsSongPage {
     this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
   }
 
-  sharePage(){
-    this.navCtrl.push(SharePage);
-  }
-
-  playAudio(){
-    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
-
-    // const alert = this.alertCtrl.create({
-    //   title: 'Played',
-    //   subTitle: 'Song has played',
-    //   buttons: ['OK']
-    // });
-    // alert.present();
-  }
-
- 
-
-  stopAudio(){
-    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
-
-    // const alert = this.alertCtrl.create({
-    //   title: 'Stopped',
-    //   subTitle: 'Song has stopped',
-    //   buttons: ['OK']
-    // });
-    // alert.present();
-
-  }
-
-  changeShuffle() {
-    this.shuffle = !this.shuffle;
-  }
-
   changeRepeat() {
     this.repeat = !this.repeat;
     if (this.repeat == true) {
@@ -88,6 +55,25 @@ export class ModalsSongPage {
     }
   }
 
+
+  playAudio(){
+    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
+  }
+
+  stopAudio(){
+    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+  }
+
+  sharePage(){
+    this.navCtrl.push(SharePage);
+  }
+  
+  changeShuffle() {
+    this.shuffle = !this.shuffle;
+  }
+
+  
+
   closeTapped() {
     this.navCtrl.pop();
   }
@@ -97,7 +83,6 @@ export class ModalsSongPage {
     {image:"RollingIntheDeep.jpg"},
     {image:"SetFiretotheRain.jpeg"}
   ]
-
 
 
 

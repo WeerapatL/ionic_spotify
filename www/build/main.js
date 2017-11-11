@@ -559,20 +559,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var SharePage = (function () {
-    function SharePage(socialSharing, navCtrl, navParams, alertCtrl) {
+    function SharePage(viewCtrl, socialSharing, navCtrl, navParams, alertCtrl) {
+        this.viewCtrl = viewCtrl;
         this.socialSharing = socialSharing;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.alertCtrl = alertCtrl;
     }
-    SharePage.prototype.share2 = function () {
-        var _this = this;
-        this.socialSharing.canShareViaEmail().then(function () {
-            _this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
-        }).catch(function () {
-            console.log('Error');
-        });
-    };
     SharePage.prototype.shareEmail = function () {
         var _this = this;
         this.socialSharing.canShareViaEmail().then(function () {
@@ -580,12 +573,12 @@ var SharePage = (function () {
         }).catch(function () {
             console.log('Error');
             var alert = _this.alertCtrl.create({
-                title: 'Log Out',
-                message: 'Are you sure you want to log out?',
+                title: 'Share fail !',
+                message: 'You must login mail on your device',
                 buttons: [
                     {
-                        text: 'Cancel',
-                        role: 'cancel',
+                        text: 'Close',
+                        role: 'Close',
                         handler: function () {
                             console.log('Cancel clicked');
                         }
@@ -603,14 +596,15 @@ var SharePage = (function () {
     };
     SharePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad SharePage');
+        this.viewCtrl.setBackButtonText('');
     };
     return SharePage;
 }());
 SharePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-share',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\share\share.html"*/'<!--\n  Generated template for the SharePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="toolbar">\n    <ion-title>Share</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="background">\n  <ion-list no-lines>\n    <button class="background" ion-item full (click)="shareEmail()">\n      <ion-icon class="icon" name="mail" item-start></ion-icon>\n      Email\n    </button>\n    <button class="background" ion-item full (click)="shareTwitter()">\n      <ion-icon class="icon" name="twitter" item-start></ion-icon>\n      Twitter\n    </button>\n    <button class="background" ion-item full (click)="shareFacebook()">\n      <ion-icon class="icon" name="facebook" item-start></ion-icon>\n      Facebook\n    </button>\n  </ion-list>\n\n  <ion-buttons text-center>\n    <button ion-button class="login" round (click)="share2()">\n      share\n    </button>\n  </ion-buttons>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\share\share.html"*/,
+        selector: 'page-share',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\share\share.html"*/'<!--\n  Generated template for the SharePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n    <ion-navbar color="toolbar">\n      <ion-title class="title">\n        <p class="ptitle">Share</p>\n      </ion-title>\n    </ion-navbar>\n  \n  </ion-header>\n  \n  <ion-content padding class="background">\n    <ion-list no-lines>\n      <button class="background" ion-item full (click)="shareEmail()">\n        <ion-icon class="icon" name="mail" item-start></ion-icon>\n        Email\n      </button>\n      <button class="background" ion-item full (click)="shareTwitter()">\n        <ion-icon class="icon" name="logo-twitter" item-start></ion-icon>\n        Twitter\n      </button>\n      <button class="background" ion-item full (click)="shareFacebook()">\n        <ion-icon class="icon" name="logo-facebook" item-start></ion-icon>\n        Facebook\n      </button>\n    </ion-list>\n  \n  </ion-content>\n'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\share\share.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
 ], SharePage);
 
 //# sourceMappingURL=share.js.map
@@ -944,30 +938,6 @@ var ModalsSongPage = (function () {
         console.log('ionViewDidLoad ModalsSongPage');
         this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
     };
-    ModalsSongPage.prototype.sharePage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__share_share__["a" /* SharePage */]);
-    };
-    ModalsSongPage.prototype.playAudio = function () {
-        this.nativeAudio.play('audio2', function () { return console.log('audio2 is done playing'); });
-        // const alert = this.alertCtrl.create({
-        //   title: 'Played',
-        //   subTitle: 'Song has played',
-        //   buttons: ['OK']
-        // });
-        // alert.present();
-    };
-    ModalsSongPage.prototype.stopAudio = function () {
-        this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
-        // const alert = this.alertCtrl.create({
-        //   title: 'Stopped',
-        //   subTitle: 'Song has stopped',
-        //   buttons: ['OK']
-        // });
-        // alert.present();
-    };
-    ModalsSongPage.prototype.changeShuffle = function () {
-        this.shuffle = !this.shuffle;
-    };
     ModalsSongPage.prototype.changeRepeat = function () {
         this.repeat = !this.repeat;
         if (this.repeat == true) {
@@ -983,6 +953,18 @@ var ModalsSongPage = (function () {
             this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
         }
     };
+    ModalsSongPage.prototype.playAudio = function () {
+        this.nativeAudio.play('audio2', function () { return console.log('audio2 is done playing'); });
+    };
+    ModalsSongPage.prototype.stopAudio = function () {
+        this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
+    };
+    ModalsSongPage.prototype.sharePage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__share_share__["a" /* SharePage */]);
+    };
+    ModalsSongPage.prototype.changeShuffle = function () {
+        this.shuffle = !this.shuffle;
+    };
     ModalsSongPage.prototype.closeTapped = function () {
         this.navCtrl.pop();
     };
@@ -990,7 +972,7 @@ var ModalsSongPage = (function () {
 }());
 ModalsSongPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n  <ion-toolbar color="toolbar">\n    <ion-buttons (click)="closeTapped()">\n      <button ion-button icon-right>\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end (click)="closeTapped()">\n      <button ion-button icon-left>\n        <ion-icon class="color" name="list"></ion-icon>\n      </button>\n    </ion-buttons>\n    <div class="artist">Playing music from\n      <p class="artist">The Blaze</p>\n    </div>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content fullscreen>\n  <!-- <ion-slides>\n    <ion-slide>\n      <img class="slide-image" src="blaze.png">\n    </ion-slide>\n    <ion-slide>       \n      <img class="slide-image" src="RollingIntheDeep.jpg">\n    </ion-slide>\n    <ion-slide>\n      <img class="slide-image" src="SetFiretotheRain.jpeg">\n    </ion-slide>\n  </ion-slides> -->\n<div class="slide">\n  <ion-slides>\n<ion-slide *ngFor = "let slide of slideData">\n  <img src="{{slide.image}}">\n</ion-slide>\n  </ion-slides>\n</div>\n  \n  <div class="div">\n    <ion-icon class="add" name="add"></ion-icon>\n    <div class="song">\n      <p class="p1">Territory</p>\n      <p class="p2">The Blaze</p>\n    </div>\n    <ion-icon class="share-alt" name="share-alt" (click)="sharePage()"></ion-icon>\n  </div>\n  <ion-item class="item" no-lines>\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n      <ion-label range-left>0:00</ion-label>\n      <ion-label range-right>4:00</ion-label>\n    </ion-range>\n  </ion-item>\n  <div class="div1">\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n    <ion-icon class="play"  (click)="changeButton()" [name]="status? \'pause\':\'play\'"></ion-icon>\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
+        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n  <ion-toolbar color="toolbar">\n    <ion-buttons (click)="closeTapped()">\n      <button ion-button icon-right>\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end (click)="closeTapped()">\n      <button ion-button icon-left>\n        <ion-icon class="color" name="list"></ion-icon>\n      </button>\n    </ion-buttons>\n    <div class="artist">Playing music from\n      <p class="artist">The Blaze</p>\n    </div>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content fullscreen>\n<div class="slide">\n  <ion-slides>\n<ion-slide *ngFor = "let slide of slideData">\n  <img src="{{slide.image}}">\n</ion-slide>\n  </ion-slides>\n</div>\n  \n  <div class="div">\n    <ion-icon class="add" name="add"></ion-icon>\n    <div class="song">\n      <p class="p1">Territory</p>\n      <p class="p2">The Blaze</p>\n    </div>\n    <ion-icon class="share-alt" name="share-alt" (click)="sharePage()"></ion-icon>\n  </div>\n  <ion-item class="item" no-lines>\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n      <ion-label range-left>0:00</ion-label>\n      <ion-label range-right>4:00</ion-label>\n    </ion-range>\n  </ion-item>\n  <div class="div1">\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n    <ion-icon class="play"  (click)="changeButton()" [name]="status? \'pause\':\'play\'"></ion-icon>\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], ModalsSongPage);
@@ -1075,7 +1057,7 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\profile\profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar hideBackButton>\n\n    <ion-icon name="arrow-back" class="backIcon" color="light" (click)="back()"></ion-icon>\n\n      <img class="image" src="user.png">\n    \n    <div class="textName">\n      {{user.name}}\n    </div>\n  <div text-center>\n    <button class=" buttonFriend" ion-button round small (click)="findfriends()"> \n            <div class="textFriend">\n               FIND FRIENDS \n              </div>\n        </button>\n  </div>\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content  class="ion-content" fullscreen>\n  <!-- <img src ={{ImageUrl}} class="picture">\n  <div class="text">\n    Mr.Spotify the Jook Slayer\n  </div>\n  <button ion-button color="light" round small class="button">\n      Find friends\n  </button> -->\n\n\n  <div class="playList1" (tap)="tapEvent1($event)">\n    {{tap1}}\n  </div>\n  <div class="follower1" (tap)="tapEvent2($event)">\n    {{tap2}}\n  </div>\n  <div class="following1" (tap)="tapEvent3($event)">\n    {{tap3}}\n  </div>\n\n\n  <div class="playList2">\n    PLAYLISTS\n  </div>\n\n  <div class="follower2">\n    FOLLOWERS\n  </div>\n\n  <div class="following2">\n    FOLLOWING\n  </div>\n\n\n  <div class="textActivity">\n    No recent activity.\n  </div>\n  <div class="textListen">\n    Check out some new music now\n  </div>\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="dark" class="footer">\n    <ion-buttons class="button" (click)="modalsTapped()">\n      <button ion-button icon-right>\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n        </button>\n    </ion-buttons>\n\n    <ion-title class="position" (click)="modalsTapped()">\n      <ion-slides>\n        <ion-slide>\n          <div class="song">\n            Songs -\n            <p class="artist">Artists</p>\n          </div>\n        </ion-slide>\n        <ion-slide>\n          <div class="song">\n            Songs2 -\n            <p class="artist">Artists2</p>\n          </div>\n        </ion-slide>\n      </ion-slides>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button ion-left (click)="changeButton()">\n            <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\profile\profile.html"*/,
+        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\profile\profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar hideBackButton>\n\n    <ion-icon name="arrow-back" class="backIcon" color="light" (click)="back()"></ion-icon>\n\n      <img class="image" src="user.png">\n    \n    <div class="textName">\n      <!-- {{user.name}} -->\n    </div>\n  <div text-center>\n    <button class=" buttonFriend" ion-button round small (click)="findfriends()"> \n            <div class="textFriend">\n               FIND FRIENDS \n              </div>\n        </button>\n  </div>\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content  class="ion-content" fullscreen>\n  <!-- <img src ={{ImageUrl}} class="picture">\n  <div class="text">\n    Mr.Spotify the Jook Slayer\n  </div>\n  <button ion-button color="light" round small class="button">\n      Find friends\n  </button> -->\n\n\n  <div class="playList1" (tap)="tapEvent1($event)">\n    {{tap1}}\n  </div>\n  <div class="follower1" (tap)="tapEvent2($event)">\n    {{tap2}}\n  </div>\n  <div class="following1" (tap)="tapEvent3($event)">\n    {{tap3}}\n  </div>\n\n\n  <div class="playList2">\n    PLAYLISTS\n  </div>\n\n  <div class="follower2">\n    FOLLOWERS\n  </div>\n\n  <div class="following2">\n    FOLLOWING\n  </div>\n\n\n  <div class="textActivity">\n    No recent activity.\n  </div>\n  <div class="textListen">\n    Check out some new music now\n  </div>\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="dark" class="footer">\n    <ion-buttons class="button" (click)="modalsTapped()">\n      <button ion-button icon-right>\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n        </button>\n    </ion-buttons>\n\n    <ion-title class="position" (click)="modalsTapped()">\n      <ion-slides>\n        <ion-slide>\n          <div class="song">\n            Songs -\n            <p class="artist">Artists</p>\n          </div>\n        </ion-slide>\n        <ion-slide>\n          <div class="song">\n            Songs2 -\n            <p class="artist">Artists2</p>\n          </div>\n        </ion-slide>\n      </ion-slides>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button ion-left (click)="changeButton()">\n            <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\profile\profile.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], ProfilePage);
@@ -1206,7 +1188,7 @@ var FindfriendsPage = (function () {
 }());
 FindfriendsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-findfriends',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\findfriends\findfriends.html"*/'<!--\n  Generated template for the FindfriendsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="toolbar">\n        <ion-title>Find Friends</ion-title>\n    </ion-navbar>\n    <ion-toolbar mode="md" color="dark">\n        <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">\n            <ion-segment-button value="friend">\n                <div class="text">FRIENDS</div>\n            </ion-segment-button>\n            <ion-segment-button value="featured">\n                <div class="text">FEATURED</div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content text-center class="ion-content" fullscreen>\n    <span *ngIf="selectedTab==\'friend\'">\n        <button class=" buttonFriend" ion-button round medium (click)="follow(amountFriend)">\n            <div class="textFriend">\n                FOLLOW ALL ({{amountFriend}})\n            </div>\n        </button>\n        <ion-searchbar placeholder="Filter" showCancelButton (ionInput)="searchFriend($event)"></ion-searchbar>\n\n        <ion-list *ngIf="!isFiltered" no-lines>\n            <ion-item *ngFor="let pointer of friendLists">\n                <ion-avatar item-start>\n                    <img src="asset/{{pointer.image}}.jpg">\n                </ion-avatar> {{pointer.name}}\n            </ion-item>\n        </ion-list>\n\n        <ion-list *ngIf="isFiltered" no-lines>\n            <ion-item *ngFor="let pointer of filterFriend">\n                <ion-avatar item-start>\n                    <img src="asset/{{pointer.image}}.jpg">\n                </ion-avatar> {{pointer.name}}\n            </ion-item>\n        </ion-list>\n    </span>\n\n    <span *ngIf="selectedTab==\'featured\'">\n\n        <ion-list no-lines>\n            <ion-item *ngFor="let pointer of featuredLists">\n                <ion-avatar item-start>\n                    <img src="{{pointer.image}}.jpg">\n                </ion-avatar> {{pointer.name}}\n            </ion-item>\n        </ion-list>\n\n    </span>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="dark" class="footer">\n      <ion-buttons class="button" (click)="modalsTapped()">\n        <button ion-button icon-right>\n            <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n          </button>\n      </ion-buttons>\n  \n      <ion-title class="position" (click)="modalsTapped()">\n        <ion-slides>\n          <ion-slide>\n            <div class="song">\n              Songs -\n              <p class="artist">Artists</p>\n            </div>\n          </ion-slide>\n          <ion-slide>\n            <div class="song">\n              Songs2 -\n              <p class="artist">Artists2</p>\n            </div>\n          </ion-slide>\n        </ion-slides>\n      </ion-title>\n  \n      <ion-buttons end>\n        <button ion-button ion-left (click)="changeButton()">\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n        </button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\findfriends\findfriends.html"*/,
+        selector: 'page-findfriends',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\findfriends\findfriends.html"*/'<!--\n  Generated template for the FindfriendsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="toolbar">\n        <ion-title>Find Friends</ion-title>\n    </ion-navbar>\n    <ion-toolbar mode="md" color="dark">\n        <ion-segment mode="md" [(ngModel)]="selectedTab" color="secondary">\n            <ion-segment-button value="friend">\n                <div class="text">FRIENDS</div>\n            </ion-segment-button>\n            <ion-segment-button value="featured">\n                <div class="text">FEATURED</div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content text-center class="ion-content" fullscreen>\n    <span *ngIf="selectedTab==\'friend\'">\n        <button class=" buttonFriend" ion-button round medium (click)="follow(amountFriend)">\n            <div class="textFriend">\n                FOLLOW ALL ({{amountFriend}})\n            </div>\n        </button>\n        <ion-searchbar placeholder="Filter" showCancelButton (ionInput)="searchFriend($event)"></ion-searchbar>\n\n        <ion-list *ngIf="!isFiltered" no-lines>\n            <ion-item *ngFor="let pointer of friendLists">\n                <ion-avatar item-start>\n                    <img src="{{pointer.image}}.jpg">\n                </ion-avatar> {{pointer.name}}\n            </ion-item>\n        </ion-list>\n\n        <ion-list *ngIf="isFiltered" no-lines>\n            <ion-item *ngFor="let pointer of filterFriend">\n                <ion-avatar item-start>\n                    <img src="{{pointer.image}}.jpg">\n                </ion-avatar> {{pointer.name}}\n            </ion-item>\n        </ion-list>\n    </span>\n\n    <span *ngIf="selectedTab==\'featured\'">\n\n        <ion-list no-lines>\n            <ion-item *ngFor="let pointer of featuredLists">\n                <ion-avatar item-start>\n                    <img src="{{pointer.image}}.jpg">\n                </ion-avatar> {{pointer.name}}\n            </ion-item>\n        </ion-list>\n\n    </span>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="dark" class="footer">\n      <ion-buttons class="button" (click)="modalsTapped()">\n        <button ion-button icon-right>\n            <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n          </button>\n      </ion-buttons>\n  \n      <ion-title class="position" (click)="modalsTapped()">\n        <ion-slides>\n          <ion-slide>\n            <div class="song">\n              Songs -\n              <p class="artist">Artists</p>\n            </div>\n          </ion-slide>\n          <ion-slide>\n            <div class="song">\n              Songs2 -\n              <p class="artist">Artists2</p>\n            </div>\n          </ion-slide>\n        </ion-slides>\n      </ion-title>\n  \n      <ion-buttons end>\n        <button ion-button ion-left (click)="changeButton()">\n              <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n        </button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-footer>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\findfriends\findfriends.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], FindfriendsPage);

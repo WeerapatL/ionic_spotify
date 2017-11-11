@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController,NavController, NavParams } from 'ionic-angular';
+import { ViewController,AlertController,NavController, NavParams } from 'ionic-angular';
 import { SocialSharing } from '@ionic-native/social-sharing';
 /**
  * Generated class for the SharePage page.
@@ -14,16 +14,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 })
 export class SharePage {
 
-  constructor(private socialSharing:SocialSharing,public navCtrl: NavController, public navParams: NavParams,private alertCtrl:AlertController) {
+  constructor(private viewCtrl: ViewController,private socialSharing:SocialSharing,public navCtrl: NavController, public navParams: NavParams,private alertCtrl:AlertController) {
     
-  }
-
-  share2(){
-    this.socialSharing.canShareViaEmail().then(() => {
-      this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
-    }).catch(() => {
-  console.log('Error');
-    });
   }
 
   shareEmail(){
@@ -33,12 +25,12 @@ export class SharePage {
   console.log('Error');
 
   const alert = this.alertCtrl.create({
-    title: 'Log Out',
-    message: 'Are you sure you want to log out?',
+    title: 'Share fail !',
+    message: 'You must login mail on your device',
     buttons: [
       {
-        text: 'Cancel',
-        role: 'cancel',
+        text: 'Close',
+        role: 'Close',
         handler: () => {
           console.log('Cancel clicked');
         }
@@ -61,6 +53,7 @@ export class SharePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SharePage');
+    this.viewCtrl.setBackButtonText('');
   }
 
 }

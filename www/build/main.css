@@ -31313,3 +31313,18 @@ page-share .background {
 page-share ion-icon.buttonColor {
   color: white;
 }
+
+page-share .toolbar-ios {
+  padding: 4px;
+  min-height: 44px;
+  padding-top: 18px;
+}
+
+page-share p.ptitle {
+  font-weight: 500;
+  padding-top: 8%;
+}
+
+page-share ion-title.title {
+  text-align: center;
+}
