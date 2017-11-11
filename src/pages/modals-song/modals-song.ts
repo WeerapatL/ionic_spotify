@@ -39,6 +39,42 @@ export class ModalsSongPage {
     this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
   }
 
+<<<<<<< HEAD
+=======
+  sharePage(){
+    this.navCtrl.push(SharePage);
+  }
+
+  playAudio(){
+    this.nativeAudio.play('audio2' ,() => console.log('audio2 is done playing'));
+
+    // const alert = this.alertCtrl.create({
+    //   title: 'Played',
+    //   subTitle: 'Song has played',
+    //   buttons: ['OK']
+    // });
+    // alert.present();
+  }
+
+ 
+
+  stopAudio(){
+    this.nativeAudio.stop('audio2'),() => console.log('audio2 is done stopped');
+
+    // const alert = this.alertCtrl.create({
+    //   title: 'Stopped',
+    //   subTitle: 'Song has stopped',
+    //   buttons: ['OK']
+    // });
+    // alert.present();
+
+  }
+
+  changeShuffle() {
+    this.shuffle = !this.shuffle;
+  }
+
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
   changeRepeat() {
     this.repeat = !this.repeat;
     if (this.repeat == true) {

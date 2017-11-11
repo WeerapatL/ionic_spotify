@@ -7,11 +7,16 @@ webpackJsonp([0],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_audio__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_loginface_loginface__ = __webpack_require__(202);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__ = __webpack_require__(21);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -170,11 +175,19 @@ TabsPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_setting_setting__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_profile_profile__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__ = __webpack_require__(109);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_setting_setting__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_profile_profile__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spotifydata_spotifydata__ = __webpack_require__(108);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modals_song_modals_song__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -323,9 +336,16 @@ webpackEmptyAsyncContext.id = 160;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginfacePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(107);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_search__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__select_select__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collection_collection__ = __webpack_require__(105);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -615,6 +635,68 @@ SharePage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__ = __webpack_require__(52);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the SharePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SharePage = (function () {
+    function SharePage(socialSharing, navCtrl, navParams) {
+        this.socialSharing = socialSharing;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    SharePage.prototype.shareEmail = function () {
+        var _this = this;
+        this.socialSharing.canShareViaEmail().then(function () {
+            _this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+        }).catch(function () {
+            console.log('Error');
+        });
+    };
+    SharePage.prototype.shareTwitter = function () {
+        this.socialSharing.shareViaTwitter('ionic test', null, null);
+    };
+    SharePage.prototype.shareFacebook = function () {
+        this.socialSharing.shareViaFacebook('ionic test', null, null);
+    };
+    SharePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SharePage');
+    };
+    return SharePage;
+}());
+SharePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-share',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\share\share.html"*/'<!--\n  Generated template for the SharePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="toolbar">\n    <ion-title>Share</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="background">\n  <ion-list no-lines>\n    <button class="background" ion-item full (click)="shareEmail()">\n      <ion-icon class="icon" name="mail" item-start></ion-icon>\n      Email\n    </button>\n    <button class="background" ion-item full (click)="shareTwitter()">\n      <ion-icon class="icon" name="twitter" item-start></ion-icon>\n      Twitter\n    </button>\n    <button class="background" ion-item full (click)="shareFacebook()">\n      <ion-icon class="icon" name="facebook" item-start></ion-icon>\n      Facebook\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\share\share.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], SharePage);
+
+//# sourceMappingURL=share.js.map
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
@@ -668,15 +750,25 @@ SelectPage = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 206:
+=======
+/***/ 205:
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__ = __webpack_require__(21);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_playback_playback__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_song_modals_song__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(207);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -818,7 +910,11 @@ SettingPage = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 208:
+=======
+/***/ 206:
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -883,16 +979,28 @@ PlaybackPage = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 21:
+=======
+/***/ 207:
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsSongPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__share_share__ = __webpack_require__(204);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_audio__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_loginface_loginface__ = __webpack_require__(208);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -953,8 +1061,89 @@ var ModalsSongPage = (function () {
             this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
         }
     };
+<<<<<<< HEAD
     ModalsSongPage.prototype.playAudio = function () {
         this.nativeAudio.play('audio2', function () { return console.log('audio2 is done playing'); });
+=======
+    return LoginPage;
+}());
+LoginPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n\n\n<!-- <ion-content fullscreen class="tutorial-page">\n\n\n\n  <img class="picture" src="spotify_logo.png">\n\n\n\n  <ion-slides pager>\n\n    <ion-slide *ngFor="let slide of slides">\n\n      <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n      <p [innerHTML]="slide.description"></p>\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <h2 class="slide-title">Ready to Play?</h2>\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n\n\n  <ion-buttons text-center>\n\n    <button ion-button class="create" round>\n\n      CREATE ACCOUNT\n\n    </button>\n\n  </ion-buttons>\n\n\n\n  <div class="already" text-center>\n\n    Already a user?\n\n  </div>\n\n\n\n  <ion-buttons text-center>\n\n    <button ion-button class="login" round (click)="loginface()">\n\n      LOG IN\n\n    </button>\n\n  </ion-buttons>\n\n</ion-content> -->\n\n\n\n  \n\n  <ion-content fullscreen class="tutorial-page">\n\n\n\n      <img class="picture" src="spotify_logo.png">\n\n      <ion-buttons text-center>\n\n          <button ion-button class="login" round (click)="share2()">\n\n            share\n\n          </button>\n\n        </ion-buttons>\n\n\n\n    <ion-slides pager style="max-height:200px;margin-top: 80px" autoplay="3800" loop="true" speed="500">\n\n      <ion-slide *ngFor="let slide of slides">   \n\n        <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n        <p [innerHTML]="slide.description"></p>\n\n      </ion-slide>\n\n    </ion-slides>\n\n\n\n    <ion-buttons text-center>\n\n        <button ion-button class="create" round>\n\n          CREATE ACCOUNT\n\n        </button>\n\n      </ion-buttons>\n\n    \n\n      <div class="already" text-center>\n\n        Already a user?\n\n      </div>\n\n    \n\n      <ion-buttons text-center>\n\n        <button ion-button class="login" round (click)="loginface()">\n\n          LOG IN\n\n        </button>\n\n      </ion-buttons>\n\n  </ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\login\login.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]])
+], LoginPage);
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 208:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginfacePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(104);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the LoginfacePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var LoginfacePage = (function () {
+    function LoginfacePage(nativeStorage, facebook, viewCtrl, navCtrl, navParams) {
+        this.nativeStorage = nativeStorage;
+        this.facebook = facebook;
+        this.viewCtrl = viewCtrl;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.facebook.browserInit(this.FB_APP_ID);
+    }
+    LoginfacePage.prototype.loginFB = function () {
+        var _this = this;
+        var permissions = new Array();
+        var nav = this.navCtrl;
+        permissions = ["public_profile"];
+        this.facebook.login(permissions)
+            .then(function (response) {
+            var userId = response.authResponse.userID;
+            var params = new Array();
+            _this.facebook.api("/me?fields=name,gender", params)
+                .then(function (user) {
+                user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
+                _this.nativeStorage.setItem('user', {
+                    name: user.name,
+                    gender: user.gender,
+                    picture: user.picture
+                })
+                    .then(function () {
+                    nav.push(__WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */]);
+                }, function (error) {
+                    console.log(error);
+                });
+            });
+        }, function (error) {
+            console.log(error);
+        });
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
     };
     ModalsSongPage.prototype.stopAudio = function () {
         this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
@@ -981,7 +1170,13 @@ ModalsSongPage = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 210:
+=======
+<<<<<<< HEAD
+=======
+/***/ 209:
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1066,6 +1261,219 @@ ProfilePage = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+>>>>>>> 0650d64b6fbe9b59e85f4a19a96e8e52070ca4fb
+/***/ 21:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsSongPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__share_share__ = __webpack_require__(203);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the ModalsSongPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalsSongPage = (function () {
+    function ModalsSongPage(alertCtrl, socialSharing, nativeAudio, navCtrl, navParams) {
+        this.alertCtrl = alertCtrl;
+        this.socialSharing = socialSharing;
+        this.nativeAudio = nativeAudio;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.startSong = 0.00;
+    }
+    // play(){
+    //   this.nativeAudio.preloadComplex('clickSound', 'assets/clickSound.mp3', 1, 1, 0).then(this.onSuccessPreloading, this.onError);
+    // }
+    // onSuccessPreloading = (data) => {
+    //   console.log('success preloading', data);
+    //   this.nativeAudio.play('track1').then(this.onSuccessPlaying, this.onError);
+    // }
+    ModalsSongPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalsSongPage');
+        this.nativeAudio.preloadComplex('audio2', 'clickSound.mp3', 1, 1, 0);
+    };
+<<<<<<< HEAD
+    ModalsSongPage.prototype.sharePage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__share_share__["a" /* SharePage */]);
+=======
+    ModalsSongPage.prototype.share2 = function () {
+        var _this = this;
+        this.socialSharing.canShareViaEmail().then(function () {
+            _this.socialSharing.shareViaEmail('Invite to listen music on Spotify', 'Spotify Sharing', ['weerapat.laor@gmail.com']);
+        }).catch(function () {
+            console.log('Error');
+        });
+>>>>>>> 0650d64b6fbe9b59e85f4a19a96e8e52070ca4fb
+    };
+    ModalsSongPage.prototype.playAudio = function () {
+        this.nativeAudio.play('audio2', function () { return console.log('audio2 is done playing'); });
+        // const alert = this.alertCtrl.create({
+        //   title: 'Played',
+        //   subTitle: 'Song has played',
+        //   buttons: ['OK']
+        // });
+        // alert.present();
+    };
+    ModalsSongPage.prototype.stopAudio = function () {
+        this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
+        // const alert = this.alertCtrl.create({
+        //   title: 'Stopped',
+        //   subTitle: 'Song has stopped',
+        //   buttons: ['OK']
+        // });
+        // alert.present();
+    };
+    ModalsSongPage.prototype.changeShuffle = function () {
+        this.shuffle = !this.shuffle;
+    };
+    ModalsSongPage.prototype.changeRepeat = function () {
+        this.repeat = !this.repeat;
+        if (this.repeat == true) {
+            this.nativeAudio.loop('audio2');
+        }
+    };
+    ModalsSongPage.prototype.changeButton = function () {
+        this.status = !this.status;
+        if (this.status == true) {
+            this.nativeAudio.play('audio2', function () { return console.log('audio2 is done playing'); });
+        }
+        else {
+            this.nativeAudio.stop('audio2'), function () { return console.log('audio2 is done stopped'); };
+        }
+    };
+    ModalsSongPage.prototype.closeTapped = function () {
+        this.navCtrl.pop();
+    };
+    return ModalsSongPage;
+}());
+ModalsSongPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+<<<<<<< HEAD
+        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n\n  <ion-toolbar color="toolbar">\n\n    <ion-buttons (click)="closeTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-buttons end (click)="closeTapped()">\n\n      <button ion-button icon-left>\n\n        <ion-icon class="color" name="list"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <div class="artist">Playing music from\n\n      <p class="artist">The Blaze</p>\n\n    </div>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content fullscreen>\n\n  <ion-slides spaceBetween="-60">\n\n    <ion-slide>\n\n      <img class="cover" src="blaze.png">\n\n    </ion-slide>\n\n    <ion-slide>       \n\n      <img class="cover" src="RollingIntheDeep.jpg">\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img class="cover" src="SetFiretotheRain.jpeg">\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n  \n\n  <div class="div">\n\n    <ion-icon class="add" name="add"></ion-icon>\n\n    <div class="song">\n\n      <p class="p1">Territory</p>\n\n      <p class="p2">The Blaze</p>\n\n    </div>\n\n    <ion-icon class="share-alt" name="share-alt" (click)="sharePage()"></ion-icon>\n\n  </div>\n\n  <ion-item class="item" no-lines>\n\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n\n      <ion-label range-left>0:00</ion-label>\n\n      <ion-label range-right>4:00</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n  <div class="div1">\n\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n\n    <ion-icon class="play"  (click)="changeButton()" [name]="status? \'pause\':\'play\'"></ion-icon>\n\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], ModalsSongPage);
+
+=======
+        selector: 'page-modals-song',template:/*ion-inline-start:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/'<ion-header no-border class="black">\n\n  <ion-toolbar color="toolbar">\n\n    <ion-buttons (click)="closeTapped()">\n\n      <button ion-button icon-right>\n\n        <ion-icon class="color" name="arrow-down"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-buttons end (click)="closeTapped()">\n\n      <button ion-button icon-left>\n\n        <ion-icon class="color" name="list"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <div class="artist">Playing music from\n\n      <p class="artist">The Blaze</p>\n\n    </div>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content fullscreen>\n\n  <ion-slides spaceBetween="-60">\n\n    <ion-slide>\n\n      <img class="cover" src="blaze.png">\n\n    </ion-slide>\n\n    <ion-slide>       \n\n      <img class="cover" src="RollingIntheDeep.jpg">\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img class="cover" src="SetFiretotheRain.jpeg">\n\n    </ion-slide>\n\n  </ion-slides>\n\n\n\n  \n\n  <div class="div">\n\n    <ion-icon class="add" name="add"></ion-icon>\n\n    <div class="song">\n\n      <p class="p1">Territory</p>\n\n      <p class="p2">The Blaze</p>\n\n    </div>\n\n    \n\n    <ion-icon class="share-alt" name="share-alt" (click)="share2()"></ion-icon>\n\n  </div>\n\n  <ion-item class="item" no-lines>\n\n    <ion-range [(ngModel)]="startSong" min="0.00" max="4.00">\n\n      <ion-label range-left>0:00</ion-label>\n\n      <ion-label range-right>4:00</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n  <div class="div1">\n\n    <ion-icon [ngClass]="{shuffle:shuffle==true}" class="notShuffle" name="shuffle" (click)="changeShuffle()" ></ion-icon>\n\n    <ion-icon class="backward" name="skip-backward"></ion-icon>\n\n    <ion-icon class="play" (click)="changeButton()" [name]="status? \'pause\':\'play\'"></ion-icon>\n\n    <ion-icon class="forward" name="skip-forward"></ion-icon>\n\n    <ion-icon [ngClass]="{repeat:repeat==true}" class="notRepeat" name="repeat"  (click)="changeRepeat()"></ion-icon>\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Guy\Desktop\hybrid\ionic_spotify\src\pages\modals-song\modals-song.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _e || Object])
+], ModalsSongPage);
+
+var _a, _b, _c, _d, _e;
+>>>>>>> 0650d64b6fbe9b59e85f4a19a96e8e52070ca4fb
+//# sourceMappingURL=modals-song.js.map
+
+/***/ }),
+
+/***/ 210:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_collection_collection__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_findfriends_findfriends__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modals_song_modals_song__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the ProfilePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ProfilePage = (function () {
+    function ProfilePage(modalCtrl, viewCtrl, spotify, navCtrl, navParams) {
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.ImageUrl = '';
+        this.tap1 = 0;
+        this.tap2 = 0;
+        this.tap3 = 0;
+        this.ImageUrl = spotify.getImage();
+    }
+    ProfilePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ProfilePage');
+        // this.viewCtrl.setBackButtonText('');
+    };
+    ProfilePage.prototype.modalsTapped = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__modals_song_modals_song__["a" /* ModalsSongPage */]);
+        modal.present();
+    };
+    ProfilePage.prototype.changeButton = function () {
+        this.status = !this.status;
+        console.log(this.status);
+    };
+    ProfilePage.prototype.findfriends = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__pages_findfriends_findfriends__["a" /* FindfriendsPage */]);
+    };
+    ProfilePage.prototype.tapEvent1 = function (e) {
+        this.tap1++;
+    };
+    ProfilePage.prototype.tapEvent2 = function (e) {
+        this.tap2++;
+    };
+    ProfilePage.prototype.tapEvent3 = function (e) {
+        this.tap3++;
+    };
+    ProfilePage.prototype.back = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_collection_collection__["a" /* CollectionPage */]);
+    };
+    return ProfilePage;
+}());
+ProfilePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\profile\profile.html"*/'<!--\n\n  Generated template for the ProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-toolbar hideBackButton>\n\n\n\n    <ion-icon name="arrow-back" class="backIcon" color="light" (click)="back()"></ion-icon>\n\n\n\n      <img class="image" src="user.png">\n\n    \n\n    <div class="textName">\n\n      Sukolawat\n\n    </div>\n\n  <div text-center>\n\n    <button class=" buttonFriend" ion-button round small (click)="findfriends()"> \n\n            <div class="textFriend">\n\n               FIND FRIENDS \n\n              </div>\n\n        </button>\n\n  </div>\n\n  </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content  class="ion-content" fullscreen>\n\n  <!-- <img src ={{ImageUrl}} class="picture">\n\n  <div class="text">\n\n    Mr.Spotify the Jook Slayer\n\n  </div>\n\n  <button ion-button color="light" round small class="button">\n\n      Find friends\n\n  </button> -->\n\n\n\n\n\n  <div class="playList1" (tap)="tapEvent1($event)">\n\n    {{tap1}}\n\n  </div>\n\n  <div class="follower1" (tap)="tapEvent2($event)">\n\n    {{tap2}}\n\n  </div>\n\n  <div class="following1" (tap)="tapEvent3($event)">\n\n    {{tap3}}\n\n  </div>\n\n\n\n\n\n  <div class="playList2">\n\n    PLAYLISTS\n\n  </div>\n\n\n\n  <div class="follower2">\n\n    FOLLOWERS\n\n  </div>\n\n\n\n  <div class="following2">\n\n    FOLLOWING\n\n  </div>\n\n\n\n\n\n  <div class="textActivity">\n\n    No recent activity.\n\n  </div>\n\n  <div class="textListen">\n\n    Check out some new music now\n\n  </div>\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-toolbar color="dark" class="footer">\n\n    <ion-buttons class="button" (click)="modalsTapped()">\n\n      <button ion-button icon-right>\n\n          <ion-icon  name="arrow-up" class="buttonColor"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n\n\n    <ion-title class="position" (click)="modalsTapped()">\n\n      <ion-slides>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs -\n\n            <p class="artist">Artists</p>\n\n          </div>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <div class="song">\n\n            Songs2 -\n\n            <p class="artist">Artists2</p>\n\n          </div>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button ion-left (click)="changeButton()">\n\n            <img class="imgicon" [src]="status? \'pause-button.png\':\'play-button.png\'"> \n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Weerapat\Desktop\Hybrid\ionic_spotify\src\pages\profile\profile.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_spotifydata_spotifydata__["a" /* SpotifydataProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], ProfilePage);
+
+//# sourceMappingURL=profile.js.map
+
+/***/ }),
+
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 /***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1221,6 +1629,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_modals_song_modals_song__ = __webpack_require__(21);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_select__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(206);
@@ -1242,6 +1651,29 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_native_audio__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_loginface_loginface__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_share_share__ = __webpack_require__(204);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_select__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_collection_collection__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_setting_setting__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_profile_profile__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_spotifydata_spotifydata__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_http__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_findfriends_findfriends__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_playback_playback__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_facebook__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_native_storage__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_login_login__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_social_sharing__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_native_audio__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_loginface_loginface__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_share_share__ = __webpack_require__(203);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1348,9 +1780,14 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(101);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(107);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(201);
+>>>>>>> a3636858b8f5c75a297154ab47e720e78f692e65
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
